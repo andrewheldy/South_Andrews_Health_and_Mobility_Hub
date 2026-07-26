@@ -1,0 +1,99 @@
+# Contradictions Matrix
+
+**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Governing documents:** `skills/source-reconciliation/SKILL.md` (format and rules), `docs/governance/SOURCE_AUTHORITY.md`, `AGENTS.md`
+**Related:** [Source Authority Register](Source%20Authority%20Register.md) · [Open Questions](Open%20Questions.md) · [Master Assumption Register](Master%20Assumption%20Register.md)
+
+Rules applied: no averaging; no cherry-picking favorable values; unresolved material conflicts escalated for owner review; displaced claims preserved as superseded assumptions or rejected scenarios. **Status** uses the AGENTS.md evidence classifications. **Treatment** states adopted / superseded / rejected / unresolved–escalated plus required downstream handling.
+
+Source IDs: S1 Corrected Assumptions · S2 6v8 Model · S3 8M Feasibility · S4 ODP · S5 Legacy Prospectus · S6 Appraisal · S7 Appraisal Valuation wb · S8 Native Realty. Cell/page citations in parentheses.
+
+## A. Identity, thesis, and naming
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Project name | "South Andrews Clinical & Mobility Center" | S4 (title), S5 (title) | "South Andrews Healthcare and Mobility Hub" | AGENTS.md; PROJECT_GLOSSARY.md | verified fact (governance) | **Adopted.** Old names historical-only; every derived doc must use the current name; ODP v2 regeneration required downstream |
+| Primary thesis | AV-fleet "Mobility Nexus" as primary economics | MA-12 (Andrews_Context.md, missing) via S4 Table 24; S2 note (`Summary!A15`) | Healthcare anchor; mobility as enabling infrastructure; no speculative AV revenue | AGENTS.md scope; S4 resolution (Constitution/Decision-003 as cited) | rejected scenario | **Rejected** (as primary thesis). Preserved as Phase-3+ optionality. Formal owner ratification still recommended (OQ-01 → [Decision Log](Decision%20Log.md) D-P2) |
+| Buyer program framing | Car-rental fleet hub, ~600 stalls, office/hotel cap | S8 (pp.1–6) | Healthcare-anchored program; project "not rental-car-led" | AGENTS.md scope | rejected scenario (as thesis) | **Rejected** as program; S8 retained as zoning/valuation reference within scope |
+| Residential & hotel programs | Scenario B (~43 units) / Scenario C (~130 keys) | S8 (p.6) | Not part of current scope ("not residential-led, hotel-led") | AGENTS.md scope | rejected scenario | **Rejected for now**; preserved as studied alternatives (relevant to HBU and exit optionality) |
+| Seller's concept | "Agora Mediterranean Market" retail/restaurant center | S6 (p.1, improvements section) | Prospective buyer's healthcare+mobility program on a cleared site | AGENTS.md; S6 HBU (redevelopment; existing use interim) | superseded assumption (seller's, never ours) | **Historical context only.** Explains S6 branding; see next row |
+| Appraisal branding mismatch (OQ-12) | Suspected subject mismatch: appraisal branded "Agora Mediterranean Market" | S4 (§0.2, OQ-12) | Same property confirmed: folio 50-42-15-01-0711 and legal description in S6 match the subject assemblage; "Agora" is the seller's concept/DBA name | S6 (pp.3, 27) + S8 (folio) | source-derived, corroborated | **Resolved factually — pending owner sign-off** (D-P8). Downstream: cite S6 as "AEI appraisal (branded for the seller's 'Agora' concept)" |
+| Canonical address string | "901–915 S Andrews Ave" (S4/S5); "917 S Andrews Ave" (S6 summary); "905" (S8 filename) | S4, S5, S6, S8 | "901–917 S Andrews Avenue" assemblage (one folio) | S6 legal description + S8 text; S7 reconciliation note | source-derived | **Adopted as working canonical string** "901–917 S Andrews Avenue, Fort Lauderdale, FL 33316"; variants preserved; title confirmation required (MB-10) |
+
+## B. Land value and acquisition
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Land value / basis | $12.0M prior listing; $11.1M appraisal ($290/SF) | S6 (pp.1, 5) | $8.0M working opening offer ($209/SF); negotiation room to ~$8.75M; defensible range $7.65–9.0M | Owner directive (S2 `Assumptions!B18`, S3 `Assumptions!D7`); S8 (p.7) | current working assumption (offer); appraisal opinion preserved | **Adopted** $8.0M as modeling basis. $11.1M preserved as third-party opinion with documented critiques (S1 §4; S8 buyer-side adjustments). Formal owner decision record needed (D-P1) |
+| Supported land value method | $11.1M supported by comps | S6 | $8.96M residual (base multifamily scenario; 80.7% coverage; "CAUTION — NEGOTIATE"); hub-only program supports ~$0.81M | S7 (`Residual Land Value!C36`, `Mobility Hub Economics!C14`) — reference only | model output (analyst) | **Context adopted for negotiation**, not as value; program in S7 differs from project program — never quote its residual as "our" number |
+| Comparable-sales reliability | 4 comps justify $290/SF | S6 (p.43) | Two comps condemnation/hospital-assemblage influenced; two carry superior RAC-CC entitlements; small-lot premium concedes size effect | S1 (§4) + S8 (p.7) — interpretation scope | source-derived critique | **Adopted** as the standing interpretation caveat whenever S6's value is cited |
+
+## C. Program & massing (the S2 ↔ S3 conflict family)
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Floor plate basis | 35,000 SF uniform plate | S2 (`Assumptions!B8`) | 28,000 SF ground/parking plate; 24,000 SF office plate | S3 (`Assumptions!D9–D11`, from S8 massing) | current working assumptions (two competing) | **UNRESOLVED — ESCALATED (OQ-14).** S2 outranks S3 by tier but S3 has third-party massing basis. Requires architect test-fit (MB-02). Until then all program-dependent numbers must state their basis |
+| Total GBA (6-story / 8-story) | 210,000 / 280,000 SF | S2 (`Program!B15,C15`) | 160,000 / 208,000 SF | S3 (`Program & Massing!B17,D17`) | model output (basis-dependent) | **Unresolved** — downstream artifact of plate conflict; never mix |
+| Office RSF (6 / 8) | 59,500 / 89,250 | S2 (`Program!B14,C14`) | 40,800 / 61,200 | S3 (`Program & Massing!B8,D8`) | model output (basis-dependent) | Same as above |
+| Parking stalls (6 / 8) | 340 / 440 | S2 (`Program!B18,C18`) | 231 / 308 structured + 18 AV bays | S3 (`Program & Massing!B11,D11`, `Assumptions!D16`) | model output (basis-dependent) | Same as above; S8's ~575–600 stalls is the rejected rental program, not a third value for this project |
+| Stall efficiency | 350 SF/space | S2 (`Assumptions!B9`) | 360 SF/stall (deliberately more conservative than the 340 SF/stall study figure) | S3 (`Assumptions!D12`); S8 (~340) | current working assumptions | **Unresolved** (minor); resolve with test-fit; do not average |
+| AV staging quantification | 12,000 SF L1 zone | S2 (`Assumptions!B12`) | 18 dedicated ground bays (excluded from stall count) | S3 (`Assumptions!D16`) | current working assumptions | **Unresolved** (representation differs); reconcile in test-fit; both encode the same owner directive (separated, secured staging) |
+| Office floors answer | — | — | 2 office floors (6-story) / 3 office floors (8-story) — convergent | S2 (`Program!B6/C6`) **and** S3 (`Assumptions!D20/E20`) | model output, convergent | **Adopted** as the working stacking answer on both bases |
+
+## D. Cost inputs
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Garage/podium structure cost | $105/SF (CIP PT FlexPark incl. +12% convertibility) | S2 (`Assumptions!B24`) | $115/GSF parking (WGI 2026 median $98.75 + S FL/HVHZ/adaptability premium) + $250/GSF ground podium | S3 (`Assumptions!D31,D32`) | current working assumptions (two) | **Unresolved**; different cost architectures (S2 blends L1+garage; S3 splits). Present both; GC pricing (MB-16) resolves |
+| Office shell & core | $310/SF | S2 (`Assumptions!B25`) | $290/GSF | S3 (`Assumptions!D33`) | current working assumptions | **Unresolved**; range $290–310 may be stated as a range with both citations — never a single midpoint |
+| Office TI allowance | $75/RSF | S2 (`Assumptions!B26`) | $135/RSF | S3 (`Assumptions!D34`) | current working assumptions | **Unresolved — material** (moves 6-story cost ~$2.4–3.7M). Note S2 cites "market TI $60–90"; S3 calls $135 "moderate medical-office." Definition difference (spec-suite vs clinical-capable) suspected; clarify then escalate |
+| Demolition | $850K | S2 (`Assumptions!B19`) | $400K | S3 (`Assumptions!D29`); S7 $350K base / $430K conservative | current working assumptions | **Unresolved**; S2 may include sitework S3 carries separately ($1.25–1.45M flood/stormwater line). Compare like-for-like before escalating |
+| Flood/stormwater sitework | (inside S2's $850K demo+sitework?) | S2 | $1.25M / $1.45M explicit allowance | S3 (`Assumptions!D30,E30`) | current working assumption | **Adopt S3's explicit line** for visibility (Zone AE is entitlement-critical); flag S2's bundling in any reconciliation |
+| Utility / FPL allowance | $750K | S2 (`Assumptions!B33`) | $1.5M / $1.8M ("high-uncertainty placeholder") | S3 (`Assumptions!D38,E38`) | current working assumptions | **Unresolved — material**; only MB-03 resolves; external docs must say "subject to utility confirmation" |
+| Soft cost structure | 18% of hard + 7.5% contingency + 4% dev fee | S2 (`Assumptions!B45–B47`) | 8% A&E + 5% permits + 4% owner + 8% contingency (= 25% of hard) + $25/RSF leasing | S3 (`Assumptions!D45–D49`) | current working assumptions | **Unresolved**; structures differ; totals materially different; carry both |
+| Construction duration | 18 / 21 months (construction only) | S2 (`Assumptions!B20,B21`) | 30 / 34 months (build **+ initial lease-up**) | S3 (`Assumptions!D27,E27`) | current working assumptions | **Partially definitional** — different periods measured; document the definitions; interest-carry comparisons must normalize first |
+| LTC / rate / financing | 65% LTC @ 7.5%, no fee modeled | S2 (`Assumptions!B48,B49`) | 60% LTC @ 8.0% + 1.5% financing fee | S3 (`Assumptions!D50–D53`) | current working assumptions | **Unresolved**; lender term sheet resolves; both are planning-level |
+| Solar capacity / cost | 300/340 kW @ $2.60/W | S2 (`Assumptions!B35–B37`) | 150/200 kW @ $2.40/W | S3 (`Assumptions!D23,D40`) | current working assumptions | **Unresolved**; 2× sizing difference driven by roof-allocation assumptions (garden 5,000 vs 6,000–8,000 SF; penthouse 2,000 vs 1,500–2,000 SF); roof study needed |
+| BESS | 600 kWh @ $520/kWh | S2 (`Assumptions!B39,B40`) | 500/1,000 kWh @ $600/$550 per kWh | S3 (`Assumptions!D24,D41`) | current working assumptions | **Unresolved**; scope definition (peak-shave vs resilience) first |
+| Solar/storage tax credit | 30% ITC captured (net cost basis) | S2 (`Assumptions!B38`, `Budget!B15`) | **0% underwritten** — §48E changed 2025–2026; 30C ends for property placed in service after 6/30/2026 | S3 (`Energy & Mobility!B20,B21` + `Sources` IRS rows) | current working assumption (S3) vs superseded-candidate (S2) | **UNRESOLVED — ESCALATED (OQ-17), material.** S3's position is newer and sourced; prudent baseline = $0 credits until tax counsel (MB-13). S2's net-of-ITC line must be flagged in any use |
+| EV charger cost/unit | L2 $8,000/port; DCFC $130,000/unit | S2 (`Assumptions!B30,B32`) | L2 $7,500/port; DCFC deferred (stub-outs only) | S3 (`Assumptions!D36`, `Energy & Mobility!B19`) | current working assumptions | **Unresolved** minor on L2; DCFC treatment is the real conflict → OQ-21 |
+| Edge compute scope/cost | 2,000 SF penthouse shell, $450K (tenant-funded fit-out) | S2 (`Assumptions!B14,B41`) | 1,500/2,000 SF data room, $1.25M/$1.75M full infrastructure (racks/fiber/UPS excl. major compute) | S3 (`Assumptions!D25,D42`) | current working assumptions | **Unresolved**; scope definitions differ (shell vs fitted); align scope before comparing cost |
+| Roof garden | 5,000 SF @ $175K | S2 (`Assumptions!B15,B42`) | 6,000/8,000 SF @ $90/SF ($540K/$720K) | S3 (`Assumptions!D26,D43`) | current working assumptions | **Unresolved** (minor); owner amenity-level decision |
+
+## E. Revenue & returns inputs
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Medical office rent | $36/RSF NNN — tagged "FACT" citing "Broward Class A MOB $34–36 and rising (Operational Study, Q1-2026)" | S2 (`Assumptions!B53`) | $50/RSF — "illustrative broker-underwriting input, not a signed lease" | S3 (`Assumptions!D55`) | S2 value: source-derived but not independently verified (FACT tag is an overclaim); S3 value: current working assumption | **UNRESOLVED — ESCALATED (OQ-15), material** (~$0.6–0.9M NOI swing). Neither external-use ready; MB-07 comps required. Downstream: reclassify S2's tag in all derived work |
+| Office vacancy/occupancy | 7% vacancy | S2 (`Assumptions!B54`) | 93% occupancy (=7% vacancy) — convergent | S3 (`Assumptions!D56`) | current working assumption, convergent | **Adopted** (7% stabilized vacancy) |
+| Retail/med-tail rent | $42/SF NNN on 4,500 SF café | S2 (`Assumptions!B55,B11`) | $45/RSF on 10,000 RSF ground leasable (café 2,500 within) | S3 (`Assumptions!D57,D14,D15`) | current working assumptions | **Unresolved**; ground-floor program differs with plate basis (OQ-14 dependency) |
+| Parking revenue construct | $2,400/space/yr blended, all spaces; 30% opex | S2 (`Assumptions!B56,B57`) | $275/stall/mo on 55% monetized share; 35% opex (pooled with EV/AV) | S3 (`Assumptions!D60,D61,D65`) | current working assumptions | **Unresolved**; effective per-stall economics differ ($2,400 vs ~$1,815/yr gross-equivalent); MB-09 resolves; underlying pricing survey not in repo |
+| EV charging net income | $120,000/yr total (JUDGMENT, 40 units) | S2 (`Assumptions!B58`) | $250/port/mo × 40 = $120,000/yr — **convergent total** | S3 (`Assumptions!D62`) | model input, convergent | **Adopted** as working value ($120K/yr net, utilization-sensitive) |
+| AV staging revenue (base case) | $0 — toggle OFF; $300K/yr only if fleet lease signed ($25/SF × 12,000 SF) | S2 (`Assumptions!B62,B63`) | $194,400/yr AV bay revenue **included in S3 base EGI** (18 bays × $900/mo, "illustrative operator master-lease equivalent") | S2 toggle logic aligns with AGENTS.md/Decision-003; S3 includes it | S2: rejected-from-base per governance; S3: current working assumption **in tension with governance** | **CONFLICT — ESCALATED (OQ-22).** S3's base NOI contains ~$194K of AV-dependent revenue despite its own "do not underwrite AV upside" caveat. Recommended: recompute S3 NOI ex-AV for governance-clean base (≈$2.15M / $2.97M) — recommendation, not applied to the workbook |
+| Solar energy value | $0.13/kWh avoided; 1,450 kWh/kW-yr | S2 (`Assumptions!B59,B60`) | 1,500 kWh/kW-yr planning factor (value via avoided cost not separately priced) | S3 (`Energy & Mobility!B15`) | current working assumptions | **Unresolved** minor; NREL-class factors both defensible |
+| Exit cap rate | 6.25% (institutional MOB/mixed 6.0–6.5%) | S2 (`Assumptions!B69`) | 7.25% illustrative (specialty mixed-use/parking-heavy) | S3 (`Assumptions!D67`) | current working assumptions | **UNRESOLVED — ESCALATED (OQ-18), material** (asset-classification question: MOB-like vs specialty). S7 uses 5.35% (multifamily) / 7.5% (hub) — different programs |
+| Return hurdle framing | Spread over 6.25% exit cap; IRR/multiple on 10-yr QOZ hold | S2 (`Summary!D9`, `Returns`) | 7.0% stabilized yield-on-cost target before tax incentives | S3 (`Assumptions!D66`) | current working assumptions | Both retained; report both metrics until owner sets the underwriting standard (MA-06) |
+| Feasibility conclusion | YoC 3.83%/4.02%; development profit −$27.7M/−$33.9M; IRR 1.2%/1.9% | S2 (`Returns!B13…B31`) | YoC 3.83%/4.07% core; partner gap $1.89M–$3.23M/yr; value gap −$28.1M to −$47.7M | S3 (`Financing & Returns!D21…E28`) | model output (convergent conclusion) | **Adopted as canonical model output:** base program does not reach institutional yield without partner support/above-market revenue. No conflict — two models, same conclusion. Must appear plainly in all internal decision documents |
+
+## F. Entitlement & site
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Height entitlement framing | "110 ft (~10 stories) by right; up to 150 ft via bonuses" | S4 (zoning table); echoed S5 | "Up to 12 stories; above 6 stories = enhanced Level III site plan & design review (discretionary)"; S1: "above six stories requires enhanced review; up to roughly twelve stories may be possible subject to review" | S8 (p.4) + S1 (§5) | source-derived, conflicting reads of ULDR | **UNRESOLVED — ESCALATED (OQ-03/OQ-11).** Working statement: *both 6- and 8-story scenarios assume discretionary review above 6 stories; exact envelope unverified pending Zoning Verification Letter.* S2's "by-right height (110 ft)" note must not be quoted externally |
+| FAR | "No maximum FAR; form-based envelope" | S4; S8 ("form-based") | S7 models FAR 4/6/8 as analyst scenarios; S1: "exact maximum FAR not yet verified" | S1 (not-verified list) | open question | **Unresolved by design**; MB-01 |
+| Existing improvements | Three older commercial buildings (interim use) | S6, S8, S1 — convergent | same | S6 | source-derived, corroborated | **Adopted** |
+| Site area & frontages | 38,207 SF; 275/170 ft | S6 (ALTA-based), S8, S1, S4 — convergent | same | S6 + survey (MA-10) when recovered | verified fact | **Adopted** (strongest-corroborated fact in repo) |
+| Topography/soils | "Moderate slopes; soils appear typical/adequate" | S6 (p.28) | Unverified pending geotech | S1/S4 treatment | current working assumption | **Adopted with caveat**; MB-06 |
+
+## G. Governance & document layer
+
+| Topic | Old value | Old source | Current value | Controlling source | Status | Treatment |
+|---|---|---|---|---|---|---|
+| Governing document hierarchy | Constitution → Decision Log → ODP → Design Standards → Open Questions | S4 (precedence table) | AGENTS.md source-precedence hierarchy + docs/governance/ | AGENTS.md | verified fact (governance) | **Adopted.** S4's cited layer is missing (MA-01…MA-05); owner to confirm succession (OQ-19) |
+| Decisions 001–003 | Logged decisions (mixed-use concept; convertible parking; no speculative day-one AV/edge revenue) | S4 (citations only; log absent) | Same content effectively restated by AGENTS.md scope rules | AGENTS.md | source-derived (content); open question (records) | **Re-ratification recommended** in the new [Decision Log](Decision%20Log.md) (D-P2…D-P4) so the record exists in-repo |
+| Zoning acronym expansion | "RAC-RPO — Residential Permitted Overlay" | S7 (`Cover!C16`) | "Regional Activity Center – Residential and Professional Office (District)" | S6 (zoning section); S4 | verified fact (of the code name) | **Superseded/corrected**; note S7's error wherever S7 is cited |
+
+## Summary of escalations requiring owner decision
+Material unresolved conflicts (full statements in [Open Questions](Open%20Questions.md)): **OQ-14** program/plate basis · **OQ-15** office rent basis · **OQ-17** tax-credit underwriting · **OQ-18** exit cap / hurdle · **OQ-21** initial charger split · **OQ-22** AV bay revenue inside S3 base NOI · **OQ-03/OQ-11** height/entitlement framing · plus formal ratifications D-P1 (land offer), D-P2 (thesis), D-P8 (OQ-12 close-out).
+
+No conflict in this matrix has been silently resolved, averaged, or dropped.
