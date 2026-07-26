@@ -35,8 +35,13 @@ Higher precedence does not make a source authoritative outside its scope. Follow
 ## Current project identity
 
 - The project name is **South Andrews Healthcare and Mobility Hub**.
+- The canonical identity address is **901–917 South Andrews Avenue, Fort Lauderdale, Florida**. Preserve parcel-specific and quoted source addresses in legal, survey, appraisal, environmental, tax, title, and source-specific contexts.
 - Older project names are historical only.
 - Property status: **Prospective acquisition. The sponsor does not currently own the property.**
+
+## Operative governance succession
+
+`AGENTS.md` and the current `docs/governance/` set are the operative repository governance system. An authenticated prior Project Constitution or Decision Log, if recovered, enters the repository as historical evidence and does not automatically supersede this system. It must first be reconciled and, where material, submitted for owner decision. The missing prior documents remain tracked dependencies; they must not be silently recreated or cited as presently operative.
 
 ## Current project scope
 
@@ -59,6 +64,8 @@ Classify every material claim as exactly one of:
 - **rejected scenario** — explicitly considered and not adopted
 
 Do not blur, combine, or silently promote these classifications.
+
+Structured records may also carry a separate statement type such as `owner_decision`, `adopted_strategy`, `scenario`, `historical_claim`, `unresolved`, or `missing_source_dependency`. Those types do not replace the evidence classification and do not promote a strategy, assumption, or model output into a verified fact.
 
 ## Status discipline
 

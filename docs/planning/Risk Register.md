@@ -1,6 +1,6 @@
 # Risk Register
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current operative risk register · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md` (status discipline)
 **Related:** [Open Questions](Open%20Questions.md) · [Missing Research Register](Missing%20Research%20Register.md)
 
@@ -21,7 +21,7 @@ Consolidates the ODP risk register (R-1…R-12, carried with original IDs) and a
 | R-9 | Site logistics (no laydown yard) | H | M | CM-led just-in-time delivery/staging plan | CM logistics plan pre-GMP | Open |
 | R-10 | Geotechnical / foundation surprises | M | M | Borings; deep-compaction precedent (SoLé Mia) | Geotech report (MB-06) | Open |
 | R-11 | Title / easement defects | L | M | Updated title commitment; survey reconciliation | Title work (MB-10 / OQ-09) | Open |
-| R-12 | Project-thesis ambiguity (Nexus vs clinical) | M | H | Ratify thesis before design spend | Owner ruling (OQ-01 / D-P2) | **Partially mitigated** — AGENTS.md fixes scope at governance level; formal ratification pending |
+| R-12 | Project-thesis ambiguity (Nexus vs clinical) | M | H | Preserve D-P2 thesis and rejected-scenario lineage | Owner ruling (OQ-01 / D-P2) | **Mitigated at strategy level by D-P2**; program/economic validation remains open |
 
 ## Part 2 — Added by this session (model- and source-derived)
 
@@ -30,11 +30,11 @@ Consolidates the ODP risk register (R-1…R-12, carried with original IDs) and a
 | R-13 | **Base-case infeasibility (yield gap).** Project yields 3.8–4.1% on cost vs 6.25–7.0% requirements; partner gap $1.9–3.2M/yr; development profit −$27.7M to −$33.9M | H (as modeled) | H | S2 `Returns`; S3 `Financing & Returns` — convergent model output | Health-system anchor / master lease / capital contribution / grants; program redesign; rent validation; do not proceed to design spend on base economics alone | MB-07/08/14; owner strategy decision |
 | R-14 | **Tax-credit expiry/eligibility.** 30C dead after 6/30/2026; §48E changed — S2 still nets 30% ITC from solar cost | M | M | S3 `E&M!B20–B21` + IRS citations vs S2 `Assumptions!B38` | Underwrite $0 credits until counsel; re-run S2-basis totals ex-ITC | Tax counsel (MB-13 / OQ-17) |
 | R-15 | **Program-basis error propagation.** Two irreconcilable plate/stall bases; mixing them silently corrupts any derived document | M | H | Contradictions Matrix §C | DUAL discipline (never mix); test-fit resolution | MB-02 / OQ-14 |
-| R-16 | **Acquisition negotiation risk.** Seller anchored at $11.1M appraisal / $12M prior list vs $8.0M disciplined entry; deal may not close in the defensible range | M | H | S6; S8 p.7; S7 waterfall | Anchor to comps/program (S8 logic); walk-away discipline at range top ($9.0M defensible / $9.5M stress) | Owner negotiation mandate (D-P1) |
+| R-16 | **Acquisition negotiation risk.** Seller anchored at $11.1M appraisal / $12M prior list vs the $8.0M working opening input; deal may not close at an evidence-supported basis | M | H | S6; S8 p.7; S7 waterfall; D-P1 | Complete diligence and obtain explicit negotiating authority, ceiling, and walk-away decision; third-party ranges are not adopted limits | OQ-20; later owner decision |
 | R-17 | **Evidence-base fragility.** Core demand and zoning claims trace to a research library absent from the repo; ODP FACTs are one-remove citations | M | M | Missing Research Register Part A | Recover documents or re-source claims; downgrade classifications until then | MA-01…MA-17 recovery |
 | R-18 | **Insurance cost severity (flood + HVHZ + coastal).** Flagged "High" by analyst scorecard but never quantified anywhere | M | M | S7 `Constraint Scorecard`; S1 §7 | Obtain quotes early; carry explicit opex line in model vNext | MB-12 |
 | R-19 | **AV-revenue leakage into base case.** S3 base NOI includes $194K/yr AV-bay revenue despite governance prohibition — feasibility slightly overstated on Basis B | M | L→M | S3 `F&R!D11` vs AGENTS.md | Recompute ex-AV (≈$2.15M/$2.97M NOI); correct in model vNext | OQ-22 |
 | R-20 | **Single-source workbook risk.** Both current models are unaudited (formulas traced this session, but inputs not independently re-derived); no derived-data layer exists | M | M | financial-model-audit skill requirements | Formal audit pass (Workflow Phase 5); create `derived/` extracts with provenance | Audit scheduled in [Implementation Roadmap](Implementation%20Roadmap.md) |
 
 ## Top-priority risks to actively manage from kickoff
-Per ODP guidance plus this session: **R-13 (yield gap)**, R-1 (flood), R-2/R-14 (FPL + tax), R-4 (cost/rate), R-16 (negotiation), R-12→closure via D-P2.
+Per ODP guidance plus this session: **R-13 (yield gap)**, R-1 (flood), R-2/R-14 (FPL + tax), R-4 (cost/rate), and R-16 (negotiation) remain priority. R-12 is strategy-level closed by D-P2.

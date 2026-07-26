@@ -1,6 +1,6 @@
 # Source Authority Register
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current operative authority register · **Last reviewed:** 2026-07-26
 **Governing documents:** `docs/governance/SOURCE_AUTHORITY.md` (this register operationalizes it), `AGENTS.md`
 **Related:** [Source Inventory](Source%20Inventory.md) · [Contradictions Matrix](Contradictions%20Matrix.md)
 
@@ -21,7 +21,7 @@ Source IDs per [Source Inventory](Source%20Inventory.md): S1 Corrected Assumptio
 | 9 | QOZ status | S4/S5 ("Site Intel FACT") | — | — | Federal QOZ designation is externally checkable; treat as source-derived until independently confirmed in diligence |
 | 10 | Appraised value ($11.1M), appraisal dates, exposure/marketing, comp set | **S6 (controls this topic exclusively)** | S1 (interpretation), S7/S8 (critiques) | — | An appraisal opinion — never "the property is worth $11.1M" as fact |
 | 11 | What the appraisal does/does not prove | **S1** (§2–§4) | S7, S8 | — | Controls interpretation of S6 |
-| 12 | Land offer / acquisition basis ($8.0M opening) | Owner directive as recorded in S2 `Assumptions!B18` & S3 `Assumptions!D7` (tier-1 decision **content**, but decision record incomplete) | S8 (recommendation & range $7.65–9.0M), S7 (residual $8.96M) | — | A documented owner decision (date/decision-maker/scope) is still required — [Decision Log](Decision%20Log.md) D-P1 |
+| 12 | Land offer / acquisition basis ($8.0M opening) | Ratified D-P1 within its limited scope; S2 `Assumptions!B18`; S3 `Assumptions!D7` | S8 recommendation/range; S7 residual context | — | Strategy input only; not proof of value or transaction authority; ceiling/walk-away unresolved |
 | 13 | Program & massing (plates, stacks, stalls) | **Conflict between S2 (35,000 SF plate) and S3 (28,000/24,000 SF plates)** — S2 outranks S3 by tier, *but* S3's basis has third-party grounding (S8) | S4 (areas intentionally TBD), S8 | S5 (silent by design) | **Escalated (OQ-14).** Until owner rules or test-fit (MB-02), present both; never mix values across bases |
 | 14 | Parking stall counts & ratios | Same as #13 — basis-dependent | S8 (~340 SF/stall, 82/level context) | — | 340 vs 231 stalls (6-story) is a program-basis artifact, not a data dispute |
 | 15 | Construction unit costs, soft costs, contingency, durations | S2 within its basis; S3 within its basis | S8 ($45–50M rental-program context), S7 (multifamily costs) | — | All are planning allowances pending GC/architect validation (MB-16); conflicts listed per-row in the [Contradictions Matrix](Contradictions%20Matrix.md) |
@@ -34,7 +34,7 @@ Source IDs per [Source Inventory](Source%20Inventory.md): S1 Corrected Assumptio
 | 22 | Feasibility conclusion (yield gap; partner support required) | **S2 + S3 convergent model output** — canonical as *model output*, not fact | S7 (independent method reaches a consistent "gap" conclusion) | — | The single most decision-relevant finding; must never be softened in external materials |
 | 23 | Healthcare demand drivers (Broward Health 188K SF MOB, GME 365, physician shortage) | S4/S5 (source-derived via missing Market Study) | — | — | *Source-derived but not independently verified*; MB-17 |
 | 24 | Healthcare partnership posture (complementary to Broward Health; co-working master tenant) | S4 (program logic — its proper scope) | S5 | — | All partners prospective (glossary) |
-| 25 | AV / fleet operators (Waymo, Zoox, Tesla, Freebee) | S3 `Sources` sheet caveats control: market relevance only; "No partnership or site demand assumed" | S2 (toggle mechanics) | S8 (rental-fleet client thesis) | No AV revenue in any base case (AGENTS.md; ODP Decision-003 as cited) |
+| 25 | AV / fleet operators (Waymo, Zoox, Tesla, Freebee) | S3 `Sources` sheet caveats control: market relevance only; "No partnership or site demand assumed" | S2 (toggle mechanics) | S8 (rental-fleet client thesis) | No speculative AV revenue in a governance-clean base case (D-P2); S3 current base-NOI inclusion remains a disclosed conflict |
 | 26 | Utility / FPL capacity | No source controls — **unverified** | S3 (planning loads, 1.5/2.0 MVA targets), S4 (redundancy rationale) | — | Only an FPL will-serve study (MB-03) can settle |
 | 27 | Structural strategy (CIP flat plates, 12-ft F2F, 100 psf, external ramps, universal grid) | S4 Ch.5 (uncontested program logic) | S2/S3 (cost carriers), S8 (flat-deck fit with Zone AE) | — | Adopt as design intent; premium pricing pending (OQ-10) |
 | 28 | Phasing (P1 parking+medtail → P2 clinical → P3+ optionality) | S4 Ch.8 | S5, S3 (demand-gated charger language) | — | Adopt as working phasing logic |

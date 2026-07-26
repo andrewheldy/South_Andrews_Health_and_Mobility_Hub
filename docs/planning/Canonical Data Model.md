@@ -1,131 +1,154 @@
 # Canonical Data Model
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
-**Governing documents:** `AGENTS.md` (evidence classifications), `docs/governance/CLAIMS_AND_EVIDENCE_POLICY.md` (claim record)
-**Related:** [Repository Knowledge Graph](Repository%20Knowledge%20Graph.md) · [Master Assumption Register](Master%20Assumption%20Register.md)
+**Status:** Ratified Phase 1 standard · **Date:** 2026-07-26
+**Authority:** D-P8 records hygiene; D-P9 governance succession; D-P11 repository refactor Phase 1
+**Implementations:** [`schemas/`](../../schemas/) · [`exports/`](../../exports/) · [`scripts/`](../../scripts/)
 
-Defines the standard entity types, fields, and integrity rules every future repository document, model, and interface must use. This is a *schema*, not data; the data lives in the registers.
+This standard separates statement type, evidence classification, lifecycle status, provenance, and external-use eligibility. Generated data is a derived view; the human-reviewed canon and registers govern.
 
-## 1. Enumerations (fixed vocabularies)
+## Fixed vocabularies
 
-- **EvidenceClass** (AGENTS.md — exactly one per claim): `verified_fact` · `source_derived` · `working_assumption` · `model_output` · `recommendation` · `open_question` · `superseded_assumption` · `rejected_scenario`
-- **Confidence:** `high` · `medium` · `low` (+ one-line basis)
-- **ExternalUseStatus** (CLAIMS_AND_EVIDENCE_POLICY): `approved` · `approved_with_caveat` · `internal_only` · `blocked`
-- **SourceClass:** `current` · `reference` · `legacy` · `raw` · `governance`
-- **AuthorityTier** (AGENTS.md hierarchy 1–8): owner_decision → corrected_assumptions → 6v8_model → 8m_feasibility → owner_program → verified_primary → third_party → legacy
-- **PartnerStatus:** `prospective` (default; only a documented commitment changes it) · `loi` · `committed_documented`
-- **ScenarioStatus:** `scenario` (default) · `adopted_by_owner_decision` · `rejected`
-- **ProgramBasis:** `basis_A_35k` (S2) · `basis_B_28k24k` (S3) · `tbd_test_fit` — every sized figure must carry one
+### Statement type
 
-## 2. Core entities
+Every material statement uses one:
 
-### Claim (the atomic unit — required for every material statement)
-```
-Claim {
-  id:            CLM-###
-  text:          the claim, stated with units/period/scenario
-  class:         EvidenceClass
-  source:        Source.id + location (page / sheet!cell / section)
-  date:          source date (not file date, where known)
-  confidence:    Confidence + basis
-  caveat:        required qualifying language (verbatim)
-  external_use:  ExternalUseStatus
-  supersedes / superseded_by: Claim.id (history never deleted)
-  conflicts_with: [Claim.id]      // must map to a Contradictions Matrix row
-  depends_on:    [Claim.id | OpenQuestion.id]
+`verified_fact` · `corroborated_fact` · `source_derived_claim` · `model_output` · `owner_decision` · `adopted_strategy` · `working_assumption` · `scenario` · `recommendation` · `historical_claim` · `rejected_scenario` · `unresolved` · `missing_source_dependency`
+
+### Evidence classification
+
+Every material statement also uses exactly one evidence classification from `AGENTS.md`:
+
+`verified_fact` · `source_derived_but_not_independently_verified` · `current_working_assumption` · `model_output` · `recommendation` · `open_question` · `superseded_assumption` · `rejected_scenario`
+
+Statement type and evidence class are not interchangeable. `owner_decision` or `adopted_strategy` does not mean `verified_fact`.
+
+### Records-hygiene statuses
+
+The D-P8 vocabulary is implemented as separate dimensions so meanings are not blurred:
+
+- `document_status`: `current` · `ratified` · `draft` · `superseded` · `archived`
+- `scenario_status`: `current` · `historical` · `rejected_scenario`
+- `source_provenance`: `seller_provided` · `third_party` · `owner_provided` · `repository_authored`
+- `verification_status`: `verified` · `unverified` · `missing_source_dependency`
+- `external_use_status`: `internal_only` · `external_eligible` · `approved_with_caveat` · `blocked_pending_resolution`
+
+### Other vocabularies
+
+- Confidence: `high`, `medium`, `low`
+- Source class: `current`, `reference`, `legacy`, `raw`, `governance`
+- Partner status: `prospective`, `loi_documented`, `committed_documented`
+- Scenario association: `project_wide`, `6_story`, `8_story`, `basis_A_35k`, `basis_B_28k24k`, or a preserved historical/rejected scenario ID
+
+## Material statement record
+
+```text
+Statement {
+  statement_id
+  statement_text
+  statement_type
+  evidence_class
+  document_status
+  source_or_decision_provenance[]
+  source_location[]
+  confidence { level, basis }
+  external_use_status
+  date_last_reviewed
+  dependencies[]
+  contradiction_status
+  supersedes[]
+  superseded_by[]
 }
 ```
-Rules: no claim promoted above its class; a caveat elsewhere never cures a misleading headline; conflicting claims are both preserved.
 
-### Source
-```
-Source { id: S#, path (exact, incl. preserved typography), format, size,
-         file_date, internal_date, author/provenance, class: SourceClass,
-         authority_tier, scope (topics it may control), integrity_notes,
-         cites: [Source.id | MissingDoc.id], status: present|missing }
-```
-Missing documents (MA-xx) are first-class `Source{status:missing}` records so citations to them are visible, not silent.
+All fields are required except supersession arrays, which may be empty. A claim with an unresolved dependency cannot be `external_eligible`.
 
-### Assumption (specialized Claim used as model input)
-```
-Assumption { id (SITE-/ZON-/ACQ-/PRG-/CST-/FIN-/REV-/EXT-/NRG-/HC-/MOB-##),
-             values: [{value, unit, program_basis, source}],   // DUAL = >1 live value
-             canonical: yes|dual|context|no,
-             resolution_path: OpenQuestion.id | research MB-## }
-```
-Rule: a `dual` assumption renders as both values or not at all — never a midpoint.
+## Decision
 
-### Decision
-```
-Decision { id: D-### (D-P## while pending), date, decision_maker, decision,
-           scope, rationale, evidence: [Claim.id], status: pending|active|superseded,
-           affects: [Assumption.id | Scenario.id | document] }
-```
-An owner decision controls only when content, date, decision-maker, and scope are documented (SOURCE_AUTHORITY.md).
-
-### OpenQuestion
-```
-OpenQuestion { id: OQ-##, question, priority: critical|high|medium|low,
-               gates: [what it blocks], resolve_via: study|owner_decision|document_recovery,
-               status: open|partially_resolved|resolved_pending_signoff|closed(Decision.id) }
+```text
+Decision {
+  decision_id
+  title
+  exact_decision_statement
+  status: ratified | pending | superseded
+  decision_date
+  decision_maker
+  evidence_or_rationale[]
+  affected_documents[]
+  superseded_decisions[]
+  review_trigger
+}
 ```
 
-### Scenario
-```
-Scenario { id: 6-story|8-story|rejected-*, status: ScenarioStatus,
-           program_basis, program_table, model_outputs: [Claim.id class=model_output] }
-```
+## Assumption and model input
 
-### ProgramComponent
-```
-ProgramComponent { name, role, phase: 1|2|3+, sizing: value|TBD(program_basis),
-                   activation_trigger (required for phase 3+), revenue_in_base_case: bool }
-```
-Rule: `phase 3+ ⇒ revenue_in_base_case = false`.
-
-### Partner
-```
-Partner { name, type: health_system|operator|fleet|utility|city|capital,
-          status: PartnerStatus = prospective, evidence, permitted_language }
-```
-
-### Risk
-```
-Risk { id: R-##, description, probability: L|M|H, impact: L|M|H,
-       mitigation, validation_required, source, status: open|retired|re-rated }
+```text
+Assumption {
+  assumption_id
+  value_or_range
+  unit
+  category
+  evidence_class
+  status
+  model_usage[]
+  scenario_association[]
+  source[]
+  external_use_restriction
+  owner_decision_requirement
+  sensitivity_importance
+}
 ```
 
-### Site (singleton)
-Fields: address_canonical ("901–917 S Andrews Avenue, Fort Lauderdale, FL 33316"), address_variants[], folio, legal_description, land_sf=38,207, acres=0.88, frontages, zoning=RAC-RPO, flu=SRAC, flood_zone=AE(map,date), bfe≈5ft(unverified), qoz=true(SD), improvements, owner_of_record, utilities{present, capacity_status:unverified}.
+Dual values remain separate scenario-associated records. They are never averaged or combined.
 
-### Milestone / Study
+## Source
+
+```text
+Source {
+  source_id
+  exact_path
+  format
+  source_class
+  provenance
+  authority_tier
+  scope
+  integrity_sha256
+  status
+  dependencies[]
+}
 ```
-Study { id: MB-##, name, purpose, gates: [OpenQuestion.id | Decision.id],
-        priority, status: not_started|commissioned|complete, resolves: [Assumption.id] }
+
+Original sources are immutable. Source-specific filenames and address strings are preserved.
+
+## Scenario
+
+```text
+Scenario {
+  scenario_id
+  title
+  scenario_status
+  program_basis
+  thesis
+  source[]
+  incompatibilities[]
+  adoption_decision
+  external_use_status
+}
 ```
 
-## 3. Integrity rules (repo-wide)
+No scenario becomes adopted without an explicit owner decision. `6_story` and `8_story` remain active scenarios; neither is adopted.
 
-1. **Provenance or it doesn't exist:** every quantitative value carries `source + location`; workbook citations are cell-level.
-2. **Single-canonical-with-preserved-variants:** one canonical value (or an explicit DUAL) plus all displaced values kept as `superseded_assumption` / `rejected_scenario`.
-3. **Basis tagging:** any figure derived from a sized program carries `ProgramBasis`.
-4. **Status language:** entity renderers must emit the approved status vocabulary (proposed, prospective, planning-level, subject to …) whenever ExternalUseStatus ≠ approved.
-5. **Model output firewall:** `model_output` claims never mutate into `verified_fact` by repetition; inputs never become facts because a model used them.
-6. **Downstream consistency:** editing any Assumption requires touching every document listed in its `affects` chain (tracked via the [Document Dependency Graph](Document%20Dependency%20Graph.md)).
-7. **Partner default:** absent documentation, `PartnerStatus = prospective` and naming uses "potential partner" language.
-8. **History append-only:** decisions, superseded values, and rejected scenarios are never deleted, only re-statused.
+## Project manifest
 
-## 4. Where each entity's data lives today
+The singleton project record contains canonical identity, property/ownership status, adopted thesis, feasibility flag, adopted and pending decisions, pending studies, external restrictions, address aliases, and source-of-truth links. Unsupported model inputs do not enter it as project facts.
 
-| Entity | Authoritative register |
-|---|---|
-| Claim/Assumption | [Master Assumption Register](Master%20Assumption%20Register.md) |
-| Source | [Source Inventory](Source%20Inventory.md) + [Source Authority Register](Source%20Authority%20Register.md) |
-| Decision | [Decision Log](Decision%20Log.md) |
-| OpenQuestion | [Open Questions](Open%20Questions.md) |
-| Risk | [Risk Register](Risk%20Register.md) |
-| Scenario/Program | [Current Development Program](Current%20Development%20Program.md) |
-| Study | [Missing Research Register](Missing%20Research%20Register.md) Part B |
-| Conflicts | [Contradictions Matrix](Contradictions%20Matrix.md) |
+## Integrity rules
 
-A future structured store (YAML/JSON per entity) may be generated from these registers during implementation — see [Repository Refactoring Plan](Repository%20Refactoring%20Plan.md).
+1. Provenance is required for material claims and quantitative values.
+2. Source/decision location must be as precise as available.
+3. Program-dependent values carry a scenario/program-basis association.
+4. Model outputs stay model outputs.
+5. Partner status defaults to `prospective`.
+6. Optional Phase 3+ revenue is excluded from a governance-clean base case unless contractually supported and later approved.
+7. Historical claims, superseded assumptions, and rejected scenarios are append-only.
+8. External eligibility requires the publication gate in `docs/external/EXTERNAL_PUBLICATION_CHECKLIST.md`.
+9. Human-reviewed canon/registers govern; exports declare their governing source and generation metadata.

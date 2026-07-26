@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "model_status": "template",
+  "governing_sources": [
+    "docs/planning/Project Canon.md",
+    "docs/planning/Master Assumption Register.md",
+    "schemas/model-input-contract.schema.json"
+  ],
+  "warning": "This template is not a model and contains no adopted program or economic inputs. Populate only from ratified values with scenario-specific provenance.",
+  "inputs": [
+    {"input_id":"MI-001","category":"land_basis","value":8000000,"unit":"USD","provenance":["D-P1"],"status":"working_assumption","scenario_association":["project_wide"],"owner_decision_requirement":null,"external_use_status":"internal_only"},
+    {"input_id":"MI-002","category":"building_program","value":null,"unit":null,"provenance":["OQ-14"],"status":"unresolved","scenario_association":["6_story","8_story"],"owner_decision_requirement":"D-P5","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-003","category":"floor_plate","value":null,"unit":"SF","provenance":["OQ-14"],"status":"unresolved","scenario_association":["basis_A_35k","basis_B_28k24k"],"owner_decision_requirement":"D-P5","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-004","category":"parking_count","value":null,"unit":"stalls","provenance":["OQ-02","OQ-14"],"status":"unresolved","scenario_association":["6_story","8_story"],"owner_decision_requirement":"D-P5","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-005","category":"office_clinical_rent","value":null,"unit":"USD/RSF/year","provenance":["OQ-15"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"D-P6","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-006","category":"retail_rent","value":null,"unit":"USD/RSF/year","provenance":["REV-03"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-007","category":"occupancy","value":null,"unit":"percent","provenance":["REV-02"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"internal_only"},
+    {"input_id":"MI-008","category":"development_costs","value":null,"unit":"USD","provenance":["CST-01:CST-24"],"status":"unresolved","scenario_association":["basis_A_35k","basis_B_28k24k"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-009","category":"contingency","value":null,"unit":"percent","provenance":["CST-20"],"status":"unresolved","scenario_association":["basis_A_35k","basis_B_28k24k"],"owner_decision_requirement":"later_owner_decision","external_use_status":"internal_only"},
+    {"input_id":"MI-010","category":"financing","value":null,"unit":null,"provenance":["FIN-01:FIN-05"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-011","category":"tax_credit_treatment","value":null,"unit":"USD","provenance":["OQ-17"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"D-P7","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-012","category":"grants","value":null,"unit":"USD","provenance":["MB-14"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-013","category":"partner_support","value":null,"unit":"USD","provenance":["OQ-08"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-014","category":"charger_economics","value":null,"unit":null,"provenance":["OQ-21","MB-03"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-015","category":"av_revenue","value":0,"unit":"USD/year","provenance":["D-P2"],"status":"ratified","scenario_association":["governance_clean_base_case"],"owner_decision_requirement":null,"external_use_status":"approved_with_caveat"},
+    {"input_id":"MI-016","category":"exit_cap","value":null,"unit":"percent","provenance":["OQ-18"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"},
+    {"input_id":"MI-017","category":"hurdle_rate","value":null,"unit":"percent","provenance":["OQ-18"],"status":"unresolved","scenario_association":["project_wide"],"owner_decision_requirement":"later_owner_decision","external_use_status":"blocked_pending_resolution"}
+  ]
+}

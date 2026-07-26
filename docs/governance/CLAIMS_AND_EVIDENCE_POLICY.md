@@ -6,6 +6,7 @@ Apply this policy to every material external-facing claim in narrative, tables, 
 
 For each material claim, record:
 
+- **Statement ID and type** — stable identifier plus statement type from the canonical data model
 - **Supporting source** — exact source, location, date, and relevant page, section, sheet, range, or formula
 - **Authority classification** — the source tier and applicable evidence classification from `AGENTS.md`
 - **Confidence level** — high, medium, or low, with a brief basis
@@ -13,6 +14,22 @@ For each material claim, record:
 - **External-use status** — approved, approved with caveat, internal only, or blocked pending resolution
 
 No claim is cleared for external use solely because it appears in a model, appraisal, prior prospectus, rendering, or owner working file.
+
+Statement type and evidence classification are separate. In particular, `owner_decision` and `adopted_strategy` describe authority or treatment; they are not `verified fact` classifications.
+
+## External-publication gate
+
+Material may be externally used only when all of the following are true:
+
+1. The claim is supported by an eligible source or ratified decision.
+2. Its evidence classification permits the proposed use.
+3. Contradictions are resolved or specifically disclosed.
+4. Missing-source dependencies are disclosed.
+5. Partner status is stated accurately.
+6. Current feasibility findings are not omitted or obscured.
+7. Scenario assumptions are not presented as adopted decisions.
+
+Use `docs/external/EXTERNAL_PUBLICATION_CHECKLIST.md` before publication.
 
 ## Prohibited unsupported claims
 

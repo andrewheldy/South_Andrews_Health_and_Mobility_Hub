@@ -1,6 +1,6 @@
 # Master Assumption Register
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current operative evidence register · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md` (evidence classifications), `docs/governance/CLAIMS_AND_EVIDENCE_POLICY.md`
 **Related:** [Contradictions Matrix](Contradictions%20Matrix.md) · [Canonical Financial Assumptions](Canonical%20Financial%20Assumptions.md) · [Canonical Construction Assumptions](Canonical%20Construction%20Assumptions.md)
 
@@ -48,8 +48,8 @@ Source IDs: S1–S8 per [Source Inventory](Source%20Inventory.md). Where S2 and 
 
 | ID | Assumption | Value(s) | Source | Class | Conf | Superseded? | Canonical? | Notes |
 |---|---|---|---|---|---|---|---|---|
-| ACQ-01 | Opening offer | $8,000,000 ($209/SF) | Owner directive: S2 `Assumptions!B18`; S3 `Assumptions!D7`; recommended by S8 p.7 | WA (owner) | H (as directive) | No | YES | Formal decision record pending (D-P1) |
-| ACQ-02 | Negotiation ceiling | ~$8.75M realistic; $7.65–9.0M defensible range | S8 p.7; S3 `Sensitivity!A13:A15` ($8.0/8.75/9.5M cases) | REC/WA | M | No | YES (working) | S3 stress case $9.5M |
+| ACQ-01 | Working opening-offer input | $8,000,000 ($209/SF) | D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | WA (owner-adopted strategy) | H (as strategy input) | No | YES | Not proof of value or offer-submission authority; diligence conditions apply |
+| ACQ-02 | Negotiation ceiling / walk-away | **Unresolved**; third-party/context ranges are not adopted | S8 p.7; S3 `Sensitivity!A13:A15` ($8.0/8.75/9.5M cases); D-P1 | OQ/REC context | M | No | OQ | Negotiating authority, maximum price, walk-away, and final conditions require later owner decision |
 | ACQ-03 | Appraised value | $11,100,000 ($290/SF), fee simple, as-is 9/18/2025 | S6 p.5 | SD (appraisal opinion) | H (that it was concluded) | No | CTX | Never cite as market-clearing fact |
 | ACQ-04 | Prior listing | $12,000,000 (not currently listed) | S6 p.1 | SD | M | Yes (stale anchor) | CTX | — |
 | ACQ-05 | Residual supported value (multifamily basis) | $8.96M ($234/SF); coverage 80.7%; "CAUTION — NEGOTIATE" | S7 `Residual Land Value!C36–C45` | MO (analyst) | M | No | CTX | Different program; negotiation context only |

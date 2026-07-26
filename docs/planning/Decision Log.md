@@ -1,53 +1,50 @@
 # Decision Log
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
-**Governing rule (SOURCE_AUTHORITY.md):** an explicit current owner decision controls only when its **content, date, decision-maker, and scope** are documented. This log is the repository's instrument for that documentation.
-**Related:** [Open Questions](Open%20Questions.md) · [Project Canon](Project%20Canon.md)
+**Status:** Ratified operative register · **Date:** 2026-07-26 · **Decision authority:** Owner
+**Governing rule:** An owner decision controls only when its content, date, decision-maker, and scope are documented.
+**Related:** [Project Canon](Project%20Canon.md) · [Open Questions](Open%20Questions.md) · [`docs/decisions/`](../decisions/)
 
-Record format: `D-###` (active) / `D-P#` (pending owner) / `D-H#` (historical, reconstructed). Nothing in this session creates a new owner decision; all substantive entries below are either **reconstructions of cited decisions** (flagged as such) or **pending items awaiting the owner**.
+The `D-P#` identifiers are preserved from planning so citations and history remain stable. `ratified` means the exact scope below is an explicit current owner decision. `pending` is not authority.
 
----
+## Ratified owner decisions
 
-## Part 1 — Standing governance decisions (evidenced in-repo)
-
-| ID | Date | Decision-maker | Decision | Scope | Evidence | Status |
+| ID | Title | Exact decision / authorized scope | Status | Date | Decision maker | Review trigger |
 |---|---|---|---|---|---|---|
-| D-G1 | on/before 2026-07-26 | Owner (via repository governance) | Project name is **South Andrews Healthcare and Mobility Hub**; older names historical only | Naming, all documents | AGENTS.md; PROJECT_GLOSSARY.md | **Active** |
-| D-G2 | on/before 2026-07-26 | Owner (via governance) | Healthcare is the anchor; mobility/energy systems are enabling infrastructure; project is not residential-, hotel-, or rental-car-led and not dependent on speculative AV revenue | Thesis & scope | AGENTS.md §Current project scope | **Active** |
-| D-G3 | on/before 2026-07-26 | Owner (via governance) | Property status language: prospective acquisition; sponsor does not own the property | All status representations | AGENTS.md; glossary | **Active** |
-| D-G4 | on/before 2026-07-26 | Owner (via governance) | 6-story and 8-story schemes remain **scenarios** until an explicit owner decision adopts one | Program | AGENTS.md | **Active** |
-| D-G5 | on/before 2026-07-26 | Owner (via governance) | Source-precedence hierarchy and original-workbook protection rules | Evidence handling | AGENTS.md; SOURCE_AUTHORITY.md | **Active** |
+| **D-P1** | Land-offer mandate | Working opening offer: **$8,000,000**. This is an acquisition-strategy input, not proof of value and not, by itself, authority to submit an offer. Negotiating authority, maximum authorized purchase price, walk-away price, and final offer conditions remain unresolved pending diligence. Sponsor does not own, control, or have the property under contract. Preserve the diligence conditions in the individual record. | **ratified** | 2026-07-26 | Owner | New diligence, transaction authority, or owner price decision |
+| **D-P2** | Project thesis | Develop and evaluate the project as healthcare-anchored and mixed-use institutional. Parking, EV, AV, solar, storage, data, and related mobility systems are enabling infrastructure or optional value layers. Base feasibility must not depend on speculative optional revenue. Historical mobility-led concepts remain preserved as rejected or superseded scenarios. | **ratified** | 2026-07-26 | Owner | Owner changes the thesis or a contractually supported optional revenue source is proposed |
+| **D-P8** | Records hygiene | Use the ratified repository status vocabulary and preserve lineage. Do not overwrite or erase historical claims. | **ratified** | 2026-07-26 | Owner | Status schema amendment |
+| **D-P9** | Governance succession | `AGENTS.md` and the current `docs/governance/` set are operative unless and until authenticated prior governance is recovered, classified as historical evidence, reconciled, and expressly acted on. Missing prior governance remains a missing dependency. | **ratified** | 2026-07-26 | Owner | Authenticated prior governance is recovered |
+| **D-P11** | Repository refactor Phase 1 | Authorize directories, indexes, schemas, status headers, registers, exports, archive maps, validation, templates, links, generated-output boundaries, and plan-authorized moves of repository-authored documents with history preserved. Original sources and model values/formulas remain immutable. No unresolved program or economic choice is resolved. | **ratified** | 2026-07-26 | Owner | Phase 2 proposal or any source-file operation |
+| **D-P12** | Canonical address | Use **901–917 South Andrews Avenue, Fort Lauderdale, Florida** as the standard project identity address. Preserve parcel-specific addresses and quoted source text in legal, title, survey, appraisal, environmental, tax, and parcel-specific contexts. Record aliases in structured data. | **ratified** | 2026-07-26 | Owner | Title/survey evidence changes the identity address |
 
-## Part 2 — Historical decisions cited but not present in repo (reconstructed; require re-ratification)
+Full decision records, rationale, affected documents, supersession treatment, and review triggers are in [`docs/decisions/`](../decisions/).
 
-> The ODP cites "Project Decision Log Decisions 001–003." The log itself is missing (MA-02). The content below is **reconstructed from citations** — classification: *source-derived, record incomplete*. Re-ratification converts each to an active D-### with proper date/decision-maker.
+## Pending owner decisions
 
-| ID | Reconstructed content | Cited by | Status |
+| ID | Decision required | Required predicate | Status |
 |---|---|---|---|
-| D-H1 (Decision-001) | Adopt the mixed-use clinical & mobility concept as the governing development program; "Pure Mobility Nexus" was among alternatives **considered and rejected** | ODP §1.1 Close-Out, Table 24 | Cited; text not in repo → re-ratify as part of D-P2 |
-| D-H2 (Decision-002) | Adopt convertible structured parking (flat plates, external removable ramps, universal grid, 12-ft F2F, selective 100 psf) | ODP Ch.5 | Cited; text not in repo → re-ratify via D-P3 |
-| D-H3 (Decision-003) | No speculative AV/edge revenue underwritten as day-one income; technology activations demand- or partner-gated | ODP Ch.9, Table 40 | Cited; text not in repo → re-ratify via D-P4 (content already enforced by AGENTS.md) |
+| **D-P3** | Convertible-structure scope and acceptable premium | Test-fit, structural engineering, code review, and GC pricing | pending |
+| **D-P4** | Model-vNext correction and treatment of optional AV/data revenue | Model-vNext authorization; contractual support if any optional revenue is proposed | pending |
+| **D-P5** | Program and floor-plate basis | Architectural/parking test-fit | **pending** |
+| **D-P6** | Medical-office and clinical rent basis | Independent MOB/clinical rent study | **pending** |
+| **D-P7** | Tax-credit treatment | Qualified tax advice | **pending** |
+| **D-P10** | Final 6-story versus 8-story selection | D-P5/D-P6/D-P7, entitlement work, model vNext, and owner review | pending |
 
-## Part 3 — Pending owner decisions (queued by this planning session)
+Also unresolved without a later owner decision: exit capitalization rate; target yield on cost; institutional hurdle rate; negotiating authority; land-price ceiling and walk-away price; charger mix/count beyond the planning placeholder; solar/BESS sizing and roof allocation; optional AV/data revenue; partner commitments; public support; entitlement approval; and utility capacity.
 
-| ID | Decision required | Options / recommendation | Feeds | Blocks |
-|---|---|---|---|---|
-| **D-P1** | Ratify acquisition mandate: $8.0M opening offer; ceiling; walk-away | Recommendation: open $8.0M; ceiling $8.75M; walk-away at $9.0M absent new evidence (S8 range; S3 stress case $9.5M) | OQ-20 | Negotiation; all acquisition-basis modeling stays "working assumption" until signed |
-| **D-P2** | Formally ratify the healthcare-anchored thesis (closes OQ-01; absorbs D-H1) | Recommendation: ratify as already encoded in AGENTS.md | Canon §1–2 | ODP's own rule: no design spend before this |
-| **D-P3** | Re-ratify convertible-structure strategy incl. low-to-mid convertibility premium (~10–15%) | Recommendation: ratify; price premium at GC stage (OQ-10) | Construction Assumptions §1 | Structural engineering brief |
-| **D-P4** | Re-ratify no-speculative-AV/edge-revenue rule; order the S3 base-NOI correction (OQ-22) | Recommendation: ratify; authorize model vNext to exclude AV bay revenue from base | Financial Assumptions §2 | Model vNext |
-| **D-P5** | Adopt canonical program basis after test-fit (closes OQ-14) | Held until MB-02 delivers | Development Program | Everything sized |
-| **D-P6** | Adopt office rent basis (closes OQ-15) | Held until MB-07 comps | Financial Assumptions | NOI/yield credibility |
-| **D-P7** | Adopt tax-credit underwriting position (closes OQ-17) | Interim: $0 credits externally; final per counsel MB-13 | Financial Assumptions §4 | Solar/BESS net economics |
-| **D-P8** | Sign off OQ-12 closure (appraisal branding = seller's "Agora" concept; same property per folio/legal) | Recommendation: sign off | Source Inventory S6 | Records hygiene |
-| **D-P9** | Governance succession: declare AGENTS.md + docs/governance the operative constitution, superseding the missing Constitution/README hierarchy (or direct recovery effort instead) | Recommendation: declare succession; still attempt recovery for the historical record (closes OQ-19) | Whole document layer | Citation hygiene |
-| **D-P10** | Adopt scenario (6- vs 8-story) — the height decision | Held until D-P5/D-P6/OQ-18 and model vNext (closes OQ-11) | Canon §7 | Schematic design |
-| **D-P11** | Authorize repository refactoring steps (folders, renames incl. the two protected filenames, .gitignore) | Per [Repository Refactoring Plan](Repository%20Refactoring%20Plan.md) | Repo structure | File moves/renames are barred without this |
-| **D-P12** | Adopt canonical address string "901–917 S Andrews Avenue" (closes OQ-23) | Recommendation: adopt, pending title confirmation | All documents | Cosmetic but pervasive |
+## Historical decisions cited but not present
 
-## Part 4 — Log discipline
+| ID | Reconstructed content | Source and treatment | Status |
+|---|---|---|---|
+| D-H1 / cited Decision-001 | Mixed-use clinical/mobility concept; “Pure Mobility Nexus” rejected | ODP citation only; thesis content superseded by the precise D-P2 ratification | historical_claim |
+| D-H2 / cited Decision-002 | Convertible parking strategy | ODP citation only; strategy remains a working requirement pending D-P3 | historical_claim |
+| D-H3 / cited Decision-003 | No speculative day-one AV/edge revenue | ODP citation only; base-case rule is now controlled by D-P2 | historical_claim |
 
-1. One entry per decision; append-only; superseding decisions reference the superseded ID.
-2. No document may cite a D-P# as authority — pending is not decided.
-3. Each ratification must state: decision-maker, date, exact scope, and the evidence reviewed.
-4. After any ratification batch, re-run the affected rows of the [Contradictions Matrix](Contradictions%20Matrix.md) and the update chain in the [Document Dependency Graph](Document%20Dependency%20Graph.md).
+The missing source Decision Log remains tracked as MA-02 and is not silently recreated by this register.
+
+## Register discipline
+
+1. Preserve IDs and append decisions; a superseding decision names what it supersedes.
+2. Never cite a pending decision as authority.
+3. Record decision-maker, date, exact statement, scope, rationale/evidence, affected documents, supersession, and review trigger.
+4. After a decision, regenerate structured exports and run repository validation.

@@ -1,6 +1,6 @@
 # Missing Research Register
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session (repository intelligence pass)
+**Status:** Current operative missing-dependency register · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md`, `docs/governance/SOURCE_AUTHORITY.md`, `docs/governance/WORKFLOW.md`
 **Related:** [Source Inventory](Source%20Inventory.md) · [Open Questions](Open%20Questions.md) · [Implementation Roadmap](Implementation%20Roadmap.md)
 
@@ -19,9 +19,9 @@ Classification: unless noted, every entry is an **open question** under the AGEN
 
 | ID | Missing document | Cited by | What it is claimed to contain | Recommended action |
 |---|---|---|---|---|
-| MA-01 | **Project Constitution** | ODP (precedence table, Principles 1–12, "eight decision questions"); 6v8 Model `Summary!A15:A16`, `Assumptions!E63` ("Constitution §5 'Phase Innovation'") | Supreme governing principles; decision framework | Locate and add to `sources/` or formally declare `AGENTS.md` + governance set as its successor (owner decision — see [Open Questions](Open%20Questions.md) OQ-19) |
-| MA-02 | **Project Decision Log (Decisions 001–003)** | ODP (Decision-001 mixed-use concept; Decision-002 convertible parking; Decision-003 no speculative day-one AV/edge revenue) | The three foundational logged decisions | Locate, or re-ratify the three decisions in the new [Decision Log](Decision%20Log.md) (drafted there as PENDING OWNER) |
-| MA-03 | **README § Document Hierarchy** | ODP precedence table | Document precedence: Constitution → Decision Log → ODP → Design Standards → Open Questions | Superseded in practice by `AGENTS.md` source-precedence hierarchy; owner should confirm |
+| MA-01 | **Prior Project Constitution** | ODP; 6v8 Model | Historical governing principles and decision framework | **Missing but expected to exist.** D-P9 makes current governance operative; recover as historical evidence and reconcile before any supersession |
+| MA-02 | **Prior Project Decision Log (Decisions 001–003)** | ODP | Historical foundational decisions | **Missing but expected to exist.** Current owner decisions are recorded separately; recover the prior log as historical evidence |
+| MA-03 | **Prior README § Document Hierarchy** | ODP precedence table | Historical document-precedence statement | **Missing but expected to exist.** D-P9 supersedes any claim that it is currently operative; recover for historical context |
 | MA-04 | **Design Standards** | ODP Ch.13 ("should migrate into the Design Standards document") | Permanent design principles | Create later from ODP Ch.13 during implementation phase |
 | MA-05 | **Open Questions file (original OQ-01…OQ-13)** | ODP Ch.14 ("extends the project's Open Questions file") | Original open-question tracker | Superseded by [Open Questions](Open%20Questions.md) in this planning set |
 | MA-06 | **Underwriting Standards** | ODP Ch.11 ("built to the project's Underwriting Standards") | Required model outputs, confidence conventions | Recreate as part of financial-model reconciliation work |

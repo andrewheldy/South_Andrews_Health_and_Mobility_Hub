@@ -1,6 +1,6 @@
 # Document Dependency Graph
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current dependency reference · **Last reviewed:** 2026-07-26
 **Related:** [Source Inventory](Source%20Inventory.md) · [Document Update Order](Document%20Update%20Order.md) · [Repository Knowledge Graph](Repository%20Knowledge%20Graph.md)
 
 Document-level edges: who cites whom, who depends on whom, and where citations point at documents that do not exist (**MISSING**). This graph determines safe update order: a document may only be revised after everything it depends on is settled.

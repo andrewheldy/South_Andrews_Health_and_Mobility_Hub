@@ -1,16 +1,16 @@
 # Document Update Order
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current implementation order · **Last reviewed:** 2026-07-26
 **Governing rule:** flow is one-way (see [Document Dependency Graph](Document%20Dependency%20Graph.md)); **no downstream document is updated before its upstream is ratified.** Skipping a gate reintroduces exactly the contradictions this planning set just mapped.
 
 ## The ordered chain
 
 | Step | What is updated | Precondition (gate) | Output |
 |---|---|---|---|
-| 0 | Governance fixes (if any) — e.g., D-P9 governance-succession note added to AGENTS.md/SOURCE_AUTHORITY.md | Owner decision D-P9 | One constitution, cleanly declared |
-| 1 | **Project Canon ratification** — owner reviews/edits/ratifies [Project Canon](Project%20Canon.md); D-P2 (thesis), D-P1 (offer mandate), D-P8, D-P12 recorded | Owner review session | `status: ratified` canon; Decision Log entries D-001+ |
-| 2 | **Register adoption** — [Master Assumption Register](Master%20Assumption%20Register.md), [Contradictions Matrix](Contradictions%20Matrix.md), [Open Questions](Open%20Questions.md), [Risk Register](Risk%20Register.md) accepted as the working evidence layer | Step 1 | Frozen baseline for all downstream work |
-| 3 | **Repository refactor phase 1** — README, `.gitignore`, `derived/` extractions, `docs/decisions/` | D-P11 | Navigable repo; provenance-stamped derived data |
+| 0 | Governance succession | D-P9 | **Complete:** current governance declared operative; missing prior layer retained as missing historical dependency |
+| 1 | **Project Canon ratification** and D-P1/D-P2/D-P8/D-P12 records | Owner ratification | **Complete:** ratified canon and individual decision records |
+| 2 | **Register adoption** | Step 1 | **Complete for Phase 1:** current evidence/register baseline preserved with structured views |
+| 3 | **Repository refactor phase 1** | D-P11 | **Complete:** architecture, schemas, exports, archive map, templates, and validation |
 | 4 | **Evidence recovery & studies round 1** — MA-document recovery; commission MB-01 (zoning), MB-02 (test-fit), MB-03 (FPL), MB-04/05 (traffic/stormwater), MB-07 (rent comps), MB-13 (tax counsel) | Steps 1–2 (budget authorization) | Inputs to resolve OQ-14/15/17/03/04 |
 | 5 | **Model reconciliation (model vNext)** — new workbook built from ratified register values on the decided program basis; S3's AV-revenue base corrected (OQ-22); both hurdle metrics reported; formal financial-model audit per skill | D-P5, D-P6, D-P7 + study results | Single canonical model; S2/S3 frozen as historical |
 | 6 | **Canonical strategy docs refreshed** — Financial/Construction/Healthcare/Mobility/Infrastructure canonical docs updated from model vNext; DUAL rows collapsed to adopted values with supersession records | Step 5 | Registers with few/no DUALs |

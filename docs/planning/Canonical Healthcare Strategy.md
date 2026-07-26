@@ -1,6 +1,6 @@
 # Canonical Healthcare Strategy
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current adopted strategy; demand claims remain unverified · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md` (healthcare is the anchor; partners prospective), `docs/governance/PROJECT_GLOSSARY.md`
 **Related:** [Project Canon](Project%20Canon.md) · [Master Assumption Register](Master%20Assumption%20Register.md) §10 · [Missing Research Register](Missing%20Research%20Register.md) (MB-07, MB-08, MB-17)
 
@@ -10,15 +10,15 @@
 
 Three drivers, all local and structural rather than cyclical:
 
-1. **Hospital-driven spillover.** Broward Health Medical Center (<½ mile south) is executing a funded expansion — an 8-story, **188,000 SF MOB** adjacent to its campus (cited opening 2027) and a **GME hub with 365 residents/fellows**, its largest class. As the system consolidates high-acuity and academic functions, it predictably displaces independent practices, step-down care, rehab, and DME vendors that need nearby, flexible space. *(SD via ODP §1/S5 Table 19; independent verification = MB-17.)*
-2. **Corridor parking deficit.** Medical uses demand 4.0–5.0 spaces/1,000 SF; the corridor's supply is strained today and the hospital's new parking is largely absorbed by its own MOB and resident influx. Future commuter-rail (BCR South, planned) adds off-peak demand. *(SD; quantification = MB-09.)*
+1. **Potential hospital-adjacent demand.** Sources S4/S5 cite a Broward Health expansion, 188,000 SF MOB, 2027 opening, and 365-resident/fellow GME program through a missing market study. If verified, nearby expansion **may** create complementary demand for independent providers, outpatient services, workforce support, parking, and related healthcare uses. Extent, timing, displacement, and rent effects are not independently validated. *(Source-derived; MA-07 and MB-17.)*
+2. **Potential parking need.** The sources use 4.0–5.0 spaces/1,000 SF as a clinical planning range and hypothesize constrained corridor supply. Existing deficit, hospital absorption, and off-peak demand have not been independently quantified. *(Working hypothesis; MB-09.)*
 3. **Structural outpatient shift + physician shortage.** Care migrating off-campus; projected statewide shortage 18,000+ physician FTEs; independents increasingly prefer turnkey flexible suites over long single-tenant leases. *(SD via S5.)*
 
 **Honest counterweight (must accompany any demand claim):** county MOB vacancy was cited at **10.4%** with near-term softening — the market study's own caveat. The response is differentiation (co-working + parking surplus + convertibility), not generic shell space. *(ODP §7, Executive Scorecard.)*
 
 ## 2. Positioning
 
-**Complementary to Broward Health, not competitive.** The hospital's new MOB will deliver conventional shell space better than we can; we absorb what it cannot serve: independent practitioners, medtail, step-down uses, and surplus parking. External language must never imply Broward Health endorsement or partnership. *(REC — ODP §7.2; prohibited-claims list applies.)*
+**Potentially complementary to Broward Health, not represented as endorsed.** The planning strategy is to explore flexible space, medical retail, outpatient support, and parking that may complement nearby healthcare uses. No claim may state that Broward Health cannot serve specific demand, that this project will absorb spillover, or that Broward Health endorses or will partner with the project. *(Recommendation; validation required.)*
 
 ## 3. Tenant strategy
 

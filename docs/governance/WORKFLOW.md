@@ -30,6 +30,8 @@ Complete phases in order. A later phase may reveal a need to return to an earlie
 
 **Gate:** no implementation based on unresolved material conflicts.
 
+Owner ratifications dated 2026-07-26 authorize the constitutional and repository-refactor Phase 1 implementation recorded in `docs/decisions/`. They do not authorize resolution of the pending program, rent, tax, return-hurdle, land-ceiling, partner, utility, or entitlement questions.
+
 ## 4. Implementation
 
 - Implement only the owner-reviewed scope.

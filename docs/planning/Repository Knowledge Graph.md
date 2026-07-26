@@ -1,6 +1,6 @@
 # Repository Knowledge Graph
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current planning knowledge map · **Last reviewed:** 2026-07-26
 **Related:** [Canonical Data Model](Canonical%20Data%20Model.md) (schema) · [Document Dependency Graph](Document%20Dependency%20Graph.md) (document-level edges)
 
 Concept-level map of the project: every material concept is a node; every dependency, gate, contradiction, or citation is a typed edge. Edge types: `enables` · `gates` (hard prerequisite) · `funds` · `contradicts` · `supersedes` · `cites` · `contextFor` · `converts-to` · `competes-on-roof`.
@@ -132,7 +132,7 @@ graph TD
 | Solar / BESS | infrastructure | sizing DUAL; $0 credits interim | S2/S3 |
 | Edge data room | optionality | scope DUAL | S2/S3 |
 | Roof allocation | design tension | unresolved (drives solar DUAL) | S2 vs S3 |
-| $8.0M offer | capital | owner directive (D-P1 pending) | S2/S3/S8 |
+| $8.0M working opening input | capital | adopted strategy under ratified D-P1; no transaction authority or ceiling | D-P1; S2/S3/S8 |
 | $11.1M appraisal | capital context | appraisal opinion + critiques | S6; S1/S8 |
 | Yield gap | model output | **canonical convergent finding** | S2+S3 |
 | Partner support / grants | capital strategy | required to close gap; all prospective | S3/S4 |

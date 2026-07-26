@@ -1,7 +1,7 @@
 # Archive Recommendations
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
-**Standing constraint:** `AGENTS.md` change discipline — **no file is moved, renamed, deleted, or archived in this session.** Everything below is a recommendation requiring owner authorization (D-P11), and most items are *concept-level* dispositions, not file operations. History is preserved, never destroyed.
+**Status:** Current archive and supersession guidance · **Last reviewed:** 2026-07-26
+**Standing constraint:** D-P11 authorizes Phase 1 records hygiene but does not authorize altering original sources. No source was moved, renamed, rewritten, or archived. History is preserved.
 
 ## 1. Concept dispositions
 
@@ -18,7 +18,7 @@
 | Mobility-hub brief counts (200/100/50) | S7 `Assumptions!B36–B38` | **Superseded assumption** — never quote as current program | Traces to an unidentified earlier "project brief" |
 | 30%-ITC-netted solar costs | S2 `Budget!B15` | **Flag wherever cited; supersede after tax counsel (D-P7)** | S3's newer sourced position says $0 |
 
-## 2. File-level recommendations (require D-P11; not executed)
+## 2. Deferred original-source actions (not authorized by D-P11)
 
 | Action (proposed) | Target | Notes |
 |---|---|---|

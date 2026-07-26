@@ -1,6 +1,6 @@
 # Canonical Infrastructure Strategy
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current working strategy; sizing unresolved · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md`, `PROJECT_GLOSSARY.md` (EV-ready / EV-installed discipline)
 **Related:** [Canonical Mobility Strategy](Canonical%20Mobility%20Strategy.md) · [Canonical Construction Assumptions](Canonical%20Construction%20Assumptions.md) · [Missing Research Register](Missing%20Research%20Register.md) (MB-03, MB-05, MA-11)
 

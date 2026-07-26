@@ -10,5 +10,7 @@
 8. Use concise, specific prose; avoid hype and generic AI language.
 9. Label every rendering as illustrative and every planning-level estimate as planning-level.
 10. Treat every partner organization as prospective unless commitment is documented.
+11. Treat `AGENTS.md` and the current `docs/governance/` set as operative. Any recovered prior Constitution or Decision Log is historical evidence pending reconciliation, not automatically governing.
+12. Use **901–917 South Andrews Avenue, Fort Lauderdale, Florida** as the canonical identity address while preserving source-specific parcel and quoted addresses.
 
 **Never use an older narrative merely because it is more polished than the current evidence.**

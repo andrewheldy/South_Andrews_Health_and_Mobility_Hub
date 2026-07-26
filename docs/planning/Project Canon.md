@@ -1,74 +1,81 @@
 # Project Canon
 
-**Status:** Draft for owner review — becomes canonical only upon owner ratification · **Date:** 2026-07-26 · **Author:** AI planning session
-**Governing documents:** This canon is subordinate to `AGENTS.md`, the `docs/governance/` set, and explicit current owner decisions. If they conflict, they win.
-**Related:** [Current Project Scope](Current%20Project%20Scope.md) · [Master Assumption Register](Master%20Assumption%20Register.md) · [Contradictions Matrix](Contradictions%20Matrix.md) · [Decision Log](Decision%20Log.md)
+**Document status:** Ratified · **Ratification date:** 2026-07-26 · **Decision authority:** Owner
+**External-use status:** Internal governing record; individual statements retain their own eligibility
+**Governing documents:** `AGENTS.md`, the current `docs/governance/` set, and explicit current owner decisions
+**Related:** [Decision Log](Decision%20Log.md) · [Master Assumption Register](Master%20Assumption%20Register.md) · [Contradictions Matrix](Contradictions%20Matrix.md)
 
-This document states the **current truth** of the project — not what used to be true, not what should be true. Each statement carries its evidence classification. Where the truth is genuinely unresolved, this canon says so instead of choosing.
+This is the human-reviewed canonical project record. Structured exports are derived views and do not replace it. Ratification adopts the explicitly identified strategies and decisions; it does not convert assumptions, source-derived claims, or model outputs into verified facts.
 
----
+## 1. Canonical identity and status
 
-## 1. Identity
+| ID | Statement | Statement type | Evidence class | Provenance / locator | Confidence | External use | Dependencies / caveat | Supersession |
+|---|---|---|---|---|---|---|---|---|
+| CAN-001 | The canonical project name is **South Andrews Healthcare and Mobility Hub**. | owner_decision | verified fact | D-G1; `AGENTS.md`; `PROJECT_GLOSSARY.md` | high | external_eligible | Older names remain historical source identifiers. | Supersedes active use of older project names. |
+| CAN-002 | The canonical identity address is **901–917 South Andrews Avenue, Fort Lauderdale, Florida**. | owner_decision | current working assumption | D-P12 | high as owner-selected identity string | external_eligible_with_caveat | Preserve parcel/source-specific addresses for legal, title, survey, appraisal, environmental, tax, and quoted contexts. | Address aliases remain preserved. |
+| CAN-003 | **Prospective acquisition. The sponsor does not currently own the property.** | owner_decision | verified fact | D-G3; D-P1; `AGENTS.md` | high | external_eligible | Do not imply control, contract, acquisition, or commitment without future evidence. | None. |
+| CAN-004 | The working opening-offer input is **$8,000,000**. It is not proof of value and does not itself authorize an offer. | adopted_strategy | current working assumption | D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | high as adopted strategy | internal_only | Negotiating authority, maximum price, walk-away price, and final conditions are unresolved; diligence required. | Supersedes any treatment as proven value or price ceiling. |
 
-- **Name:** **South Andrews Healthcare and Mobility Hub.** *(Verified fact — governance: AGENTS.md, PROJECT_GLOSSARY.md.)* All older names — "South Andrews Clinical & Mobility Center" (ODP, legacy prospectus), "South Andrews Mobility Hub" (Native Realty), "Andrews Mobility Nexus" (session framing) — are historical only.
-- **What it is:** A **proposed** healthcare-anchored mixed-use development on a 0.88-acre corner assemblage at 901–917 S Andrews Avenue, Fort Lauderdale, pairing structured parking, medical retail, and flexible clinical/medical-office space, engineered for convertibility, with EV charging, AV-staging readiness, solar/battery, and data infrastructure as enabling systems.
-- **Property status:** **Prospective acquisition. The sponsor does not currently own the property.** *(Governance-mandated status language.)* Owner of record: Highlands Equity Investments LLC (appraisal p.3).
+## 2. Ratified thesis
 
-## 2. What we are building, and why
+| ID | Statement | Statement type | Evidence class | Provenance | Confidence | External use | Dependencies / caveat | Supersession |
+|---|---|---|---|---|---|---|---|---|
+| CAN-010 | Healthcare is the project anchor. | adopted_strategy | current working assumption | D-P2 | high as adopted strategy | external_eligible_with_caveat | Strategy, not verified demand or partner commitment; subject to market validation, test-fit, entitlement, operator input, and economics. | Supersedes active mobility-led thesis. |
+| CAN-011 | Structured parking, EV charging/readiness, AV staging readiness, solar, battery storage, data infrastructure, and related mobility systems are enabling infrastructure or optional value layers. | adopted_strategy | current working assumption | D-P2 | high as adopted strategy | external_eligible_with_caveat | Scope and sizing remain subject to test-fit, engineering, code, utility, operator, and economic validation. | Supersedes treatment as the primary thesis. |
+| CAN-012 | A governance-clean base case excludes speculative AV, charging, fleet-operating, edge-compute, and similar optional revenue unless contractually supported and later approved. | owner_decision | current working assumption | D-P2 | high | approved_with_caveat | S3 currently includes AV-bay revenue in modeled base NOI; that model output must be caveated and corrected only in an authorized successor model. | Supersedes historical base-case treatment inconsistent with this rule. |
+| CAN-013 | Broward Health’s nearby expansion **may** create complementary demand for independent providers, outpatient services, workforce support, parking, and related healthcare uses. The extent, timing, and rent implications have not been independently validated. | source_derived_claim | source-derived but not independently verified | S4/S5 citing missing Market Study MA-07 | low | blocked_pending_resolution | Recover or independently rebuild the market study. No claim of displacement, parking deficit, guaranteed spillover, or endorsement is permitted. | Stronger demand language is retained only as an internal historical hypothesis. |
 
-- **The anchor is healthcare.** Demand logic: Broward Health (<½ mile south) is executing a funded expansion — a 188,000 SF MOB (opening 2027) and a GME program (365 residents) — which is expected to displace independent and step-down practices while intensifying a corridor parking deficit. The project absorbs that spillover rather than competing with the hospital's own shell space. *(Source-derived via ODP/legacy prospectus citing a Market Study not yet in the repo — not independently verified; see MB-17.)*
-- **Mobility is enabling infrastructure, not the thesis.** Parking funds early cash flow and satisfies the 4.0–5.0/1,000 SF clinical ratio; EV/AV/solar/edge systems are built-in optionality, demand- or partner-gated. *(Governance: AGENTS.md scope; ODP Decision-003 as cited.)*
-- **For whom:** patients and independent providers (users); healthcare systems and a medical co-working operator (prospective partners); City of Fort Lauderdale (SRAC/mobility goals); QOZ-oriented institutional capital (long-term hold). All partner organizations are **prospective** — no documented commitment exists for any of them. *(Verified fact of the record.)*
+## 3. Feasibility finding
 
-## 3. How it makes money (and the honest current answer)
+> **Both current financial models independently indicate that the base project, as presently modeled at an $8,000,000 land basis, does not satisfy the modeled institutional return requirements.**
 
-Revenue layers (all planning-level): medical office/clinical rent · med-tail/café NNN rent · parking (medical by day, public/commuter off-peak) · EV charging net income (~$120K/yr working value) · solar offset · small edge/data lease · **plus optional AV staging lease only if a fleet operator signs** (excluded from every governance-clean base case).
+| ID | Statement | Statement type | Evidence class | Provenance / locator | Confidence | External use | Dependencies / caveat |
+|---|---|---|---|---|---|---|---|
+| CAN-020 | S2 reports yield on cost of 3.83% / 4.02%, development profit of approximately −$27.7M / −$33.9M, and ten-year unlevered IRRs of approximately 1.2% / 1.9% for its 6-/8-story scenarios. | model_output | model output | S2 `Returns!B13:B31` | high as workbook output | approved_with_caveat | Planning-level model output; S2 program and inputs are not adopted facts. |
+| CAN-021 | S3 reports core yield on cost of 3.83% / 4.07%, annual support gaps of approximately $1.89M–$3.23M, and value gaps of approximately −$28.1M to −$47.7M across its modeled cases. | model_output | model output | S3 `Financing & Returns!D21:E28` | high as workbook output | approved_with_caveat | Planning-level model output; S3 includes AV-bay revenue in base NOI and uses a different, unadopted program basis. |
+| CAN-022 | The convergent conclusion is that the presently modeled base project does not meet the respective modeled institutional return requirements. | model_output | model output | S2 `Returns`; S3 `Financing & Returns` | high as convergent model conclusion | external_eligible_with_caveat | Neither model proves actual feasibility or market value. Current negative findings must not be omitted. |
 
-**Canonical model output — stated plainly, per the status-discipline rule:** Both current models independently conclude the base program at an $8.0M land basis does **not** reach an institutional yield:
+Feasibility may require one or more of: a lower land basis; revised program; validated differentiated rents; a health-system or operator anchor; master lease or minimum-use agreement; capital contribution; public support; grant or TIF proceeds; cost reduction; phased capitalization; or contractually supported mobility or energy revenue. These are **recommendations or potential mechanisms only**. None is documented as secured.
 
-| Metric | 6v8 Story Model (S2) | 8M Feasibility (S3) |
-|---|---|---|
-| Yield on cost | 3.83% (6-st) / 4.02% (8-st) vs 6.25% cap | 3.83% / 4.07% core vs 7.0% target |
-| Gap | Development profit −$27.7M / −$33.9M; 10-yr unlevered IRR 1.2% / 1.9% | Partner/grant/master-lease gap $1.89M–$3.23M per year; value gap −$28.1M to −$47.7M |
+## 4. Program and strategy status
 
-**Therefore the project as currently modeled requires one or more of:** a health-system anchor commitment, above-market differentiated rents, an AV/charging master lease or minimum-use guarantee, capital contribution, public grants/TIF, or a materially different program — before it pencils. *(Model output, convergent across S2 `Returns` and S3 `Financing & Returns`. This finding must never be concealed in polished prose or external materials.)*
+The following are adopted planning strategies or working requirements—not verified facts:
 
-## 4. How it gets approved
+| ID | Strategy / requirement | Type | Evidence class | Current treatment and dependency |
+|---|---|---|---|---|
+| CAN-030 | Convertible parking, universal grid, and removable/conversion-friendly ramp strategy | adopted_strategy | recommendation | Subject to test-fit, structural engineering, code review, operator needs, cost, and D-P3. |
+| CAN-031 | EV conduit readiness and approximately 40 initial chargers | adopted_strategy | current working assumption | Planning placeholder only; charger mix/count, FPL capacity, and economics unresolved. |
+| CAN-032 | Medical co-working concept | scenario | current working assumption | No operator commitment; market/operator validation required. |
+| CAN-033 | Phase sequencing: enabling infrastructure first, flexible clinical/medical-office program later, optional systems demand- or partner-gated | adopted_strategy | recommendation | Subject to test-fit, financing, operator input, and economics. |
+| CAN-034 | Roof garden; solar/BESS readiness; small data room; external AV ingress or staging concepts | scenario | current working assumption | Sizing, roof allocation, engineering, utility capacity, code, demand, and economics unresolved. No optional revenue in the clean base case. |
 
-Working entitlement picture *(source-derived; unverified until Zoning Verification Letter — MB-01)*: RAC-RPO zoning; retail/restaurant/office/hotel/residential are permitted uses; **above 6 stories requires enhanced (Level III) discretionary site plan & design review; ceiling ~12 stories subject to review**; 0-ft build-to on Andrews; 1 space/250 SF parking; form-based envelope (no verified max FAR); Zone AE flood design and City resilient stormwater compliance are entitlement-critical; standalone garage uses must be structured as accessory to a permitted principal use. Path: pre-application → Level III site plan → permits. The ODP's "110 ft by right" framing is **not** to be used externally until the City confirms the height path.
+## 5. Scenario discipline
 
-## 5. What differentiates it
+- **6-story scenario:** active scenario; not adopted.
+- **8-story scenario:** active scenario; not adopted.
+- **35,000 SF plate basis (S2):** active modeled basis; not adopted.
+- **28,000/24,000 SF plate basis (S3/S8):** active modeled basis; not adopted.
+- Incompatible program bases must never be combined. Architectural and parking test-fit plus D-P5 are required.
+- Healthcare-led scenario: adopted thesis, but its detailed program is unresolved.
+- Mobility-led, car-rental fleet hub, seller Agora, residential-led, and hotel-led concepts: preserved historical or rejected scenarios, not deleted.
 
-Turnkey medical co-working + deliberate parking surplus + convertible structure (flat plates, external removable ramps, 12-ft floor-to-floor, universal grid, selective 100 psf) + QOZ long-term hold + mobility/energy readiness. Competitors and the hospital MOB deliver generic shell space; this asset competes on flexibility. *(Recommendation/strategy, ODP Ch.5/7; benchmarks cited there sit in a missing research library.)*
+## 6. Site and entitlement evidence
 
-## 6. Phases
+The repository contains strongly corroborated source statements for a 38,207 SF / approximately 0.88-acre three-parcel assemblage, one folio, the cited frontages, RAC-RPO zoning, Zone AE mapping, and existing older commercial improvements. These remain subject to their source scopes and to updated title, survey, zoning, environmental, flood/stormwater, and technical diligence.
 
-- **Phase 1 (build now):** structured parking podium + ground-floor med-tail/café + flood-resilient MEP + universal grid + EV conduit to 100% of stalls (~40 chargers initially).
-- **Phase 2:** flexible clinical / medical co-working floors on the Phase-1 grid; timed to co-working LOI and absorption.
-- **Phase 3+ (optionality, demand- or partner-gated, never underwritten):** expanded charging/DCFC, AV staging & fleet servicing operations, edge/data build-out, or conversion of parking levels to occupied use.
-*(Working phasing logic, ODP Ch.8; adopted.)*
+No canon statement represents entitlement approval, City support, final height, final FAR, approved design, utility/FPL capacity, environmental clearance, or site control. The working entitlement path above six stories remains unverified pending City confirmation.
 
-## 7. Scenario status — explicitly undecided
+## 7. Unresolved decisions and dependencies
 
-The **6-story and 8-story schemes are both scenarios.** Neither is adopted. Two competing program bases exist (35,000 SF plate per S2 vs 28,000/24,000 SF plates per S3/S8) and must not be mixed; an architect test-fit and an owner decision are required (OQ-14, D-P5). Convergent across both bases: 2 office floors on 6 stories, 3 office floors on 8 stories.
+The canon does not resolve: D-P5 program/floor plate; D-P6 office/clinical rent; D-P7 tax credits; exit cap; target yield on cost; institutional hurdle; final land ceiling or walk-away; story selection; charger mix/count beyond the placeholder; solar/BESS sizing; roof allocation; AV/data revenue; partner commitments; grants/TIF/QOZ/bond/subsidy proceeds; entitlement; or utility capacity.
 
-## 8. What is core, optional, and abandoned
+Missing prior governance, market evidence, survey/title/environmental records, electrical-load support, and the required diligence studies remain listed in the [Missing Research Register](Missing%20Research%20Register.md) and structured export.
 
-- **Core:** healthcare anchor; structured convertible parking; med-tail ground floor; flood resilience; QOZ hold; conduit/power readiness.
-- **Optional (preserved, gated):** AV staging operations; DCFC expansion; edge compute; solar/BESS sizing above baseline; rooftop garden scale.
-- **Abandoned / rejected / historical:** "Agora Mediterranean Market" retail center (seller's concept); car-rental fleet hub (Native Realty client thesis); Mobility-Nexus-as-primary-thesis (rejected per Decision-001 as cited; AGENTS.md: not dependent on speculative AV revenue); residential-led (~43 units) and hotel-led (~130 keys) schemes (studied by S8, never adopted; AGENTS.md exclusions). All preserved as rejected scenarios with their sources — never deleted.
+## 8. Maintenance and external-use rules
 
-## 9. Site facts of record (verified/corroborated)
-
-38,207 SF (0.88 ac), 3 parcels, one folio 50-42-15-01-0711; corner with ±275 ft on S Andrews / ±170 ft on SW 9th; Hardy Park immediately north; three 1959-era commercial buildings (interim use); RAC-RPO; SRAC; federal QOZ *(source-derived)*; FEMA Zone AE entire site (map 12011C0557J); moderate slopes; utilities present (capacity unverified); FLL 2.8 mi, Brightline 1.8 mi; appraised $11.1M as-is (9/18/2025, AEI — an appraisal opinion with documented buyer-side critiques); working opening offer $8.0M (owner directive; formal decision record pending).
-
-## 10. Unresolved material questions (the canon does not pretend these are settled)
-
-OQ-14 program basis · OQ-15 office rent ($36 vs $50/RSF) · OQ-17 tax credits (30% ITC vs $0) · OQ-18 exit cap (6.25% vs 7.25%) · OQ-21 charger split · OQ-22 AV bay revenue inside S3's base NOI · OQ-03/11 height path · D-P1 land-offer ratification · D-P2 thesis ratification · OQ-19 governance succession (missing Constitution/Decision Log). Full statements in [Open Questions](Open%20Questions.md).
-
-## 11. Canon maintenance rules
-
-1. This file changes only through an owner decision recorded in [Decision Log](Decision%20Log.md).
-2. Nothing here may be promoted above its evidence classification in downstream documents.
-3. Every future document (models, ODP v2, prospectus, frontend) must be consistent with this canon or must first change it.
-4. The feasibility finding in §3 stays in the canon until superseded by a revised, owner-reviewed model.
+1. Owner decisions are recorded in the [Decision Log](Decision%20Log.md) and individual records.
+2. Each material statement carries a stable ID, type, evidence class, provenance, confidence, external-use status, review date, dependencies, and supersession treatment in the claims export.
+3. Statement type never promotes evidence class: an adopted strategy is not a verified fact.
+4. No downstream model, prospectus, interface, caption, or rendering may contradict the canon or omit the current feasibility finding.
+5. External use must pass `docs/external/EXTERNAL_PUBLICATION_CHECKLIST.md`.
+6. Review date for this ratification: **2026-07-26**.

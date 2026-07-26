@@ -1,6 +1,6 @@
 # Canonical Financial Assumptions
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current working assumptions; unresolved economics preserved · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md`, `docs/governance/CLAIMS_AND_EVIDENCE_POLICY.md`
 **Related:** [Master Assumption Register](Master%20Assumption%20Register.md) (full provenance) · [Contradictions Matrix](Contradictions%20Matrix.md) §§B, D, E · [Open Questions](Open%20Questions.md)
 
@@ -10,7 +10,7 @@ Canonical status per input: **ADOPTED** (single working value justified by hiera
 
 | Input | Canonical treatment | Basis |
 |---|---|---|
-| Land opening offer | **ADOPTED: $8,000,000** ($209/SF) as the modeling and negotiation basis | Owner directive (S2 `Assumptions!B18`, S3 `Assumptions!D7`); S8 recommendation. Formal decision record pending (D-P1) |
+| Land opening offer | **ADOPTED STRATEGY INPUT: $8,000,000** ($209/SF), not proof of value or authority to submit an offer | Ratified D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7. Ceiling, walk-away, authority, and final conditions unresolved |
 | Negotiation envelope | ADOPTED (working): room to ~$8.75M; defensible range $7.65–9.0M; stress case $9.5M | S8 p.7; S3 `Sensitivity!A13:A15` |
 | Appraised value | CONTEXT ONLY: $11.1M (9/18/2025) — appraisal opinion, with standing comp critiques | S6 p.5; S1 §4; S8 p.7 |
 | Analyst residual value | CONTEXT ONLY: $8.96M supported (different, multifamily program); hub-only ~$0.81M | S7 |

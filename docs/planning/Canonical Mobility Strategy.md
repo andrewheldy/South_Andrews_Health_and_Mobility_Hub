@@ -1,10 +1,10 @@
 # Canonical Mobility Strategy
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current adopted strategy; system scope/economics unresolved · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md` (mobility = enabling infrastructure; no speculative AV revenue), `PROJECT_GLOSSARY.md` (EV-ready vs EV-installed; AV staging definitions)
 **Related:** [Canonical Infrastructure Strategy](Canonical%20Infrastructure%20Strategy.md) · [Current Development Program](Current%20Development%20Program.md) §3 · [Master Assumption Register](Master%20Assumption%20Register.md) §11
 
-> **Standing rules (governance, non-negotiable):** Mobility systems **enable** the healthcare anchor; they are not the thesis. "Mobility-enabled" does not imply AV deployment, partner commitment, or revenue. No AV or edge revenue is underwritten in any base case. Every fleet operator named below is market context only.
+> **Standing rules (governance, non-negotiable):** Mobility systems **enable** the healthcare anchor; they are not the thesis. "Mobility-enabled" does not imply AV deployment, partner commitment, or revenue. No speculative AV or edge revenue belongs in a governance-clean base case. S3 is a preserved source model whose current base NOI includes AV-bay revenue and therefore requires an explicit caveat. Every fleet operator named below is market context only.
 
 ## 1. Parking (the load-bearing mobility layer)
 
@@ -25,7 +25,7 @@
 ## 3. AV staging & fleet readiness
 
 - **What is in scope now:** a separated, secured ground-level staging capability with independent ingress/egress (12,000 SF zone per S2 / 18 bays per S3 — representation unresolved with the program basis), structural and power readiness, and access-control provisions. *(Owner directive; capability, not operation.)*
-- **What is not:** any AV service, approval, demand, partnership, or revenue. **Base-case AV revenue = $0 everywhere.** S2's toggle-OFF is the compliant pattern; S3's inclusion of $194.4K/yr AV-bay revenue in base NOI is flagged for correction in the next model cycle (OQ-22).
+- **What is not:** any AV service, approval, demand, partnership, or revenue. **Governance-clean base-case AV revenue = $0.** S2's toggle-OFF is the compliant pattern; S3's inclusion of $194.4K/yr AV-bay revenue in base NOI is preserved and flagged for correction in an authorized successor model (OQ-22).
 - **Upside if a fleet operator signs (FORECAST only):** ~$300K/yr (S2: $25/SF/yr × 12,000 SF) or ~$194K/yr (S3: 18 bays × $900/mo) — quote only with "potential partner / subject to executed lease" language.
 - **Operator landscape (context only — S3 `Sources!A14–A17` caveats adopted verbatim):** Waymo active Miami/Orlando (supports outreach relevance, **not site demand**); Zoox Miami testing/deployment; Tesla Robotaxi Miami operations; Freebee regional electric microtransit. "No partnership or Fort Lauderdale commitment assumed" — all four.
 - **Activation trigger discipline:** each Phase-3+ activation (DCFC expansion, AV build-out, conversion) needs an explicit, owner-approved demand/partner trigger encoded in the financial model (ODP Ch.9; to be defined during model reconciliation).

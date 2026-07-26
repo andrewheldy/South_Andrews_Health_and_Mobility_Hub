@@ -1,6 +1,6 @@
 # Source Inventory
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current operative source inventory · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md`, `docs/governance/SOURCE_AUTHORITY.md`, `docs/governance/WORKFLOW.md` (Phase 1 output)
 **Related:** [Source Authority Register](Source%20Authority%20Register.md) · [Missing Research Register](Missing%20Research%20Register.md) · [Document Dependency Graph](Document%20Dependency%20Graph.md)
 
@@ -123,9 +123,9 @@ Source IDs (S1–S8) are used across all planning documents.
 
 ---
 
-## Organization issues identified (report only — no changes made)
+## Organization issues and Phase 1 treatment
 1. Two filenames deviate from clean conventions and are **intentionally preserved** pending owner authorization: `Andrew’s Appraisal.pdf` (curly apostrophe), `Appraisal Valuation .xlsx` (trailing space).
 2. `NativeRealty_905 …` filename address conflicts with document text (901–917).
-3. `.DS_Store` files present at repo root and in `sources/` (macOS artifacts; candidate for `.gitignore` — see [Repository Refactoring Plan](Repository%20Refactoring%20Plan.md)).
-4. The ODP and 6v8 Model cite a governing layer and research library absent from the repository (see [Missing Research Register](Missing%20Research%20Register.md) Part A).
-5. No `derived/` location exists yet for workbook extractions and normalized data (financial-model-audit skill requires derived work stored separately) — proposed in the refactoring plan.
+3. `.DS_Store` artifacts are ignored under Phase 1; the tracked `sources/.DS_Store` artifact was removed from the repository index. No evidence source was removed.
+4. The ODP and 6v8 Model cite a governing layer and research library absent from the repository. D-P9 makes current governance operative while the missing layer remains tracked for recovery.
+5. `derived/workbooks/` and `derived/documents/` now establish generated-work boundaries. No derived extraction supersedes an original.

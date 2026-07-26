@@ -1,6 +1,6 @@
 # Current Development Program
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current scenario program; no scheme or plate adopted · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md` (scenario discipline), `docs/governance/SOURCE_AUTHORITY.md`
 **Related:** [Current Project Scope](Current%20Project%20Scope.md) · [Master Assumption Register](Master%20Assumption%20Register.md) §4 · [Contradictions Matrix](Contradictions%20Matrix.md) §C
 
@@ -68,7 +68,7 @@ ROOF: solar 150kW + garden 6k SF + BESS 500kWh              ROOF: solar 200kW + 
 | Component | Role | Status |
 |---|---|---|
 | Medical office / flexible outpatient (decoupled from inpatient code) | Primary revenue; anchor identity | Areas TBD |
-| Medical co-working (turnkey HIPAA suites under master tenant) | Anchor leasing strategy; captures displaced independents | Operator unidentified (OQ-08) |
+| Medical co-working (turnkey HIPAA suites under prospective master tenant) | Anchor leasing concept intended to serve independent providers; demand effect is not validated | Operator unidentified; no commitment (OQ-08) |
 | Med-tail liner (pharmacy, urgent care, DME, wellness, F&B) | Street activation + post-discharge capture | Areas TBD |
 | Convertible parking podium | Enabling infrastructure + early cash flow + future conversion | Count TBD (basis conflict) |
 | AV staging ground zone/bays | Preserved capability; revenue only on signed operator | No LOI exists |

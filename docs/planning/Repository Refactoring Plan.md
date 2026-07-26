@@ -1,9 +1,9 @@
 # Repository Refactoring Plan
 
-**Status:** Draft for owner review — **recommendations only; nothing executed** (requires D-P11) · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Phase 1 authorized by D-P11 and implemented on 2026-07-26 · **Date:** 2026-07-26
 **Standing constraints:** originals never edited/moved/renamed without owner instruction; derived work stored separately; protected filenames preserved until authorized.
 
-## 1. Target folder architecture
+## 1. Implemented Phase 1 architecture
 
 ```
 /                           (repo root)
@@ -14,18 +14,24 @@
 │   ├── governance/         (unchanged, controlling)
 │   ├── planning/           (this set — constitutional planning layer)
 │   ├── decisions/          (NEW: one file per ratified decision, D-###.md)
-│   ├── claims/             (NEW: claim records per CLAIMS_AND_EVIDENCE_POLICY,
-│   │                        generated from the Master Assumption Register)
-│   └── strategy/           (FUTURE: ODP v2 chapters once regenerated)
+│   ├── canon/              (index to ratified canon; source remains in planning for link stability)
+│   ├── decisions/          (one file per ratified owner decision)
+│   ├── registers/          (human-readable register index)
+│   ├── research/ technical/ financial/ program/ partnerships/
+│   ├── external/           (publication gate; no marketing material)
+│   ├── archive/            (archive/supersession map)
+│   └── standards/          (metadata, source handling, export guidance)
 ├── sources/
 │   ├── current/  reference/  legacy/  raw/     (unchanged)
-├── derived/                (NEW: read-only extractions & normalized data)
+├── derived/                (generated or normalized work; never a source of truth)
 │   ├── workbooks/          (per-sheet CSV/MD extracts of S2/S3/S7 with
 │   │                        cell-level provenance headers — satisfies the
 │   │                        financial-model-audit "separately stored derived
 │   │                        summaries" requirement)
 │   └── documents/          (text extractions of S4/S5/S6/S8 with page/paragraph anchors)
-└── skills/                 (unchanged)
+├── schemas/ scripts/ templates/
+├── models/current/ working/ archived/ exports/
+└── exports/                (generated JSON views with validation metadata)
 ```
 
 Rationale: sources stay immutable; everything derivative gets a provenance-stamped home; decisions and claims become first-class records instead of living only inside prose.
@@ -35,7 +41,7 @@ Rationale: sources stay immutable; everything derivative gets a provenance-stamp
 - ASCII, no trailing spaces, no smart quotes; words separated by spaces or hyphens consistently within a folder.
 - Derived files: `derived/workbooks/S2_6v8_Assumptions.csv` — source ID prefix mandatory.
 - Decisions: `docs/decisions/D-001 <slug>.md`.
-- Existing source filenames **unchanged** until D-P11 explicitly authorizes: `Andrew’s Appraisal.pdf` (curly apostrophe), `Appraisal Valuation .xlsx` (trailing space), `NativeRealty_905 …` (address mismatch with content). If renamed later, update `docs/governance/SOURCE_AUTHORITY.md` in the same commit.
+- Existing source filenames remain **unchanged**. D-P11 authorizes Phase 1 repository-authored structure, not original-source renames: `Andrew’s Appraisal.pdf`, `Appraisal Valuation .xlsx`, and `NativeRealty_905 …` are preserved. Any future source rename requires separate explicit owner instruction and atomic reference updates.
 
 ## 3. Metadata standard (frontmatter for all new docs)
 
@@ -75,7 +81,7 @@ Purpose: lets the [Document Dependency Graph](Document%20Dependency%20Graph.md) 
 
 | Item | Action (when authorized) |
 |---|---|
-| `.DS_Store` (root, sources/) | Add `.gitignore` entry; `git rm --cached` |
+| `.DS_Store` (root, sources/) | `.gitignore` added; tracked artifact removed from the repository index |
 | Empty `sources/raw/` | Keep; document intake convention in README |
 | Workbook protection | Consider `chmod a-w` advisory note in README (originals are already treated read-only by governance) |
 
@@ -83,10 +89,10 @@ Purpose: lets the [Document Dependency Graph](Document%20Dependency%20Graph.md) 
 
 Once `docs/claims/` exists, a small script can emit the [Repository Knowledge Graph](Repository%20Knowledge%20Graph.md) mermaid from frontmatter — keeping graph and registers from drifting. Not required for the current phase.
 
-## 9. Execution order (after D-P11)
+## 9. Phase 1 execution record
 
-1. Add README.md + `.gitignore` (no source impact).
-2. Create `derived/` and generate provenance-stamped extractions of S2/S3/S7 (read-only pass).
-3. Create `docs/decisions/` and migrate ratified decisions from the [Decision Log](Decision%20Log.md).
-4. (Only if separately authorized) filename normalizations with same-commit governance-doc updates.
-5. Regenerate the Document Dependency Graph from frontmatter.
+1. README, `.gitignore`, navigation indexes, and generated-output boundaries added.
+2. Decision records, schemas, structured exports, external-use controls, archive map, templates, and validation added.
+3. Source hashes recorded; original sources and protected filenames unchanged.
+4. No source filename normalization or source-file move was performed.
+5. Model-vNext, ODP v2, prospectus, and frontend remain later gated work.

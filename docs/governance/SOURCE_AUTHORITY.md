@@ -2,6 +2,10 @@
 
 This document controls how project sources may be used. Authority is claim-specific: a source may control one topic while providing context only on another.
 
+## Operative governance succession
+
+As ratified by owner decision D-P9 on 2026-07-26, `AGENTS.md` and the current `docs/governance/` set are the operative repository governance system. The prior Project Constitution and Project Decision Log cited by current sources are missing dependencies, not active authorities. If authenticated versions are recovered, classify them as historical evidence, preserve them, reconcile their claims, and obtain an owner decision before treating any provision as superseding current governance.
+
 ## Current controlling sources
 
 Use these sources as the controlling project record within their respective scopes:

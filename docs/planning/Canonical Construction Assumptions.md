@@ -1,6 +1,6 @@
 # Canonical Construction Assumptions
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current working assumptions; unresolved values preserved · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md`, `skills/financial-model-audit/SKILL.md` (classification discipline)
 **Related:** [Master Assumption Register](Master%20Assumption%20Register.md) §5 · [Contradictions Matrix](Contradictions%20Matrix.md) §D · [Current Development Program](Current%20Development%20Program.md)
 

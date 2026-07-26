@@ -1,6 +1,6 @@
 # Current Project Scope
 
-**Status:** Draft for owner review · **Date:** 2026-07-26 · **Author:** AI planning session
+**Status:** Current scope under D-P2 · **Last reviewed:** 2026-07-26
 **Governing documents:** `AGENTS.md` §Current project scope (controlling), `docs/governance/PROJECT_GLOSSARY.md`
 **Related:** [Project Canon](Project%20Canon.md) · [Current Development Program](Current%20Development%20Program.md) · [Archive Recommendations](Archive%20Recommendations.md)
 
@@ -25,7 +25,7 @@ Per AGENTS.md, the project is **not**:
 - **Residential-led** (S8 Scenario B ~43 units — rejected scenario, preserved)
 - **Hotel-led** (S8 Scenario C ~130 keys — rejected scenario, preserved)
 - **Rental-car-led** (S8's client thesis — rejected as program; S8 retained for zoning/valuation scope)
-- **Dependent on speculative AV revenue** (no AV income in any base case; S2 toggle OFF is the compliant treatment; S3's included $194K/yr AV-bay revenue is flagged — OQ-22)
+- **Dependent on speculative AV revenue** (no AV income in a governance-clean base case; S2 toggle OFF is the compliant treatment; S3's included $194K/yr AV-bay revenue is a preserved conflict — OQ-22)
 
 Also out of scope for the current phase: economic-impact claims without analysis (legacy prospectus discipline retained), any implication of ownership, entitlement, partner commitment, utility capacity, cost certainty, or returns (CLAIMS_AND_EVIDENCE_POLICY prohibited list).
 
