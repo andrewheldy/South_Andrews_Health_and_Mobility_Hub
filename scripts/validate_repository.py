@@ -255,6 +255,10 @@ authoritative_text_paths = [
     ROOT / "docs/planning/Project Canon.md",
     ROOT / "docs/planning/Executive Planning Summary.md",
     ROOT / "docs/external/EXTERNAL_PUBLICATION_CHECKLIST.md",
+    ROOT / "docs/investment/Institutional Investment Memorandum.md",
+    ROOT / "docs/investment/README.md",
+    ROOT / "docs/planning/IIM Source Map.md",
+    ROOT / "docs/planning/IIM Architecture and Writing Plan.md",
 ]
 authoritative_text = "\n".join(path.read_text(encoding="utf-8") for path in authoritative_text_paths)
 ownership_patterns = [
@@ -305,6 +309,105 @@ for path in required_status_docs:
         "status:" in text.lower() or "**status:**" in text.lower() or "**document status:**" in text.lower(),
         str(path.relative_to(ROOT)),
     )
+
+# --- Institutional Investment Memorandum (IIM) controls (internal_only document set) ---
+iim_doc_paths = {
+    "memorandum": ROOT / "docs/investment/Institutional Investment Memorandum.md",
+    "investment index": ROOT / "docs/investment/README.md",
+    "source map": ROOT / "docs/planning/IIM Source Map.md",
+    "architecture plan": ROOT / "docs/planning/IIM Architecture and Writing Plan.md",
+}
+iim_texts = {}
+for label, path in iim_doc_paths.items():
+    check("IIM document present", path.is_file(), f"{label}: {path.relative_to(ROOT)}")
+    if path.is_file():
+        iim_texts[label] = path.read_text(encoding="utf-8")
+
+for label, text in iim_texts.items():
+    check(
+        "IIM internal-only status",
+        "internal_only" in text,
+        f"{label} must declare internal_only external-use status",
+    )
+
+iim_text = iim_texts.get("memorandum", "")
+check(
+    "IIM canonical name",
+    "South Andrews Healthcare and Mobility Hub" in iim_text,
+    "memorandum must use the canonical project name",
+)
+check(
+    "IIM canonical address",
+    "901–917 South Andrews Avenue, Fort Lauderdale, Florida" in iim_text,
+    "memorandum must use the canonical identity address (D-P12, en dash)",
+)
+check(
+    "IIM feasibility finding present",
+    "does not satisfy the modeled institutional return requirements" in iim_text,
+    "memorandum must carry the canonical negative feasibility finding (Project Canon §3)",
+)
+check(
+    "IIM external-eligibility not self-claimed",
+    "external_use_status: internal_only" in iim_text and "external_eligible" not in iim_text,
+    "memorandum may not designate itself or its content external_eligible",
+)
+
+# D-P1 discipline: every substantive $8M occurrence in the memorandum must sit
+# within a proximity window containing a D-P1 reference plus an approved label.
+# A document-level qualification elsewhere does not cure an unqualified use.
+iim_lines = iim_text.splitlines()
+land_figure = re.compile(r"\$8(?:,000,000|\.0\s*M\b|\.0 million|M\b| million)", re.IGNORECASE)
+land_qualifier = re.compile(
+    r"acquisition-strategy input only"
+    r"|not proof of value"
+    r"|strategy input; not proof of value or authority"
+    r"|not appraised value, land-price ceiling, walk-away price, or transaction authority",
+    re.IGNORECASE,
+)
+for index, line in enumerate(iim_lines):
+    if land_figure.search(line):
+        window = "\n".join(iim_lines[max(0, index - 2): index + 3])
+        check(
+            "IIM land-basis qualifier (D-P1)",
+            "D-P1" in window and land_qualifier.search(window) is not None,
+            f"unqualified $8M reference near memorandum line {index + 1}",
+        )
+
+land_mischaracterizations = [
+    r"(?:appraised|market)\s+value\s+of\s+\$8",
+    r"\$8(?:,000,000|\.0\s*M|M\b)[^\n]{0,60}\b(?:is|was|equals)\s+(?:the\s+)?(?:appraised|market)\s+value",
+    r"valuation\s+conclusion\s+of\s+\$8",
+    r"approved\s+offer\s+of\s+\$8",
+    r"(?:price\s+)?ceiling\s+of\s+\$8",
+    r"maximum\s+(?:authorized\s+)?price\s+of\s+\$8",
+    r"walk-?away\s+price\s+of\s+\$8",
+    r"\$8(?:,000,000|\.0\s*M|M\b)[^\n]{0,60}\b(?:constitutes|establishes|grants)\s+transaction\s+authority",
+]
+check(
+    "IIM land-basis mischaracterization scan",
+    not any(re.search(pattern, iim_text, flags=re.IGNORECASE) for pattern in land_mischaracterizations),
+    "memorandum characterizes the $8M input as value, ceiling, walk-away, approved offer, or authority",
+)
+
+prohibited_promotional = [
+    r"guaranteed\s+demand",
+    r"perfectly\s+positioned",
+    r"massive\s+opportunity",
+    r"profound\s+and\s+immediate\s+demand",
+    r"highly\s+viable",
+    r"project\s+wins",
+    r"cannot\s+wait",
+    r"generational\s+asset",
+    r"guaranteed\s+(?:hospital\s+)?spillover",
+    r"guaranteed\s+parking\s+demand",
+    r"guaranteed\s+returns?",
+]
+iim_decision_surface = iim_text + "\n" + iim_texts.get("investment index", "")
+check(
+    "IIM prohibited-language scan",
+    not any(re.search(pattern, iim_decision_surface, flags=re.IGNORECASE) for pattern in prohibited_promotional),
+    "memorandum contains prohibited promotional or certainty language",
+)
 
 timestamp = datetime.now(timezone.utc).isoformat()
 if not ERRORS:
