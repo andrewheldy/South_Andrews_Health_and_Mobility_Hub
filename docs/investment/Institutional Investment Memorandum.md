@@ -54,6 +54,8 @@ The only ratified transaction input is a working opening offer of **$8,000,000**
 
 The land basis in that sentence is the D-P1 strategy input (acquisition-strategy input only; not proof of value or authority). Modeled yields on cost are 3.83–4.07% against 6.25–7.0% modeled requirements; Basis A shows development profit of approximately −$27.7M / −$33.9M (6-/8-story) and Basis B shows annual partner/grant/master-lease gaps of approximately $1.89M–$3.23M [MO — CAN-020/021; S2 `Returns!B13:B31`; S3 `Financing & Returns!D21:E28`]. These are planning-level outputs of unaudited models on unadopted program bases [R-20]; they are the current record, and no downstream document may omit or contradict them [Project Canon §8.4].
 
+**Extension of the finding (2026-07-27 integrated development pass).** A derived residual-land analysis — which reproduces S3's published stabilized NOI to within $107 before any analyst judgment is applied — establishes that **the modeled shortfall is not curable by the acquisition price**. At a land basis of zero, no tested scenario exceeds a 4.49% yield on cost; the leading balanced scheme reaches 3.62%. The office rent required to reach a 7.0% yield on the leading scheme is approximately $131/RSF NNN against $50 modeled and $36 in the alternative basis [MO — FIN-06/07/08; R-21]. Every increment of vertical scale earns between 2.12% and 3.43% on the incremental capital. The consequence for this memorandum is that the acquisition question is one of **transaction structure and partner support**, not of negotiated price. Full analysis: [Integrated Development Recommendation](Integrated%20Development%20Recommendation.md).
+
 ### 1.4 Project Readiness by Decision Domain
 
 | Domain | Current status | Principal blocker | Next evidence |
@@ -361,7 +363,22 @@ Exit cap: 6.25% (S2, institutional MOB-class) versus 7.25% (S3, specialty/parkin
 
 A lower land basis; a revised program; validated differentiated rents; a health-system or operator anchor; a master lease or minimum-use agreement; capital contribution; public support; grant or TIF proceeds; cost reduction; phased capitalization; or contractually supported mobility/energy revenue [Project Canon §3]. Health-system participation is the most direct route to closing the modeled $1.9–3.2M/yr gap — pursued early and disclosed as prospective [REC — Canonical Healthcare Strategy §4].
 
+**Qualification on "a lower land basis" (2026-07-27).** That mechanism is now measured and found insufficient on its own. Residual analysis returns a negative supportable land value under every tested scenario at institutional yields, and a zero land basis still leaves the leading scheme at a 3.62% yield on cost [MO — FIN-06; R-21]. A lower basis helps; it does not close the gap. The mechanisms that remain capable of closing it are a health-system anchor or master lease worth roughly $1.6–2.3M/yr of incremental NOI, public capital of roughly $15–20M, or a transaction structure that removes the fixed land obligation altogether — ground lease, option, seller participation, or a contribution structure. None is documented as secured, approached, or negotiated.
+
 **Feasibility is not established.** This memorandum must not be read as implying otherwise; the burden is on diligence (rents, program, partners, costs, capacity) to produce a model vNext whose feasibility statement ownership can defend to a lender.
+
+### 16.4 Scenario extension (2026-07-27 integrated development pass — model output, planning-level)
+
+Derived scenarios on the Basis B geometry, governance-clean (AV revenue excluded), parking limited to genuine surplus over the City's 1-per-250-GFA standard. **Not adopted; not a substitute for model vNext.** Full derivation: [`models/working/`](../../models/working/build_integrated_development_model.py).
+
+| Scenario | Storeys | GSF | Core all-in | NOI | Yield on cost | Operational fleet/staging positions | Service class |
+|---|---|---|---|---|---|---|---|
+| SA-A maximum fleet | 8 | 216,000 | $76.30M | $2.226M | 2.92% | ~140 | Medium voltage |
+| SA-B balanced two-site | 6 | 160,000 | $59.87M | $1.879M | 3.14% | 18 ground bays | 480 V |
+| SA-C minimum viable | 4 | 108,000 | $40.90M | $1.228M | 3.00% | 27 | 480 V |
+| SA-C0 staging ground | 1 | 14,000 | $20.40M | $0.557M | 2.73% | 16 | 480 V |
+
+Two findings carry beyond the numbers. First, **gross stalls are not operational fleet capacity**: after code-required parking, secure-zone boundary loss, turnaround and manoeuvring reserve, the maximum-fleet scheme yields roughly 140 positions against a 300–400 working hypothesis, and the leading balanced scheme carries a one-stall deficit against its own code requirement [MO — CAP-02/03; R-22]. Second, **S3's monetized-parking revenue of $419,265/yr is in tension with that same code requirement** and is reported here on both constructs pending a City determination [OQ-26; R-23].
 
 ## 17. Capital Structure and Incentives
 
@@ -512,7 +529,9 @@ The complete scenario set (five active-unadopted, four rejected, one historical 
 
 ### 25.4 Register cross-reference
 
-Decisions: [Decision Log](../planning/Decision%20Log.md) and [`docs/decisions/`](../decisions/README.md) · Assumptions: [Master Assumption Register](../planning/Master%20Assumption%20Register.md) (96 rows) · Questions: [Open Questions](../planning/Open%20Questions.md) (OQ-01…23) · Risks: [Risk Register](../planning/Risk%20Register.md) (R-1…R-20) · Conflicts: [Contradictions Matrix](../planning/Contradictions%20Matrix.md) · Missing evidence: [Missing Research Register](../planning/Missing%20Research%20Register.md) (MA-01…18; MB-01…20) · Chapter-level provenance: [IIM Source Map](../planning/IIM%20Source%20Map.md).
+Decisions: [Decision Log](../planning/Decision%20Log.md) and [`docs/decisions/`](../decisions/README.md) · Assumptions: [Master Assumption Register](../planning/Master%20Assumption%20Register.md) (96 rows plus §12 integrated-pass additions) · Questions: [Open Questions](../planning/Open%20Questions.md) (OQ-01…30) · Risks: [Risk Register](../planning/Risk%20Register.md) (R-1…R-25) · Conflicts: [Contradictions Matrix](../planning/Contradictions%20Matrix.md) and [Contradiction and Validation Register](../planning/Contradiction%20and%20Validation%20Register.md) (CVR-01…53) · Missing evidence: [Missing Research Register](../planning/Missing%20Research%20Register.md) (MA-01…18; MB-01…20) · Chapter-level provenance: [IIM Source Map](../planning/IIM%20Source%20Map.md).
+
+**Integrated development package (2026-07-27).** [Integrated Development Recommendation](Integrated%20Development%20Recommendation.md) · [Final Development Planning Brief](../planning/Final%20Development%20Planning%20Brief.md) · [Program and Scenario Reconciliation](../planning/Program%20and%20Scenario%20Reconciliation.md) · [Integrated Development Source Map](../planning/Integrated%20Development%20Source%20Map.md) · [Construction Budget Basis](../cost/Construction%20Budget%20Basis.md) · [Electrical Basis of Design](../technical/Electrical%20Basis%20of%20Design.md) · [Entitlement and Utility Roadmap](../technical/Entitlement%20and%20Utility%20Roadmap.md) · [Two-Site Operating Plan](../technical/Two-Site%20Operating%20Plan.md).
 
 ### 25.5 Relationship to future documents
 

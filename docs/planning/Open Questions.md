@@ -38,6 +38,20 @@ Adopts the ODP's OQ-01…OQ-13 (original numbering preserved, statuses updated b
 | OQ-22 | Correct S3's inclusion of $194.4K/yr AV-bay revenue in base NOI (governance conflict)? | Medium | Model vNext correction (owner-authorized) | Ex-AV NOI ≈ $2.15M/$2.97M (recomputed, not applied) |
 | OQ-23 | Canonical address string: adopt "901–917 S Andrews Avenue" and record variants? | Low | Owner sign-off with title confirmation | **Closed by D-P12:** canonical identity address adopted; source-specific aliases preserved |
 
+## Part 3 — New from the integrated development pass (2026-07-27)
+
+Surfaced by the electrical audit, the operational stall analysis, and the residual-land analysis. Full statements in [Contradiction and Validation Register](Contradiction%20and%20Validation%20Register.md).
+
+| ID | Question | Priority | Resolve via | Notes |
+|---|---|---|---|---|
+| OQ-24 | **What clinical electrical load density governs design — S3's 5 W/GSF (equipment-excluded) or a clinical-capable density near 18 W/SF connected (12.6 W/GSF demand)?** A 2.5× difference driving the entire service size. | Critical | Electrical engineer on the adopted program (MB-03) | CVR-12. The two figures measure different things; neither is engineered |
+| OQ-25 | **What is the utility service allowance: $750K (S2), $1.5–1.8M (S3), or $3.5–5.0M (electrical workbook)?** A 6.7× spread on one line with no engineered basis anywhere. | Critical | FPL will-serve / load study (MB-03) | CVR-16. Under the two-site strategy the medium-voltage case does not arise, collapsing the range to ~$0.9–1.8M |
+| OQ-26 | **May structured stalls required by the City's 1-per-250-GFA standard be monetised, or is parking revenue limited to genuine surplus?** | Critical | City parking-method determination (MB-01) + utilisation study (MB-09) | CVR-31. S3 books $419,265/yr from 55% of 231 stalls while the code requirement for its own program is ~232. Swings 6-storey yield on cost by ~45 bps |
+| OQ-27 | **How far may accessory parking exceed the principal use's requirement before it ceases to be accessory under RAC-RPO?** | Critical | Land-use counsel + pre-application (MB-01) | CVR-32. S8's use pathway is the load-bearing entitlement argument for any parking-heavy scheme and cites no ULDR provision, ratio, or cap |
+| OQ-28 | **Do the existing Phase I and Phase II ESAs disclose a recognised environmental condition, and what is the remediation exposure?** | Critical | Recover MA-13; refresh Phase I (MB-11) | CVR-44. S6 p.10 lists both reports among documents reviewed; S6 p.28 states no environmental information was provided. A Phase II is normally commissioned only after a Phase I identifies a condition |
+| OQ-29 | **Is the corrected electrical load workbook admitted to `sources/` as a governed source, and on what provenance?** | High | Owner decision | CVR-01. It sits outside the repository in two byte-identical copies; the original it corrects does not exist anywhere. S3's energy factors currently trace to it |
+| OQ-30 | **Does the Live Local Act preempt the 50 du/net acre density cap on this parcel?** | High | Land-use counsel (MB-18) | CVR-53. If it does, the alternative-use analysis reopens materially — the appraisal's two highest comps were RAC-CC tower sites whose density this parcel cannot otherwise reach |
+
 ## Recommended resolution order
 
 1. Recover missing records and commission **OQ-03 (zoning)**, **OQ-14/OQ-02 (test-fit)**, and **OQ-05 (traffic)**.
@@ -45,3 +59,5 @@ Adopts the ODP's OQ-01…OQ-13 (original numbering preserved, statuses updated b
 3. Pursue OQ-08 (prospective operator evidence), OQ-09 (title), and OQ-16 (parking study) without implying commitment.
 4. Obtain a later owner decision on authority, ceiling, and walk-away under OQ-20.
 5. Inside authorized model-vNext work, resolve OQ-10, OQ-18, OQ-21, and OQ-22 before OQ-11.
+
+**Revised priority following the integrated development pass.** Two of the new questions are cheaper and faster to close than anything above and are more likely to change the acquisition answer: **OQ-28** (recover the existing Phase I/Phase II ESAs — days, nominal cost) and **OQ-25** (FPL preliminary load letter — weeks, $5–10K). Close those first. **OQ-26** and **OQ-27** are answered by the same land-use counsel opinion and pre-application meeting already required for OQ-03, at no material additional cost.

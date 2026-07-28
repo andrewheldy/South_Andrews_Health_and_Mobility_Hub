@@ -409,6 +409,130 @@ check(
     "memorandum contains prohibited promotional or certainty language",
 )
 
+# --- Integrated development package controls (2026-07-27) ---
+# The package is internal working product. These checks enforce that it declares
+# itself internal, preserves the negative feasibility finding, keeps scenario
+# discipline, and never implies ownership, entitlement, utility capacity, or
+# partner commitment.
+package_paths = {
+    "source map": ROOT / "docs/planning/Integrated Development Source Map.md",
+    "contradiction register": ROOT / "docs/planning/Contradiction and Validation Register.md",
+    "scenario reconciliation": ROOT / "docs/planning/Program and Scenario Reconciliation.md",
+    "planning brief": ROOT / "docs/planning/Final Development Planning Brief.md",
+    "construction budget": ROOT / "docs/cost/Construction Budget Basis.md",
+    "electrical basis": ROOT / "docs/technical/Electrical Basis of Design.md",
+    "entitlement roadmap": ROOT / "docs/technical/Entitlement and Utility Roadmap.md",
+    "two-site plan": ROOT / "docs/technical/Two-Site Operating Plan.md",
+    "development recommendation": ROOT / "docs/investment/Integrated Development Recommendation.md",
+    "prospectus release candidate": ROOT / "docs/external/Institutional Development Prospectus.md",
+    "one-page summary": ROOT / "docs/external/One-Page Project Summary.md",
+}
+package_texts = {}
+for label, path in package_paths.items():
+    check("integrated package document present", path.is_file(), f"{label}: {path}")
+    if path.is_file():
+        package_texts[label] = path.read_text(encoding="utf-8")
+
+for label, text in package_texts.items():
+    check(
+        "integrated package internal-only status",
+        "internal_only" in text,
+        f"{label} must declare internal_only external-use status",
+    )
+    check(
+        "integrated package external-eligibility not self-claimed",
+        "external_eligible" not in text,
+        f"{label} may not designate itself or its content external_eligible",
+    )
+
+package_surface = "\n".join(package_texts.values())
+check(
+    "integrated package ownership-language scan",
+    not any(re.search(pattern, package_surface, flags=re.IGNORECASE) for pattern in ownership_patterns),
+    "integrated package contains ownership/control implication",
+)
+check(
+    "integrated package prohibited-language scan",
+    not any(re.search(pattern, package_surface, flags=re.IGNORECASE) for pattern in prohibited_promotional),
+    "integrated package contains prohibited promotional or certainty language",
+)
+package_unsupported = [
+    r"\bentitlement (?:is|has been) (?:approved|granted|secured)\b",
+    r"\bFPL (?:has )?confirmed\b",
+    r"\bcommitted (?:healthcare|health-system|mobility) partner\b",
+    r"\bby[- ]right height\b",
+]
+check(
+    "integrated package unsupported-approval scan",
+    not any(re.search(pattern, package_surface, flags=re.IGNORECASE) for pattern in package_unsupported),
+    "integrated package implies entitlement, utility capacity, or partner commitment",
+)
+
+for label in ("development recommendation", "prospectus release candidate", "one-page summary"):
+    text = package_texts.get(label, "")
+    check(
+        "integrated package property-status disclosure",
+        "does not" in text and "own the property" in text,
+        f"{label} must state that the sponsor does not own the property",
+    )
+
+prospectus_text = package_texts.get("prospectus release candidate", "")
+check(
+    "prospectus release blocked",
+    "BLOCKED" in prospectus_text and "EXTERNAL_PUBLICATION_CHECKLIST" in prospectus_text,
+    "prospectus release candidate must declare external use blocked and cite the checklist",
+)
+check(
+    "prospectus preserves negative feasibility finding",
+    "does not satisfy the modeled institutional return requirements" in prospectus_text,
+    "prospectus release candidate must carry the canonical negative feasibility finding",
+)
+check(
+    "prospectus states no target return",
+    "No target return is stated" in prospectus_text,
+    "prospectus release candidate must not assert a target return",
+)
+
+# Scenario discipline: the package must name its stated basis and refuse to blend bases.
+recon_text = package_texts.get("scenario reconciliation", "")
+check(
+    "scenario reconciliation declares a stated basis",
+    "stated modelling basis" in recon_text.lower() or "stated basis" in recon_text.lower(),
+    "scenario reconciliation must name its geometric basis",
+)
+check(
+    "scenario reconciliation preserves dual-basis discipline",
+    "never mixed" in recon_text.lower() or "never be mixed" in recon_text.lower(),
+    "scenario reconciliation must state that program bases are never mixed",
+)
+
+# Derived model artefacts must exist, parse, and carry their planning-level disclaimer.
+model_json_path = ROOT / "models/working/integrated-development-model.json"
+check("derived model script present", (ROOT / "models/working/build_integrated_development_model.py").is_file(), "build_integrated_development_model.py")
+check("derived model data present", model_json_path.is_file(), "integrated-development-model.json")
+if model_json_path.is_file():
+    model_data = load_json(model_json_path)
+    if model_data:
+        check(
+            "derived model disclaimer",
+            "PLANNING-LEVEL MODEL OUTPUT" in model_data.get("disclaimer", ""),
+            "derived model must carry its planning-level disclaimer",
+        )
+        scenarios = model_data.get("scenarios", {})
+        check(
+            "derived model scenario coverage",
+            {"SA-A", "SA-B", "SA-C", "SA-C0"}.issubset(scenarios),
+            f"expected SA-A/SA-B/SA-C/SA-C0, found {sorted(scenarios)}",
+        )
+        check(
+            "derived model excludes AV revenue from base cases",
+            all(
+                item.get("operating_governance_clean", {}).get("AV staging / secure bay revenue") == 0
+                for item in scenarios.values()
+            ),
+            "governance-clean operating case must carry zero AV revenue",
+        )
+
 timestamp = datetime.now(timezone.utc).isoformat()
 if not ERRORS:
     for name, data in data_by_name.items():

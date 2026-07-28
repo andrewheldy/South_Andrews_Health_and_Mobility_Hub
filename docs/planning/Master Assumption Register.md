@@ -65,7 +65,7 @@ Source IDs: S1–S8 per [Source Inventory](Source%20Inventory.md). Where S2 and 
 | PRG-01 | Floor plate | 35,000 SF uniform | 28,000 SF ground/parking; 24,000 SF office | S2 `Assumptions!B8`; S3 `Assumptions!D9–D11` (from S8 massing) | WA | M/M | **DUAL → OQ-14** | Root of the program conflict |
 | PRG-02 | Stack, 6-story | L1 + 3 pkg + 2 office | L1 + 3 pkg + 2 office | S2 `Program!B5,B6`; S3 `Assumptions!D19,D20` | WA | H | YES (stack logic convergent) | Floors convergent; areas differ |
 | PRG-03 | Stack, 8-story | L1 + 4 pkg + 3 office | L1 + 4 pkg + 3 office | S2 `Program!C5,C6`; S3 `Assumptions!E19,E20` | WA | H | YES (stack logic) | — |
-| PRG-04 | Total GBA 6 / 8 | 210,000 / 280,000 SF | 160,000 / 208,000 SF | S2 `Program!B15,C15`; S3 `P&M!B17,D17` | MO | M | DUAL | — |
+| PRG-04 | Total GBA 6 / 8 | 210,000 / 280,000 SF | 160,000 / **212,000** SF | S2 `Program!B15,C15`; S3 `P&M!B17,D17` | MO | M | DUAL | *Corrected 2026-07-27: 8-story figure was recorded as 208,000 SF; `P&M!D17` evaluates to 212,000 GSF. See [Contradiction and Validation Register](Contradiction%20and%20Validation%20Register.md) CVR-40* |
 | PRG-05 | Office RSF 6 / 8 | 59,500 / 89,250 | 40,800 / 61,200 | S2 `Program!B14,C14`; S3 `P&M!B8,D8` | MO | M | DUAL | Both use 85% efficiency |
 | PRG-06 | Office efficiency | 85% | 85% | S2 `Assumptions!B10`; S3 `Assumptions!D13` | WA | M | YES | Convergent |
 | PRG-07 | Structured stalls 6 / 8 | 340 / 440 (incl. 40 ground) | 231 / 308 (+18 AV bays excluded) | S2 `Program!B18,C18`; S3 `P&M!B11,D11` | MO | M | DUAL | — |
@@ -188,3 +188,25 @@ Source IDs: S1–S8 per [Source Inventory](Source%20Inventory.md). Where S2 and 
 | MOB-05 | Mobility-hub brief counts | 200 transient / 100 fleet / 50 EV | S7 `Assumptions!B36–B38` ("per brief") | SUP (superseded program brief) | L | NO — historical brief, not current program |
 
 **Register totals:** 96 assumptions: 10 VF · 24 SD · 41 WA · 8 MO · 9 REC · 2 OQ-class · 1 SUP · 1 REJ (plus per-row DUAL flags). Every DUAL row traces to an escalation in [Open Questions](Open%20Questions.md).
+
+## 12. Assumptions added by the integrated development pass (2026-07-27)
+
+Derived or newly surfaced. Full derivation in [`models/working/build_integrated_development_model.py`](../../models/working/build_integrated_development_model.py); conflicts in [Contradiction and Validation Register](Contradiction%20and%20Validation%20Register.md).
+
+| ID | Assumption | Value | Source (location) | Class | Conf | Canonical? | Notes |
+|---|---|---|---|---|---|---|---|
+| CAP-01 | City parking standard applied to the building's own program | 1 space / 250 SF GFA on office + med-tail GFA | S6 p.37; corroborated S4, S8 | SD | M | YES (working) | No shared-parking or RAC reduction provision is quoted in any source |
+| CAP-02 | Code-required stalls, Basis B 6-storey scheme | ~232 stalls against 231 provided — **a one-stall deficit** | Derived from S6 p.37 + S3 `P&M!B11` | MO | M | YES (working) | Drives OQ-26; means the leading scheme has no monetisable surplus |
+| CAP-03 | Net operational fleet capacity, 8-storey maximum-fleet scheme | ~140 positions (122 structured + 18 ground bays) | Derived model `stall_waterfall` | MO | M | YES (working) | Against a 300–400 working hypothesis. Gross stalls ≠ fleet capacity |
+| CAP-04 | Secure-zone boundary loss on gated parking levels | ~6% of each gated level | Analyst allowance | WA | L | YES (working) | Not modelled in S2 or S3 |
+| NRG-11 | Clinical load density, clinical-capable basis | 18 W/SF connected × 0.70 = 12.6 W/GSF demand | Corrected electrical workbook `Inputs!B10,B11` (ungoverned source) | WA | L | **DUAL → OQ-24** | Conflicts 2.5× with S3's 5 W/GSF (NRG-03), which explicitly excludes clinical equipment |
+| NRG-12 | Service basis, two-site clinical scheme (SA-B) | ~1,143 kW → 1.4 MVA target, **480 V secondary** | Derived model `electrical` | MO | L | YES (working) | Materially consistent with S3's independently derived 1.5 MVA recommendation (NRG-07) |
+| NRG-13 | Service basis, on-site depot scheme (SA-A) | ~3,208 kW → 4.0 MVA, **medium voltage (13.2 kV) indicated** | Derived model `electrical` | MO | L | YES (working) | The 64% reduction from relocating the depot is the principal quantified benefit of the two-site strategy |
+| NRG-14 | Battery may **not** be deducted from required service size | Rejected as a sizing method | CVR-13; NEC Art. 750 / 625.42 practice | REC | M | YES | The electrical workbook's "managed service basis" is not a stampable service size |
+| NRG-15 | FPL demand charges | **Not modelled anywhere.** Both models carry only a $0.13/kWh energy assumption | S2 `Assumptions!B60`; S3; electrical workbook `Load Build-Up!A45` | OQ | — | OQ | Plausibly a six-figure annual omission at a ~1,000 kW peak. Must be added at model vNext |
+| CST-25 | Environmental remediation allowance | $250,000 placeholder | Analyst allowance against MA-13 | WA | **very low** | YES (caveated) | A Phase I **and** Phase II are referenced by S6 p.10 but absent. Placeholder against an unknown (OQ-28) |
+| CST-26 | Design contingency | **Not carried in either model.** A Class 5 estimate would normally carry it in addition to construction contingency | Derived budget review | REC | M | YES (recommendation) | Adding 5% would raise core all-in cost by ~$1.3–2.6M depending on scenario |
+| FIN-06 | Residual land value at institutional yields | Negative in every scenario; **at a zero land basis no scheme exceeds 4.49% yield on cost** | Derived model `residual_land_value` | MO | M | YES | Establishes that the yield gap (EXT-06) is not curable by land price. See R-21 |
+| FIN-07 | Maximum program-supported acquisition price | ~$0–2M (positive only for SA-C0 at a 4.0% yield) | Derived model | MO | M | YES (working) | Not a negotiating position and not a statement of market value to another buyer |
+| FIN-08 | Marginal return on each increment of vertical scale | 3.27% (1→4 storeys), 3.43% (4→6), **2.12% (6→8)** | Derived model | MO | M | YES | No increment earns a cost of capital; the 8-storey increment is the worst |
+| ACQ-10 | The most likely competing buyer may be the anchor institution | North Broward Hospital purchased **both** of the two closest comparables (1404 and 1408 S Andrews) in Jan–Feb 2025, one under an express condemnation threat | S6 pp.45–46 | SD | H | YES | Simultaneously the strongest evidence for healthcare relevance and a warning about who sets price |
