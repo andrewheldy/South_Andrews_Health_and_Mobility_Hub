@@ -44,6 +44,8 @@ No increment earns a cost of capital. The 8-storey increment is the worst, retur
 
 **Do not commit to acquisition at the $8,000,000 working opening-offer input on the strength of the development program.** The program does not support that basis, and no negotiated reduction within a plausible range would change that. Per D-P1, the $8,000,000 figure is an acquisition-strategy input only — not proof of value, and it does not itself authorise an offer.
 
+> **Amendment 2026-07-29 (D-P13).** The working opening-offer basis is now **$7,500,000** — a tactical negotiation figure, not an economically supported land value, and not authority to submit an offer. **This recommendation is unchanged by that decision.** A $500,000 reduction is a negotiated reduction within a plausible range, and the analysis above is precisely that no such reduction changes the answer: the shortfall persists at a land basis of zero. The figures throughout this document remain computed at the **$8,000,000 modeled basis** (CAN-004a) and have not been restated. D-P13 authorises no offer, and gate **G8** remains open.
+
 Instead, **convert the next 90–120 days into a bounded pre-acquisition diligence programme costing roughly $100,000–$200,000** that can do one of three things: produce evidence that materially changes the answer, support a fundamentally different transaction structure, or support a documented decision not to proceed. Every item on that list can be completed before any capital is committed to land, and two of them could independently end the enquiry.
 
 ### 2.2 On what to build, if the project proceeds
@@ -137,7 +139,7 @@ No gate may be treated as passed because a document says so. Each requires evide
 | **G5 — FPL capacity** | Is the target service available, and at what contribution cost? | Will-serve / load study (MB-03 / OQ-25) | **OPEN.** A single line spans $750K–$5.0M |
 | **G6 — Medical demand** | What rent and absorption does this submarket actually support? | MOB comps and absorption study (MB-07 / OQ-15) | **OPEN.** Break-even is $131/RSF; this study is more likely to confirm the problem than solve it |
 | **G7 — Budget** | What does a contractor price this at? | GC pricing, convertible vs conventional (MB-16) | **OPEN.** Class 5 estimate, −30%/+50% |
-| **G8 — Acquisition** | Is there a supportable basis and structure? | G1–G7 plus a transaction-structure decision | **OPEN.** Program-supported value is $0–2M against an $8.0M input |
+| **G8 — Acquisition** | Is there a supportable basis and structure? | G1–G7 plus a transaction-structure decision | **OPEN.** Program-supported value is $0–2M against an $8.0M modeled input and a $7.5M D-P13 offer basis. Transaction authority and structure remain unresolved (pending D-P16) |
 | **G9 — Depot site** | Is an off-site depot identified, priced, zoned and secured? | Option or LOI on a specific site | **OPEN.** No site exists. Blocks ~$3.15M of mobility spend |
 | **G10 — Partner commitment** | Is there a signed master lease, minimum-use guarantee, or capital contribution? | Executed document | **OPEN.** No LOI, term sheet, or agreement exists with any party |
 | **G11 — Financing** | Will a lender underwrite this? | Term sheet | **OPEN.** A lender will underwrite the returns in this package |

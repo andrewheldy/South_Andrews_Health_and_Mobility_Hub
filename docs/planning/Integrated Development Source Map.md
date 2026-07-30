@@ -109,7 +109,8 @@ Higher tier does not confer authority outside scope. S2 outranks S3 by tier, but
 | "Above 6 floors and up to 12 floors … shall be reviewed" | source-derived but not independently verified | S6 p.37, and the quoted field is **truncated mid-word** in the source PDF |
 | "Level III" review designation | source-derived but not independently verified | Appears **only** in S8; no ULDR text is quoted anywhere in the repository |
 | $11,100,000 appraised value | source-derived (third-party opinion) | Never a market-clearing fact; standing critique at S1 §4 |
-| $8,000,000 land input | current working assumption | D-P1 acquisition-strategy input only; not proof of value, not a ceiling, walk-away price, or transaction authority |
+| $8,000,000 land input | current working assumption | **Modeled land basis** — unchanged and used throughout this package (CAN-004a). Originally D-P1's acquisition-strategy input; not proof of value, not a ceiling, walk-away price, or transaction authority |
+| $7,500,000 negotiation basis | current working assumption | **D-P13 (2026-07-29) working opening-offer basis** — a tactical negotiation figure, not an economically supported land value. **Not used in any figure in this package**, which is computed at the $8,000,000 modeled basis. Never blend the two |
 | All unit costs, rents, cap rates | current working assumption | No GC pricing, no lease comps, no broker survey in the repository |
 | All stall counts, GBA, service sizes | model output | Basis-dependent; test-fit and FPL study outstanding |
 | Every partner organisation | prospective | No LOI, term sheet, or executed agreement exists in the repository |

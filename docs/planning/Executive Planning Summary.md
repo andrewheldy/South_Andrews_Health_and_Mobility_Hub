@@ -6,13 +6,15 @@
 
 ## Executive result
 
-The owner ratified the healthcare-anchored thesis, the limited $8,000,000 opening-offer strategy input, records hygiene, governance succession, repository refactor Phase 1, and the canonical identity address. The Project Canon is now ratified. Phase 1 establishes individual decision records, metadata/status rules, human-readable indexes, schemas, structured exports, archive/supersession guidance, source-integrity records, an external-publication gate, a future-model input contract, and validation.
+The owner ratified the healthcare-anchored thesis, a limited opening-offer strategy input, records hygiene, governance succession, repository refactor Phase 1, and the canonical identity address. The Project Canon is now ratified. **Amended 2026-07-29:** the owner ratified **D-P13**, setting the working opening-offer basis at **$7,500,000** as a tactical negotiation figure (superseding D-P1's $8,000,000 figure only, while the **modeled** land basis remains $8,000,000), and **D-P14**, classifying the Toothaker advisor-context file (S9) as a provisional external-advisor research source with no authority for project claims. Phase 1 establishes individual decision records, metadata/status rules, human-readable indexes, schemas, structured exports, archive/supersession guidance, source-integrity records, an external-publication gate, a future-model input contract, and validation.
 
 The sponsor does not currently own the property. No ratification establishes site control, entitlement, partner support, utility capacity, market demand, final program, or financial feasibility.
 
 ## Ratified decisions
 
-- **D-P1:** $8,000,000 working opening offer only; authority, ceiling, walk-away, and final terms unresolved.
+- **D-P1:** $8,000,000 working opening offer only; authority, ceiling, walk-away, and final terms unresolved. **Figure superseded by D-P13 (2026-07-29); $8,000,000 remains the unchanged modeled land basis.**
+- **D-P13:** working opening-offer basis **$7,500,000** — a tactical negotiation figure, not an economically supported land value, not authority to submit an offer. Feasibility conclusion unchanged. Authority, ceiling, walk-away, conditions, and structure remain unresolved (pending D-P16).
+- **D-P14:** S9 admitted as a provisional external-advisor research source with **no authority** for site, zoning, legal, economic, contract, approval, or stakeholder claims; Stephanie Toothaker remains a prospective advisor only.
 - **D-P2:** Healthcare anchor; mobility/energy/data/AV systems enabling or optional; no speculative optional revenue in a governance-clean base case.
 - **D-P8:** Controlled status vocabulary with lineage preserved.
 - **D-P9:** `AGENTS.md` and current governance set are operative; missing prior governance remains historical/missing pending recovery and reconciliation.

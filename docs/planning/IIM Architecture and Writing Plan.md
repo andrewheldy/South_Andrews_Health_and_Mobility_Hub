@@ -73,7 +73,7 @@ Per `skills/institutional-prospectus/SKILL.md` (applied here to an internal docu
 3. Approved status vocabulary only (proposed / prospective / planning-level / subject to … / potential partner / working assumption / illustrative / not yet validated). A caveat elsewhere does not cure a misleading headline or table.
 4. Key-metric tables carry a status column using: verified · source-reported · model-derived · owner input · working assumption · scenario · unresolved · superseded.
 5. Dual-basis discipline: Basis A (S2) and Basis B (S3) never mixed or averaged; every sized figure names its basis.
-6. The $8,000,000 figure follows owner amendment A2: each substantive occurrence either sits within the full D-P1 qualification or carries an adjacent D-P1 reference plus an approved label; tables never show the figure without an adjacent qualifier.
+6. The $8,000,000 figure follows owner amendment A2: each substantive occurrence either sits within the full D-P1 qualification or carries an adjacent D-P1 reference plus an approved label; tables never show the figure without an adjacent qualifier. **Extended 2026-07-29:** the same per-occurrence rule now applies to the **$7,500,000** D-P13 working opening-offer basis, which must additionally be labelled a tactical negotiation figure and not an economically supported land value. `scripts/validate_repository.py` enforces the rule for both figures.
 7. Recommendation/authorization separation per amendment A5: no action is described as approved, commissioned, funded, or authorized absent a ratified decision or later owner instruction.
 8. No renderings exist; if any are added later they are labeled **Illustrative rendering** at point of use.
 

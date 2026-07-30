@@ -22,7 +22,7 @@
 | Soft-cost structure | S3 — 8% A&E + 5% permits/fees + 4% owner + 8% contingency = **25% of hard**, plus $25/office RSF leasing | S2 — 18% soft + 7.5% contingency + 4% developer fee on hard+soft ≈ **29.7% of hard**. Structures differ; totals differ materially |
 | Financing | 60% LTC, 8.0% all-in, 55% average balance, 1.5% fee (S3 `Assumptions!D50:D53`) | 65% LTC, 7.5%, no fee modelled (S2). Lender term sheet resolves |
 | Tax credits | **0% underwritten** (S3 `Energy & Mobility!B20,B21`) | S2 nets 30% ITC from solar. Rejected as the interim rule (OQ-17) |
-| Land | $8,000,000 — the D-P1 working opening-offer input. An acquisition-strategy input only; not proof of value, not a price ceiling, walk-away price, or transaction authority | Appraised $11.1M (S6); prior listing $12.0M; residual context $8.96M (S7) |
+| Land | $8,000,000 — the **modeled land basis** (CAN-004a), unchanged. An acquisition-strategy input only; not proof of value, not a price ceiling, walk-away price, or transaction authority. **The current working opening-offer basis is $7,500,000 (D-P13, 2026-07-29) and is deliberately not used here; every figure in this document rests on the $8,000,000 modeled basis** | Appraised $11.1M (S6); prior listing $12.0M; residual context $8.96M (S7) |
 
 ### Explicit exclusions
 
@@ -41,7 +41,7 @@ Not carried in any figure below: land carry beyond the modelled construction per
 
 | Line | SA-A | SA-B | SA-C | SA-C0 | Basis |
 |---|---|---|---|---|---|
-| Land purchase | $8,000,000 | $8,000,000 | $8,000,000 | $8,000,000 | D-P1 working opening-offer input — strategy input only, not proof of value or authority |
+| Land purchase | $8,000,000 | $8,000,000 | $8,000,000 | $8,000,000 | Modeled land basis (CAN-004a) — strategy input only, not proof of value or authority. Not restated to the $7.5M D-P13 offer basis |
 | Closing / acquisition costs (2%) | $160,000 | $160,000 | $160,000 | $160,000 | S3 `Assumptions!D8`; excludes unusual title, transfer or financing costs |
 | **Subtotal** | **$8,160,000** | **$8,160,000** | **$8,160,000** | **$8,160,000** | |
 

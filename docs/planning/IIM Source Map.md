@@ -108,7 +108,7 @@ Full register: [Contradictions Matrix](Contradictions%20Matrix.md). Columns per 
 | Parking revenue construct | $2,400/space/yr blended | S2 `Assumptions!B56` | $275/stall/mo × 55% monetized | None — escalated | current working assumptions | Unresolved (OQ-16/MB-09); survey basis missing (MA-16) |
 | AV revenue in base NOI | $0 (toggle OFF) | S2 `Assumptions!B63` | $194,400/yr included in S3 base | D-P2 rule controls; S3 in tension | S2 treatment governance-aligned | Escalated (OQ-22); IIM uses governance-clean framing, discloses S3 contamination |
 | Height/entitlement framing | "110 ft ~10 stories by right" | S4 zoning table | ">6 stories = enhanced Level III review; ~12-story ceiling subject to review" | Composite S8+S1 working statement | source-derived, conflicting | Unresolved (OQ-03/11); IIM uses the working statement only |
-| Land value | $12.0M listing; $11.1M appraisal | S6 | $8.0M working opening input (strategy only); $8.96M analyst residual | D-P1 (input only); S6 controls the appraisal-opinion topic | working assumption / appraisal opinion / analyst output | Three defensible-but-different values disclosed side by side (MB-19); no ceiling adopted |
+| Land value | $12.0M listing; $11.1M appraisal | S6 | **$7.5M working opening-offer basis** (D-P13, tactical negotiation figure); $8.0M modeled basis (strategy only); $8.96M analyst residual | D-P13 (offer basis); D-P1 (modeled basis, input only); S6 controls the appraisal-opinion topic | working assumption / model input / appraisal opinion / analyst output | Values disclosed side by side (MB-19); no ceiling adopted; offer basis and modeled basis never blended |
 | Utility allowance | $750K | S2 `Assumptions!B33` | $1.5M/$1.8M placeholder | None — escalated | current working assumptions | Unresolved (OQ-04/MB-03); "subject to utility confirmation" |
 | Construction duration | 18/21 mo (construction only) | S2 | 30/34 mo (build + lease-up) | Definitional difference | current working assumptions | Disclose definitions; never compare carry without normalizing |
 
@@ -130,7 +130,7 @@ Proposed register entries derived from the above (drafts, not entered): an Open 
 ## 5. Standing constraints carried into every IIM chapter
 
 1. Canonical name **South Andrews Healthcare and Mobility Hub** (CAN-001); canonical address **901–917 South Andrews Avenue, Fort Lauderdale, Florida** (D-P12); aliases only in source-specific contexts.
-2. The $8,000,000 figure appears only under D-P1 treatment: acquisition-strategy input; not proof of value; not authority; not a ceiling or walk-away; classified `internal_only` (CAN-004).
+2. The $8,000,000 figure appears only under D-P1 treatment: acquisition-strategy input; not proof of value; not authority; not a ceiling or walk-away; classified `internal_only`. **Amended 2026-07-29:** it is now the **modeled land basis** (CAN-004a). The **$7,500,000** D-P13 working opening-offer basis (CAN-004) is subject to the same per-occurrence rule and must additionally be labelled a tactical negotiation figure, not an economically supported land value. The two bases are never blended.
 3. The feasibility finding (Canon §3) is mandatory content and may not be omitted, softened, or contradicted (Canon §8.4).
 4. Broward Health language per CAN-013 only; the HC-05 vacancy counterweight accompanies any demand claim.
 5. Dual program bases are never mixed (Canon §5); every sized figure names Basis A (S2) or Basis B (S3).

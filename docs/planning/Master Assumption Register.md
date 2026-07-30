@@ -48,7 +48,8 @@ Source IDs: S1–S8 per [Source Inventory](Source%20Inventory.md). Where S2 and 
 
 | ID | Assumption | Value(s) | Source | Class | Conf | Superseded? | Canonical? | Notes |
 |---|---|---|---|---|---|---|---|---|
-| ACQ-01 | Working opening-offer input | $8,000,000 ($209/SF) | D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | WA (owner-adopted strategy) | H (as strategy input) | No | YES | Not proof of value or offer-submission authority; diligence conditions apply |
+| ACQ-01 | Working opening-offer basis | **$7,500,000** ($196/SF) | **D-P13 (2026-07-29)** | WA (owner-adopted strategy) | H (as strategy input) | No | YES | Tactical negotiation figure. Not an economically supported land value, not proof of value, not a price ceiling or walk-away price, not offer-submission authority; diligence conditions apply. Supersedes ACQ-01a |
+| ACQ-01a | Modeled land basis (unchanged) | $8,000,000 ($209/SF) | D-P1 (preserved figure); S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | WA (model input) | H (as model input) | No | YES | **Every model output in the repository carries this input.** Superseded as the working offer basis by ACQ-01/D-P13; retained as the modeled basis until model vNext. Never blend with ACQ-01 |
 | ACQ-02 | Negotiation ceiling / walk-away | **Unresolved**; third-party/context ranges are not adopted | S8 p.7; S3 `Sensitivity!A13:A15` ($8.0/8.75/9.5M cases); D-P1 | OQ/REC context | M | No | OQ | Negotiating authority, maximum price, walk-away, and final conditions require later owner decision |
 | ACQ-03 | Appraised value | $11,100,000 ($290/SF), fee simple, as-is 9/18/2025 | S6 p.5 | SD (appraisal opinion) | H (that it was concluded) | No | CTX | Never cite as market-clearing fact |
 | ACQ-04 | Prior listing | $12,000,000 (not currently listed) | S6 p.1 | SD | M | Yes (stale anchor) | CTX | — |

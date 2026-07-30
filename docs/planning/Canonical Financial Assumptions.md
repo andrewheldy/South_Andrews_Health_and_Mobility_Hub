@@ -10,7 +10,8 @@ Canonical status per input: **ADOPTED** (single working value justified by hiera
 
 | Input | Canonical treatment | Basis |
 |---|---|---|
-| Land opening offer | **ADOPTED STRATEGY INPUT: $8,000,000** ($209/SF), not proof of value or authority to submit an offer | Ratified D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7. Ceiling, walk-away, authority, and final conditions unresolved |
+| Land opening offer (negotiation basis) | **ADOPTED STRATEGY INPUT: $7,500,000** ($196/SF) — a tactical negotiation figure; not an economically supported land value, not proof of value, not a ceiling or walk-away price, not authority to submit an offer | Ratified **D-P13** (2026-07-29), superseding D-P1's figure only. Ceiling, walk-away, authority, final conditions, and structure unresolved (pending D-P16) |
+| Land basis used in all models | **MODEL INPUT: $8,000,000** ($209/SF) — unchanged | D-P1 (preserved figure); S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7. **Every figure in this document and in every model output rests on this input, not on the $7.5M negotiation basis. The two are never blended.** Restatement is model-vNext work |
 | Negotiation envelope | ADOPTED (working): room to ~$8.75M; defensible range $7.65–9.0M; stress case $9.5M | S8 p.7; S3 `Sensitivity!A13:A15` |
 | Appraised value | CONTEXT ONLY: $11.1M (9/18/2025) — appraisal opinion, with standing comp critiques | S6 p.5; S1 §4; S8 p.7 |
 | Analyst residual value | CONTEXT ONLY: $8.96M supported (different, multifamily program); hub-only ~$0.81M | S7 |

@@ -46,7 +46,7 @@ A **proposed** healthcare-anchored, mixed-use institutional development on a 38,
 
 ### 1.2 Transaction status
 
-The only ratified transaction input is a working opening offer of **$8,000,000** — an acquisition-strategy input only (D-P1); it is not proof of value and not, by itself, authority to submit an offer. Negotiating authority, maximum authorized purchase price, walk-away price, and final offer conditions are unresolved [OQ-20]. A September 2025 third-party appraisal concluded $11,100,000 fee simple — an appraisal opinion, not a verified market-clearing price, and one carrying documented comparable-selection critiques [SD — ACQ-03/09; S1 §4; S8 p.7]. See Chapter 5.
+The only ratified transaction input is a nonbinding working opening-offer basis of **$7,500,000** — a tactical negotiation figure and an acquisition-strategy input only (D-P13, 2026-07-29, superseding D-P1's figure alone); it is not an economically supported land value, not proof of value, and not, by itself, authority to submit an offer. The **modeled** land basis throughout this memorandum remains **$8,000,000** — an acquisition-strategy input only (D-P1); not proof of value and not authority (CAN-004a). The two bases are never blended. Negotiating authority, maximum authorized purchase price, walk-away price, final offer conditions, and transaction structure are unresolved [OQ-20; pending D-P16]. A September 2025 third-party appraisal concluded $11,100,000 fee simple — an appraisal opinion, not a verified market-clearing price, and one carrying documented comparable-selection critiques [SD — ACQ-03/09; S1 §4; S8 p.7]. See Chapter 5.
 
 ### 1.3 The finding that controls this memorandum
 
@@ -133,7 +133,7 @@ No statement in this chapter represents entitlement approval, environmental clea
 
 ## 5. Transaction Context and Land Basis
 
-**Standing qualification (D-P1).** The working opening offer of **$8,000,000** is an acquisition-strategy input only (D-P1) — not proof of value, not a price ceiling, not a walk-away price, and not, by itself, authority to submit an offer. Negotiating authority, maximum authorized purchase price, walk-away price, and final offer conditions remain unresolved pending diligence [OQ-20]. Every figure in this chapter is read against that qualification.
+**Standing qualification (D-P13 and D-P1).** The current nonbinding working opening-offer basis of **$7,500,000** is a tactical negotiation figure and an acquisition-strategy input only (D-P13) — not an economically supported land value, not proof of value, not a price ceiling, not a walk-away price, and not, by itself, authority to submit an offer. The **modeled** land basis of **$8,000,000** is likewise an acquisition-strategy input only (D-P1) — not proof of value, not a ceiling or walk-away price, and not authority — and it is the input behind every model output in this memorandum; D-P13 did not restate it, and the two bases are never blended. Negotiating authority, maximum authorized purchase price, walk-away price, final offer conditions, and transaction structure remain unresolved pending diligence [OQ-20; pending D-P16]. Every figure in this chapter is read against that qualification.
 
 ### 5.1 The land-value evidence
 
@@ -143,7 +143,8 @@ No statement in this chapter represents entitlement approval, environmental clea
 | $11,100,000 ($290/SF) | Appraised fee-simple value, effective 2025-09-18 | [SD — appraisal opinion] S6 p.5 | source-reported opinion; never a market-clearing fact |
 | $8,960,000 ($234/SF) | Analyst residual land value on a *different* (multifamily) program; 80.7% appraisal coverage; verdict "CAUTION — NEGOTIATE" | [MO — analyst] S7 `Residual Land Value!C36–C45` | model-derived context; not this project's program |
 | ≈$810,000 | Analyst residual for a pure mobility-hub program — a hub-only program supports almost no land value | [MO — analyst] S7 `Mobility Hub Economics!C14` | model-derived context |
-| $8,000,000 ($209/SF) | Working opening-offer input — acquisition-strategy input only (D-P1); not proof of value or authority | [WA — adopted strategy] D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | owner input; internal_only |
+| $7,500,000 ($196/SF) | Working opening-offer basis — tactical negotiation figure; acquisition-strategy input only (D-P13); not an economically supported land value, not proof of value or authority | [WA — adopted strategy] D-P13 | owner input; internal_only |
+| $8,000,000 ($209/SF) | Modeled land basis, unchanged — acquisition-strategy input only (D-P1); not proof of value or authority | [WA — model input] D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | owner input; internal_only |
 
 **Why the appraisal is challengeable [SD — ACQ-09; S1 §4]:** of its four land comparables, one involved a condemnation negotiation, one was purchased as part of a hospital assemblage, and two carry superior downtown entitlements; the adjusted range was broad and the reconciliation judgment-heavy. The appraisal also rejected owner operating statements and related-party leases as market evidence [S1 §3]. The buyer-side study recommends opening at $8.0M — as broker strategy, not value; that figure is the same D-P1 strategy input (acquisition-strategy input only; not proof of value or authority), with reported room to ~$8.75M and a "defensible range" of $7.65–9.0M [SD/REC — S8 p.7]; these third-party ranges are **not** adopted limits [ACQ-02].
 
@@ -456,7 +457,9 @@ Consolidated from the governed [Risk Register](../planning/Risk%20Register.md) (
 
 | ID | Decision | Scope limit |
 |---|---|---|
-| D-P1 | $8,000,000 working opening offer — acquisition-strategy input only; not proof of value or authority | Authority, ceiling, walk-away, conditions all unresolved |
+| D-P1 | $8,000,000 working opening offer — acquisition-strategy input only; not proof of value or authority. Figure superseded by D-P13; retained as the modeled land basis | Authority, ceiling, walk-away, conditions all unresolved |
+| D-P13 | $7,500,000 nonbinding working opening-offer basis — tactical negotiation figure; acquisition-strategy input only; not proof of value or authority. Feasibility conclusion unchanged | Authority, ceiling, walk-away, conditions, structure all unresolved (pending D-P16) |
+| D-P14 | S9 admitted as a provisional external-advisor research source with no authority for site, zoning, legal, economic, contract, approval, or stakeholder claims; Toothaker prospective only | `sources/people/` class (OQ-36); engagement and disclosure authority (pending D-P15) |
 | D-P2 | Healthcare-anchored thesis; mobility/energy as enabling or optional; no speculative revenue in base case | Not proof of demand, feasibility, or partner support |
 | D-P8 | Records hygiene and status vocabulary | — |
 | D-P9 | Current governance operative; missing prior governance stays historical pending recovery | — |

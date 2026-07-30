@@ -1,12 +1,14 @@
 # Source Inventory
 
-**Status:** Current operative source inventory · **Last reviewed:** 2026-07-26
+**Status:** Current operative source inventory · **Last reviewed:** 2026-07-29
 **Governing documents:** `AGENTS.md`, `docs/governance/SOURCE_AUTHORITY.md`, `docs/governance/WORKFLOW.md` (Phase 1 output)
 **Related:** [Source Authority Register](Source%20Authority%20Register.md) · [Missing Research Register](Missing%20Research%20Register.md) · [Document Dependency Graph](Document%20Dependency%20Graph.md)
 
 Complete inventory of every file in `sources/`, plus governance and skills. Every source was opened and read in full during this session (all workbook sheets and formulas inspected read-only; no source modified, moved, or renamed). Do not infer content from filenames — the "Content summary" column reflects actual inspection.
 
 Source IDs (S1–S8) are used across all planning documents.
+
+**Amendment 2026-07-29.** One file was added to `sources/` by the owner after the 2026-07-26 baseline: `sources/people/Stephanie_J_Toothaker_Context.md`, registered below as **S9**. It was read in full and left unmodified, unmoved, and unrenamed. **Owner decision [D-P14](../decisions/D-P14-advisor-research-source-classification.md) (2026-07-29) admits S9 as a provisional external-advisor research source carrying no evidentiary authority tier**, which closes the authority-classification portion of OQ-34. S9 is now carried in the generated `exports/source-register.json` with its integrity hash. **The folder-structure question is preserved separately as OQ-36:** `sources/people/` remains a source class the Phase 1 architecture did not establish, and the file stays in place until the owner rules. S1–S8 hashes remain unchanged and validated.
 
 ---
 
@@ -115,6 +117,23 @@ Source IDs (S1–S8) are used across all planning documents.
 ## sources/raw/
 - Empty (`.gitkeep` only). **Observed fact.** Intended for unprocessed intake per repo conventions; transaction paper (MA-18) and recovered documents should land here first.
 
+## sources/people/
+
+### S9 — `sources/people/Stephanie_J_Toothaker_Context.md`
+
+**Admitted by owner decision [D-P14](../decisions/D-P14-advisor-research-source-classification.md), 2026-07-29, as a provisional external-advisor research source with no evidentiary authority tier.**
+
+- **Format / size / dates:** Markdown, 17,180 bytes; added to the repository 2026-07-29; internal date "Prepared: July 29, 2026". SHA-256 `46472f288ff6ff0e565b5d2fc27b0ed5a1ff6984afa80debeda70f16b08964ad`.
+- **Purpose:** Pre-meeting context for evaluating Stephanie J. Toothaker, Esq. as potential land-use, entitlement, governmental-relations, and development-strategy counsel.
+- **Provenance:** Owner-provided synthesis of publicly available professional information (LinkedIn, firm website, The Florida Bar directory, UF Bob Graham Center, Best Lawyers, Super Lawyers, South Florida Business & Wealth, History Fort Lauderdale). **None of the underlying web sources is captured in the repository**, so its factual base cannot be inspected here — the same defect already recorded for the electrical load model (CVR-01). Primary-source captures are tracked as MA-19.
+- **Authority:** **No evidentiary tier — ratified by D-P14.** It is context about a prospective professional advisor, not evidence about the site, zoning, program, economics, entitlement, or transaction. **Permitted uses (D-P14):** advisor evaluation, conflicts preparation, meeting preparation, proposed-scope drafting. **It carries no authority for site, zoning, legal, economic, contract, approval, or stakeholder claims** and may not be cited as support for any such claim at any classification. Stephanie Toothaker remains a prospective advisor only.
+- **Content summary:** Executive profile and professional positioning; practice areas (land use, zoning, entitlements, governmental relations, procurement, political consulting); role as Chairwoman and Chief Strategist of TOOTHAKER.org; education (UF Levin College of Law, 1997); Florida Bar number 140112, admitted 1998-05-04, reported in good standing with no discipline in the ten-year history reviewed; prior positions (Tripp Scott, Ruden McClosky, Blosser and Sayfie); recognitions (Martindale-Hubbell AV, Super Lawyers, Florida Trend Legal Elite, Best Lawyers); civic profile; a fourteen-item relevance assessment for South Andrews; a proposed twelve-item Phase 1 paid strategic-review scope with a Land-Use and Entitlement Strategy Memorandum deliverable; 28 first-meeting questions; a 22-item pre-meeting materials list; five desired meeting outcomes; and eleven items the file states its sources do not establish. The file expressly separates sourced facts from project-specific inference.
+- **Dependencies:** MA-19 (primary-source captures). Documents depending on it: [Advisor Profile](../partnerships/Advisor%20Profile%20-%20Stephanie%20J.%20Toothaker.md), [Land-Use Counsel Introductory Meeting Brief](../partnerships/Land-Use%20Counsel%20Introductory%20Meeting%20Brief.md), [Counsel Meeting Materials Register](../partnerships/Counsel%20Meeting%20Materials%20Register.md).
+- **Conflicts:** Contains project statements that differ from the ratified record. The acquisition-basis conflict is **resolved in part by D-P13** — $7,500,000 is now the ratified nonbinding working opening-offer basis (CAN-004), superseding D-P1's figure only, while the **modeled** basis remains $8,000,000 (CAN-004a); S9 derives no authority for that or any figure. Remaining differences, all preserved and unresolved: the address form "901–915" against canonical 901–917 (D-P12); a program description including "rental and mobility functions" and AV optionality broader than the D-P2 thesis; **a weaker statement of the feasibility finding than CVR-50/R-21 support** — the repository's finding governs; a named sponsor entity the repository does not establish (**OQ-33**); and proposed contract periods untested against any schedule (**OQ-32**). Full table in [Land-Use Counsel Introductory Meeting Brief](../partnerships/Land-Use%20Counsel%20Introductory%20Meeting%20Brief.md) §4.
+- **Integrity notes:** Internally disciplined — it labels its own inferences, flags one biographical claim as secondary-sourced background, and lists what its sources do not establish. Its project-fact statements are nonetheless outside its competence and are not controlling.
+- **Confidence:** Medium for the public-record professional facts (single-remove, uncaptured sources); low for style and value-proposition inferences; not applicable for project facts.
+- **Recommended action:** Keep in place unmoved pending the folder-class decision (**OQ-36**). Admission and tier are settled by D-P14. Capture the primary sources to `sources/raw/` (MA-19). Recheck Florida Bar standing immediately before any engagement.
+
 ## Governance & skills (context, not sources)
 - `AGENTS.md` — operating contract; source hierarchy; current identity/scope. **The repository's operative constitution.**
 - `CLAUDE.md` — Claude working rules (inventory before synthesis; conflict table before drafting; no legacy narrative merely for polish).
@@ -129,3 +148,4 @@ Source IDs (S1–S8) are used across all planning documents.
 3. `.DS_Store` artifacts are ignored under Phase 1; the tracked `sources/.DS_Store` artifact was removed from the repository index. No evidence source was removed.
 4. The ODP and 6v8 Model cite a governing layer and research library absent from the repository. D-P9 makes current governance operative while the missing layer remains tracked for recovery.
 5. `derived/workbooks/` and `derived/documents/` now establish generated-work boundaries. No derived extraction supersedes an original.
+6. **`sources/people/` (added 2026-07-29) is a source class the Phase 1 architecture did not establish.** `docs/standards/SOURCE_HANDLING.md` §4 directs new unprocessed material to `sources/raw/` for classification after inspection. The file has been inspected and registered as S9 **in place**: `AGENTS.md` prohibits moving or renaming a source without explicit owner instruction. Of the two questions this raised, **(b) authority is settled by D-P14 — no evidentiary tier**, and S9 is now registered in `exports/source-register.json` on that basis. **(a) whether `sources/people/` is a recognized class remains open and is tracked separately as OQ-36.** If the owner later relocates the file, the move must be atomic across the source register, the counsel package, and `scripts/generate_exports.py`.

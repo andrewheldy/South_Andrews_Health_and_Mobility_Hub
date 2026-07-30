@@ -115,15 +115,21 @@ manifest.update(
         "mobility_role": "enabling_infrastructure",
         "base_case_feasible": False,
         "base_case_feasibility_basis": "Convergent planning-level model outputs from S2 and S3; incompatible program bases remain unresolved.",
-        "opening_offer_usd": 8000000,
+        "opening_offer_usd": 7500000,
         "opening_offer_classification": "adopted_strategy",
+        "opening_offer_basis": "nonbinding tactical negotiation figure; not an economically supported land value, not proof of value, not a ceiling or walk-away price, not offer-submission authority",
+        "opening_offer_provenance": "D-P13",
+        "modeled_land_basis_usd": 8000000,
+        "modeled_land_basis_note": "Unchanged by D-P13 (CAN-004a). Every model output rests on this input; no restatement at the $7,500,000 offer basis has been performed. The two bases are never blended.",
+        "offer_submission_authorized": False,
         "offer_authority_status": "unresolved",
         "maximum_price_status": "unresolved",
         "walk_away_price_status": "unresolved",
+        "transaction_structure_status": "unresolved",
         "adopted_scheme": None,
         "active_scenarios": ["6_story", "8_story"],
-        "ratified_decisions": ["D-P1", "D-P2", "D-P8", "D-P9", "D-P11", "D-P12"],
-        "pending_decisions": ["D-P3", "D-P4", "D-P5", "D-P6", "D-P7", "D-P10"],
+        "ratified_decisions": ["D-P1", "D-P2", "D-P8", "D-P9", "D-P11", "D-P12", "D-P13", "D-P14"],
+        "pending_decisions": ["D-P3", "D-P4", "D-P5", "D-P6", "D-P7", "D-P10", "D-P15", "D-P16"],
         "pending_studies": [
             "architectural_parking_test_fit",
             "zoning_verification",
@@ -162,6 +168,7 @@ decisions = [
         "evidence_or_rationale": ["Owner instruction", "S2 Assumptions!B18", "S3 Assumptions!D7", "S8 p.7"],
         "affected_documents": ["Project Canon", "Master Assumption Register", "project manifest"],
         "superseded_decisions": [],
+        "superseded_in_part_by": "D-P13 (working opening-offer figure only, 2026-07-29); all other provisions remain in force and $8,000,000 is retained as the modeled land basis",
         "review_trigger": "New diligence or written transaction/price authority",
     },
     {
@@ -224,6 +231,47 @@ decisions = [
         "superseded_decisions": [],
         "review_trigger": "Controlling title/survey changes identity",
     },
+    {
+        "decision_id": "D-P13",
+        "title": "Acquisition negotiation basis",
+        "exact_decision_statement": "The current nonbinding working opening-offer basis is $7,500,000. It is a tactical negotiation figure, not an economically supported land value, not proof of value, not a price ceiling, not a walk-away price, and not authority to submit an offer. The governing feasibility conclusion is unchanged: the tested program does not support the land at any price, including zero. No offer submission or acquisition is authorized. The modeled land basis remains $8,000,000 and is not restated; the two bases are never blended. Negotiating authority, maximum price, walk-away price, final conditions, transaction structure, and applicant identity remain unresolved.",
+        "status": "ratified",
+        "decision_date": "2026-07-29",
+        "decision_maker": "Owner",
+        "evidence_or_rationale": [
+            "Owner ruling 2026-07-29",
+            "Context preserved not adopted: S8 p.7 defensible range $7.65-9.0M",
+            "CVR-50 residual finding",
+        ],
+        "affected_documents": [
+            "Project Canon CAN-004/CAN-004a",
+            "D-P1 record",
+            "Master Assumption Register ACQ-01/ACQ-01a",
+            "Canonical Financial Assumptions",
+            "Source Authority Register",
+            "Contradictions Matrix",
+            "Construction Budget Basis",
+            "Institutional Investment Memorandum",
+            "Integrated Development Recommendation",
+            "counsel package",
+            "project manifest",
+            "model input contract",
+        ],
+        "superseded_decisions": ["D-P1 working opening-offer figure only"],
+        "review_trigger": "New diligence, written transaction authority, later owner price decision, structure ruling, or model-vNext restatement",
+    },
+    {
+        "decision_id": "D-P14",
+        "title": "Advisor research source classification",
+        "exact_decision_statement": "S9 (sources/people/Stephanie_J_Toothaker_Context.md) is admitted as a provisional external-advisor research source. Permitted uses: advisor evaluation, conflicts preparation, meeting preparation, proposed-scope drafting. It carries no authority for site, zoning, legal, economic, contract, approval, or stakeholder claims. Stephanie Toothaker remains a prospective advisor only. Resolves the authority-classification portion of OQ-34 only.",
+        "status": "ratified",
+        "decision_date": "2026-07-29",
+        "decision_maker": "Owner",
+        "evidence_or_rationale": ["Owner ruling 2026-07-29", "CVR-01 admission-versus-authority precedent"],
+        "affected_documents": ["Source Inventory S9", "source register", "counsel package", "Open Questions OQ-34/OQ-36"],
+        "superseded_decisions": [],
+        "review_trigger": "Owner ruling on the sources/people class, engagement of counsel, MA-19 recovery, or any proposal to cite S9 beyond the permitted uses",
+    },
 ]
 for did, title, predicate in [
     ("D-P3", "Convertible-structure scope", "test-fit, engineering, code, and GC pricing"),
@@ -232,6 +280,8 @@ for did, title, predicate in [
     ("D-P6", "Medical-office and clinical rent basis", "independent rent study"),
     ("D-P7", "Tax-credit treatment", "qualified tax advice"),
     ("D-P10", "Final story selection", "program, entitlement, economics, and model-vNext"),
+    ("D-P15", "Prospective counsel engagement and disclosure authority", "owner ruling on legal-spend cap, fee structure, and prospective client identity for conflicts; then written conflicts clearance, engagement letter, and the transmission determination (OQ-35). Draft text prepared 2026-07-30 at docs/decisions/D-P15-prospective-counsel-engagement-and-disclosure-authority.md; proposed, not authority"),
+    ("D-P16", "Acquisition price authority and limits", "owner ruling on maximum authorized purchase price, walk-away price, and counteroffer band; diligence gates G1-G7, owner underwriting standard (MA-06), and appraisal reconciliation memo (MB-19). Draft text prepared 2026-07-30 at docs/decisions/D-P16-acquisition-price-authority-and-limits.md; proposed, not authority"),
 ]:
     decisions.append(
         {
@@ -259,7 +309,9 @@ claims = [
     claim("CAN-001", "The canonical project name is South Andrews Healthcare and Mobility Hub.", "owner_decision", "verified_fact", ["D-G1"], ["AGENTS.md"], confidence("high", "Explicit repository governance"), "external_eligible"),
     claim("CAN-002", "The canonical identity address is 901–917 South Andrews Avenue, Fort Lauderdale, Florida.", "owner_decision", "current_working_assumption", ["D-P12"], ["docs/decisions/D-P12-canonical-address.md"], confidence("high", "Explicit owner-selected identity string"), "approved_with_caveat", ["title/survey confirmation"]),
     claim("CAN-003", "The sponsor does not currently own the property.", "owner_decision", "verified_fact", ["D-G3", "D-P1"], ["AGENTS.md", "docs/decisions/D-P1-land-offer-mandate.md"], confidence("high", "Explicit owner/governance status"), "external_eligible"),
-    claim("CAN-004", "The $8,000,000 opening-offer figure is a strategy input, not proof of value or transaction authority.", "adopted_strategy", "current_working_assumption", ["D-P1"], ["docs/decisions/D-P1-land-offer-mandate.md"], confidence("high", "Explicit owner decision within limited scope"), "internal_only", ["negotiating authority", "diligence"]),
+    claim("CAN-004", "The $7,500,000 working opening-offer basis is a nonbinding tactical negotiation figure, not an economically supported land value, not proof of value, and not transaction authority.", "adopted_strategy", "current_working_assumption", ["D-P13"], ["docs/decisions/D-P13-acquisition-negotiation-basis.md"], confidence("high", "Explicit owner decision within limited scope"), "internal_only", ["negotiating authority", "price limits", "transaction structure", "diligence"]),
+    claim("CAN-004a", "The modeled land basis remains $8,000,000 and is unchanged by D-P13; every model output rests on that input and no restatement has been performed.", "adopted_strategy", "current_working_assumption", ["D-P1", "D-P13"], ["docs/decisions/D-P1-land-offer-mandate.md", "docs/decisions/D-P13-acquisition-negotiation-basis.md"], confidence("high", "Direct model input; explicitly preserved by D-P13"), "internal_only", ["model-vNext restatement"]),
+    claim("CAN-005", "S9 is a provisional external-advisor research source carrying no authority for site, zoning, legal, economic, contract, approval, or stakeholder claims; Stephanie Toothaker is a prospective advisor only.", "owner_decision", "current_working_assumption", ["D-P14"], ["docs/decisions/D-P14-advisor-research-source-classification.md"], confidence("high", "Explicit owner classification decision"), "internal_only", ["sources/people class (OQ-36)", "engagement authority (D-P15)"]),
     claim("CAN-010", "Healthcare is the project anchor.", "adopted_strategy", "current_working_assumption", ["D-P2"], ["docs/decisions/D-P2-project-thesis.md"], confidence("high", "Explicit owner strategy"), "approved_with_caveat", ["market validation", "test-fit", "entitlement", "economics"]),
     claim("CAN-011", "Mobility, energy, charging, data, and AV systems are enabling or optional infrastructure.", "adopted_strategy", "current_working_assumption", ["D-P2"], ["docs/decisions/D-P2-project-thesis.md"], confidence("high", "Explicit owner strategy"), "approved_with_caveat", ["engineering", "utility capacity", "economics"]),
     claim("CAN-012", "A governance-clean base case excludes speculative optional AV and similar revenue.", "owner_decision", "current_working_assumption", ["D-P2"], ["docs/decisions/D-P2-project-thesis.md"], confidence("high", "Explicit owner rule"), "approved_with_caveat", ["S3 successor-model correction"], "known_model_conflict"),
@@ -282,7 +334,8 @@ payload["claims"] = claims
 write("claims-register.json", payload)
 
 assumptions = [
-    ("ACQ-01", 8000000, "USD", "acquisition", "current_working_assumption", "ratified_limited_scope", ["S2", "S3"], ["project_wide"], "D-P1", "high", "internal_only"),
+    ("ACQ-01", 7500000, "USD", "acquisition", "current_working_assumption", "ratified_limited_scope", ["D-P13"], ["project_wide"], "D-P13", "high", "internal_only"),
+    ("ACQ-01a", 8000000, "USD", "acquisition", "current_working_assumption", "ratified_limited_scope", ["S2", "S3"], ["project_wide"], "D-P1", "high", "internal_only"),
     ("ACQ-02", None, "USD", "acquisition", "open_question", "unresolved", ["D-P1", "OQ-20"], ["project_wide"], "later owner price decision", "high", "blocked_pending_resolution"),
     ("PRG-01A", 35000, "SF/floor", "program", "current_working_assumption", "scenario", ["S2"], ["basis_A_35k"], "D-P5", "high", "internal_only"),
     ("PRG-01B", {"ground_parking": 28000, "office": 24000}, "SF/floor", "program", "current_working_assumption", "scenario", ["S3", "S8"], ["basis_B_28k24k"], "D-P5", "high", "internal_only"),
@@ -373,14 +426,25 @@ open_items = {
     "OQ-17": ("Tax-credit treatment", "open", "D-P7"),
     "OQ-18": ("Exit cap/hurdle basis", "open", "later owner decision"),
     "OQ-19": ("Governance succession", "closed", "D-P9"),
-    "OQ-20": ("Negotiating authority/ceiling/walk-away", "partially_resolved", "later owner decision"),
+    "OQ-20": ("Negotiating authority/ceiling/walk-away/structure", "partially_resolved", "D-P16 (pending)"),
     "OQ-21": ("Charger mix", "open", "MB-03"),
     "OQ-22": ("S3 AV revenue in base NOI", "open", "model-vNext"),
     "OQ-23": ("Canonical address", "closed", "D-P12"),
+    # Items whose status was changed by the 2026-07-29 ratifications (D-P13, D-P14).
+    "OQ-31": ("Acquisition basis", "partially_resolved", "D-P13"),
+    "OQ-34": ("S9 admission and authority tier", "closed", "D-P14"),
+    "OQ-36": ("sources/people directory class", "open", "owner decision"),
 }
 payload = envelope(
     ["docs/planning/Open Questions.md"],
     dependencies=[key for key, value in open_items.items() if value[1] != "closed"],
+)
+payload["coverage_note"] = (
+    "Enumerates the Phase 1 question set (OQ-01..OQ-23) plus items whose status was changed by a "
+    "ratified owner decision. OQ-24..OQ-30 (2026-07-27 integrated development pass) and OQ-32, OQ-33, "
+    "OQ-35 (2026-07-29 counsel-context pass) exist in the governing register at "
+    "docs/planning/Open Questions.md but are not yet mirrored here. The human register governs; this "
+    "export is subordinate. Completing the mirror requires separate owner authorization."
 )
 payload["open_questions"] = [
     {"question_id": key, "question": value[0], "status": value[1], "resolve_via": value[2]}
@@ -418,6 +482,7 @@ source_specs = [
     ("S6", "sources/reference/Andrew’s Appraisal.pdf", "reference", "seller_provided", "tier_7", "Third-party appraisal and site facts within professional scope"),
     ("S7", "sources/reference/Appraisal Valuation .xlsx", "reference", "third_party", "tier_7", "Analyst valuation context; different program"),
     ("S8", "sources/reference/NativeRealty_905 S Andrews - Development Feasibility & Massing Study.pdf", "reference", "third_party", "tier_7", "Buyer-side zoning/massing/offer context; car-rental thesis rejected"),
+    ("S9", "sources/people/Stephanie_J_Toothaker_Context.md", "people", "owner_provided", "no_authority_tier", "Provisional external-advisor research source per D-P14. Permitted uses: advisor evaluation, conflicts preparation, meeting preparation, proposed-scope drafting. No authority for site, zoning, legal, economic, contract, approval, or stakeholder claims. Directory class unresolved (OQ-36)"),
 ]
 source_records = []
 for sid, relative, source_class, provenance, tier, scope in source_specs:
@@ -501,7 +566,8 @@ payload = envelope(
 )
 payload["metrics"] = {
     "site_area_sf": {"value": 38207, "classification": "corroborated_fact", "external_use_status": "approved_with_caveat"},
-    "opening_offer_usd": {"value": 8000000, "classification": "adopted_strategy", "external_use_status": "internal_only"},
+    "opening_offer_usd": {"value": 7500000, "classification": "adopted_strategy", "external_use_status": "internal_only", "provenance": "D-P13", "basis": "nonbinding tactical negotiation figure; not an economically supported land value"},
+    "modeled_land_basis_usd": {"value": 8000000, "classification": "adopted_strategy", "external_use_status": "internal_only", "provenance": "D-P1 (preserved)", "basis": "input behind every model output; not restated by D-P13"},
     "base_case_feasible": {"value": False, "classification": "model_output", "external_use_status": "approved_with_caveat"},
     "s2_yield_on_cost": {"6_story": 0.0383, "8_story": 0.0402, "classification": "model_output", "program_basis": "basis_A_35k"},
     "s3_core_yield_on_cost": {"6_story": 0.0383, "8_story": 0.0407, "classification": "model_output", "program_basis": "basis_B_28k24k"},

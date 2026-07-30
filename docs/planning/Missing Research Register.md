@@ -1,6 +1,6 @@
 # Missing Research Register
 
-**Status:** Current operative missing-dependency register · **Last reviewed:** 2026-07-26
+**Status:** Current operative missing-dependency register · **Last reviewed:** 2026-07-29
 **Governing documents:** `AGENTS.md`, `docs/governance/SOURCE_AUTHORITY.md`, `docs/governance/WORKFLOW.md`
 **Related:** [Source Inventory](Source%20Inventory.md) · [Open Questions](Open%20Questions.md) · [Implementation Roadmap](Implementation%20Roadmap.md)
 
@@ -36,7 +36,8 @@ Classification: unless noted, every entry is an **open question** under the AGEN
 | MA-15 | **AEI Zoning Report** | Appraisal p.10 ("available separately from this Appraisal report") | Appraiser's zoning review | Obtain from AEI file |
 | MA-16 | **"Operational Study" / "Site Analysis" / "Feasibility Study" cited in 6v8 Model** | 6v8 Model `Assumptions` column E (e.g., E8, E24, E28, E33, E53, E56, E69) | Programming basis, cost premiums, rent evidence, parking pricing survey | Determine whether these are MA-07/MA-08/MA-09 under other names or separate documents; until resolved, the affected inputs are working assumptions with untraceable citations |
 | MA-17 | **"Plan 3" (session plan referenced by 6v8 Model governance note)** | 6v8 Model `Summary!A15` | The framing decision behind the "Andrews Mobility Nexus" session | Locate session record or record as unrecoverable; the framing is superseded by AGENTS.md identity rules |
-| MA-18 | **Current listing / offer correspondence** | Native Realty study ("current listing", "three commercial assets"); appraisal ("previously listed at $12,000,000 but is currently not listed") | Listing status and any offer/LOI paper trail | Add transaction documents to `sources/raw/` as they are generated |
+| MA-18 | **Current listing / offer correspondence** | Native Realty study ("current listing", "three commercial assets"); appraisal ("previously listed at $12,000,000 but is currently not listed") | Listing status and any offer/LOI paper trail | Add transaction documents to `sources/raw/` as they are generated. **Extended 2026-07-29:** S9 §12 refers to a "draft $7.5 million purchase offer and entitlement rider." **No offer, LOI, term sheet, or rider exists anywhere in the repository** (CVR-03), and the $7.5M basis is not a ratified decision (OQ-31 / D-P13 pending). Do not draft the instrument before that decision |
+| MA-19 | **Primary-source captures behind the Toothaker context file (S9)** | S9 §15 (LinkedIn profile, TOOTHAKER.org firm site, The Florida Bar attorney directory, UF Bob Graham Center biography, Best Lawyers, Super Lawyers, South Florida Business & Wealth, History Fort Lauderdale) | The public-record basis for S9's professional, educational, and Florida Bar claims | **Capture to `sources/raw/` with retrieval dates.** S9's factual base is currently uninspectable in the repository — the same defect recorded for the electrical load model (CVR-01). Florida Bar standing and discipline history must additionally be rechecked on the day of any engagement |
 
 ---
 
@@ -66,6 +67,7 @@ Priority: **Critical** = gates owner decisions or design spend; **High** = gates
 | MB-18 | **Live Local Act / TDR / bonus-height counsel review** | Listed as "not yet verified" in Corrected Assumptions §5; legislative volatility flagged in ODP R-5 | Height strategy | Medium | OQ-03 |
 | MB-19 | **Appraisal reconciliation memo ($11.1M vs $8.0M offer vs $8.96M residual)** | Three defensible-but-different land values exist; negotiation strategy should be documented as an owner decision | Acquisition | High | OQ-12 (context), OQ-20 |
 | MB-20 | **Economic-impact analysis** | Legacy prospectus explicitly declines to state figures until analysis exists ("we have chosen not to estimate them here") | External communications, City package | Medium | — |
+| MB-21 | **Land-use counsel written opinion** — use characterization; accessory-parking ratio limit; height pathway and review level against the actual ULDR text; parking methodology and shared-parking availability; Live Local preemption; applicant identity; and the purchase-contract feasibility, entitlement, and closing-milestone structure | Previously folded inside MB-01. Broken out 2026-07-29 because it is a distinct instrument, it precedes and shapes MB-01, and it is the single purchase that can close OQ-03, OQ-26, OQ-27, OQ-30 and OQ-32 together. The controlling height text in evidence is truncated mid-word; the accessory-parking argument is uncited; no shared-parking provision is quoted in any source | Offer structure, entitlement strategy, program scale, acquisition decision | **Critical** | OQ-03, OQ-26, OQ-27, OQ-30, OQ-32, OQ-33 |
 
 ---
 

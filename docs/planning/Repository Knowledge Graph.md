@@ -53,7 +53,7 @@ graph TD
   end
 
   subgraph CAP["CAPITAL & RETURNS"]
-    Land8["$8.0M land offer"]
+    Land8["$7.5M offer basis (D-P13) / $8.0M modeled basis"]
     Appraisal["$11.1M appraisal (opinion)"]
     TDC["Development cost $59–95M<br/>(basis-dependent)"]
     NOI["Base NOI $2.2–3.8M"]
@@ -132,7 +132,8 @@ graph TD
 | Solar / BESS | infrastructure | sizing DUAL; $0 credits interim | S2/S3 |
 | Edge data room | optionality | scope DUAL | S2/S3 |
 | Roof allocation | design tension | unresolved (drives solar DUAL) | S2 vs S3 |
-| $8.0M working opening input | capital | adopted strategy under ratified D-P1; no transaction authority or ceiling | D-P1; S2/S3/S8 |
+| $7.5M working opening-offer basis | capital | adopted strategy under ratified **D-P13** (2026-07-29); tactical negotiation figure; no transaction authority or ceiling | D-P13 |
+| $8.0M modeled land basis | capital | unchanged model input behind every model output; superseded only as the offer basis | D-P1 (preserved); S2/S3/S8 |
 | $11.1M appraisal | capital context | appraisal opinion + critiques | S6; S1/S8 |
 | Yield gap | model output | **canonical convergent finding** | S2+S3 |
 | Partner support / grants | capital strategy | required to close gap; all prospective | S3/S4 |
@@ -147,7 +148,7 @@ graph TD
 
 ## 4. Contradiction edges (live)
 
-`$11.1M appraisal ↔ $8.0M offer` · `35k plate ↔ 28k/24k plates` · `$36 ↔ $50 rent` · `30% ITC ↔ 0%` · `6.25% ↔ 7.25% exit cap` · `32L2+8DCFC ↔ 40L2+stubs` · `AV $0 base ↔ S3 $194K in base` · `110 ft by-right ↔ Level III review` — all tracked in the [Contradictions Matrix](Contradictions%20Matrix.md); none may be silently collapsed.
+`$11.1M appraisal ↔ $7.5M offer basis (D-P13) ↔ $8.0M modeled basis` · `35k plate ↔ 28k/24k plates` · `$36 ↔ $50 rent` · `30% ITC ↔ 0%` · `6.25% ↔ 7.25% exit cap` · `32L2+8DCFC ↔ 40L2+stubs` · `AV $0 base ↔ S3 $194K in base` · `110 ft by-right ↔ Level III review` — all tracked in the [Contradictions Matrix](Contradictions%20Matrix.md); none may be silently collapsed.
 
 ## 5. Maintenance
 

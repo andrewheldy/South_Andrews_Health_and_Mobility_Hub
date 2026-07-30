@@ -91,7 +91,7 @@ check(
     len(decision_ids) == len(set(decision_ids)),
     "decision IDs must be unique",
 )
-ratified_expected = {"D-P1", "D-P2", "D-P8", "D-P9", "D-P11", "D-P12"}
+ratified_expected = {"D-P1", "D-P2", "D-P8", "D-P9", "D-P11", "D-P12", "D-P13", "D-P14"}
 ratified_actual = {item["decision_id"] for item in decisions if item.get("status") == "ratified"}
 check(
     "ratified decision set",
@@ -352,41 +352,54 @@ check(
     "memorandum may not designate itself or its content external_eligible",
 )
 
-# D-P1 discipline: every substantive $8M occurrence in the memorandum must sit
-# within a proximity window containing a D-P1 reference plus an approved label.
-# A document-level qualification elsewhere does not cure an unqualified use.
+# D-P1/D-P13 discipline: every substantive land-figure occurrence in the memorandum
+# must sit within a proximity window containing a decision reference plus an approved
+# label. A document-level qualification elsewhere does not cure an unqualified use.
+# Extended 2026-07-29 to the $7,500,000 D-P13 working opening-offer basis, so the
+# control established for the superseded $8M figure does not lapse on the new one.
+# Note "D-P1" in window is also satisfied by "D-P13" as a substring, which is intended.
 iim_lines = iim_text.splitlines()
-land_figure = re.compile(r"\$8(?:,000,000|\.0\s*M\b|\.0 million|M\b| million)", re.IGNORECASE)
+land_figure = re.compile(
+    r"\$8(?:,000,000|\.0\s*M\b|\.0 million|M\b| million)"
+    r"|\$7(?:,500,000|\.5\s*M\b|\.5 million)",
+    re.IGNORECASE,
+)
 land_qualifier = re.compile(
     r"acquisition-strategy input only"
     r"|not proof of value"
     r"|strategy input; not proof of value or authority"
-    r"|not appraised value, land-price ceiling, walk-away price, or transaction authority",
+    r"|not appraised value, land-price ceiling, walk-away price, or transaction authority"
+    r"|tactical negotiation figure"
+    r"|not an economically supported land value",
     re.IGNORECASE,
 )
 for index, line in enumerate(iim_lines):
     if land_figure.search(line):
         window = "\n".join(iim_lines[max(0, index - 2): index + 3])
         check(
-            "IIM land-basis qualifier (D-P1)",
+            "IIM land-basis qualifier (D-P1/D-P13)",
             "D-P1" in window and land_qualifier.search(window) is not None,
-            f"unqualified $8M reference near memorandum line {index + 1}",
+            f"unqualified land-figure reference near memorandum line {index + 1}",
         )
 
+# Applies to both land figures: the $8,000,000 modeled basis (D-P1, preserved) and the
+# $7,500,000 working opening-offer basis (D-P13). Neither may be characterized as value,
+# a ceiling, a walk-away price, an approved offer, or transaction authority.
+_land_amt = r"(?:8(?:,000,000|\.0\s*M|M\b)|7(?:,500,000|\.5\s*M))"
 land_mischaracterizations = [
-    r"(?:appraised|market)\s+value\s+of\s+\$8",
-    r"\$8(?:,000,000|\.0\s*M|M\b)[^\n]{0,60}\b(?:is|was|equals)\s+(?:the\s+)?(?:appraised|market)\s+value",
-    r"valuation\s+conclusion\s+of\s+\$8",
-    r"approved\s+offer\s+of\s+\$8",
-    r"(?:price\s+)?ceiling\s+of\s+\$8",
-    r"maximum\s+(?:authorized\s+)?price\s+of\s+\$8",
-    r"walk-?away\s+price\s+of\s+\$8",
-    r"\$8(?:,000,000|\.0\s*M|M\b)[^\n]{0,60}\b(?:constitutes|establishes|grants)\s+transaction\s+authority",
+    rf"(?:appraised|market)\s+value\s+of\s+\${_land_amt}",
+    rf"\${_land_amt}[^\n]{{0,60}}\b(?:is|was|equals)\s+(?:the\s+)?(?:appraised|market)\s+value",
+    rf"valuation\s+conclusion\s+of\s+\${_land_amt}",
+    rf"approved\s+offer\s+of\s+\${_land_amt}",
+    rf"(?:price\s+)?ceiling\s+of\s+\${_land_amt}",
+    rf"maximum\s+(?:authorized\s+)?price\s+of\s+\${_land_amt}",
+    rf"walk-?away\s+price\s+of\s+\${_land_amt}",
+    rf"\${_land_amt}[^\n]{{0,60}}\b(?:constitutes|establishes|grants)\s+transaction\s+authority",
 ]
 check(
     "IIM land-basis mischaracterization scan",
     not any(re.search(pattern, iim_text, flags=re.IGNORECASE) for pattern in land_mischaracterizations),
-    "memorandum characterizes the $8M input as value, ceiling, walk-away, approved offer, or authority",
+    "memorandum characterizes a land figure as value, ceiling, walk-away, approved offer, or authority",
 )
 
 prohibited_promotional = [

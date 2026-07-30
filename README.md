@@ -36,8 +36,11 @@ Both current financial models independently indicate that the base project, as p
 ## Current decision state
 
 Ratified on 2026-07-26: D-P1, D-P2, D-P8, D-P9, D-P11, D-P12.
+Ratified on 2026-07-29: **D-P13** (acquisition negotiation basis), **D-P14** (advisor research source classification).
 
-Pending: D-P5 program/floor plate, D-P6 rent basis, D-P7 tax treatment, D-P10 final story selection, and all other unresolved economic, partner, entitlement, utility, and transaction-authority questions in the canon.
+D-P13 sets the current **nonbinding working opening-offer basis at $7,500,000** — a tactical negotiation figure, not an economically supported land value, and not authority to submit an offer. It supersedes only D-P1's $8,000,000 figure; **the modeled land basis remains $8,000,000** and the two are never blended. The feasibility conclusion is unchanged.
+
+Pending: D-P5 program/floor plate, D-P6 rent basis, D-P7 tax treatment, D-P10 final story selection, D-P15 counsel engagement and disclosure authority, D-P16 transaction authority and price limits, and all other unresolved economic, partner, entitlement, utility, and transaction-authority questions in the canon.
 
 ## Validation
 

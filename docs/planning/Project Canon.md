@@ -1,11 +1,13 @@
 # Project Canon
 
-**Document status:** Ratified · **Ratification date:** 2026-07-26 · **Decision authority:** Owner
+**Document status:** Ratified · **Ratification date:** 2026-07-26 · **Amended:** 2026-07-29 (D-P13, D-P14) · **Decision authority:** Owner
 **External-use status:** Internal governing record; individual statements retain their own eligibility
 **Governing documents:** `AGENTS.md`, the current `docs/governance/` set, and explicit current owner decisions
 **Related:** [Decision Log](Decision%20Log.md) · [Master Assumption Register](Master%20Assumption%20Register.md) · [Contradictions Matrix](Contradictions%20Matrix.md)
 
 This is the human-reviewed canonical project record. Structured exports are derived views and do not replace it. Ratification adopts the explicitly identified strategies and decisions; it does not convert assumptions, source-derived claims, or model outputs into verified facts.
+
+> **Amendment 2026-07-29.** Owner decisions **D-P13** (acquisition negotiation basis) and **D-P14** (advisor research source classification) were ratified. CAN-004 is restated to the **$7,500,000** nonbinding working opening-offer basis; the superseded **$8,000,000** working opening-offer figure is preserved and its surviving role as the **unchanged modeled land basis** is recorded separately as **CAN-004a**. **§3 is unamended:** the feasibility finding continues to describe the models as run, at an $8,000,000 land basis, and the conclusion is unchanged — the tested program does not support the land at any price, including zero. Nothing else in this canon is amended; no pending decision was resolved.
 
 ## 1. Canonical identity and status
 
@@ -14,7 +16,8 @@ This is the human-reviewed canonical project record. Structured exports are deri
 | CAN-001 | The canonical project name is **South Andrews Healthcare and Mobility Hub**. | owner_decision | verified fact | D-G1; `AGENTS.md`; `PROJECT_GLOSSARY.md` | high | external_eligible | Older names remain historical source identifiers. | Supersedes active use of older project names. |
 | CAN-002 | The canonical identity address is **901–917 South Andrews Avenue, Fort Lauderdale, Florida**. | owner_decision | current working assumption | D-P12 | high as owner-selected identity string | external_eligible_with_caveat | Preserve parcel/source-specific addresses for legal, title, survey, appraisal, environmental, tax, and quoted contexts. | Address aliases remain preserved. |
 | CAN-003 | **Prospective acquisition. The sponsor does not currently own the property.** | owner_decision | verified fact | D-G3; D-P1; `AGENTS.md` | high | external_eligible | Do not imply control, contract, acquisition, or commitment without future evidence. | None. |
-| CAN-004 | The working opening-offer input is **$8,000,000**. It is not proof of value and does not itself authorize an offer. | adopted_strategy | current working assumption | D-P1; S2 `Assumptions!B18`; S3 `Assumptions!D7`; S8 p.7 | high as adopted strategy | internal_only | Negotiating authority, maximum price, walk-away price, and final conditions are unresolved; diligence required. | Supersedes any treatment as proven value or price ceiling. |
+| CAN-004 | The current nonbinding working opening-offer basis is **$7,500,000**. It is a tactical negotiation figure — not an economically supported land value, not proof of value, not a price ceiling, not a walk-away price — and does not itself authorize an offer. | adopted_strategy | current working assumption | D-P13 (2026-07-29); context preserved: S8 p.7 defensible range $7.65–9.0M | high as adopted strategy | internal_only | Negotiating authority, maximum price, walk-away price, final conditions, and transaction structure are unresolved; diligence required. **The modeled land basis remains $8,000,000 (CAN-004a); the two bases are never blended.** | **Supersedes D-P1's $8,000,000 working opening-offer figure only** (preserved as a superseded assumption). Continues to supersede any treatment as proven value or price ceiling. |
+| CAN-004a | The **modeled** land basis is **$8,000,000** and is unchanged by D-P13. Every model output, cost table, yield, residual, and gap figure in the repository carries an $8,000,000 land input. No restatement at $7,500,000 has been performed or authorized. | adopted_strategy | current working assumption | D-P1 (preserved figure); S2 `Assumptions!B18`; S3 `Assumptions!D7`; derived model | high as model input | internal_only | Restatement is model-vNext work gated by [Document Update Order](Document%20Update%20Order.md) Step 5. Immaterial to the feasibility conclusion, which holds at a land basis of zero. | None. Records the surviving element of D-P1's figure. |
 
 ## 2. Ratified thesis
 
@@ -78,4 +81,5 @@ Missing prior governance, market evidence, survey/title/environmental records, e
 3. Statement type never promotes evidence class: an adopted strategy is not a verified fact.
 4. No downstream model, prospectus, interface, caption, or rendering may contradict the canon or omit the current feasibility finding.
 5. External use must pass `docs/external/EXTERNAL_PUBLICATION_CHECKLIST.md`.
-6. Review date for this ratification: **2026-07-26**.
+6. Review date for this ratification: **2026-07-26**; amendment review date: **2026-07-29** (D-P13, D-P14).
+7. The working opening-offer basis (CAN-004) and the modeled land basis (CAN-004a) are distinct and **must never be blended**. Any document quoting a land figure must name which basis it is using.
